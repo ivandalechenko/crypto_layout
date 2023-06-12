@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700&family=Inter:wght@300;500&display=swap");
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -25,7 +26,7 @@ time, mark, audio, video, button {
   box-sizing: border-box;
   color: white;
   transition: 0.3s;
-  font-family: "Montserrat";
+  font-family: "Inter Tight";
 }
 
 img, svg {
@@ -45,6 +46,83 @@ a {
   text-decoration: none;
 }
 
-.meow {
-  color: red;
+.container {
+  width: 1085px;
+  margin: 0 auto;
+}
+@media (max-width: 1150px) {
+  .container {
+    width: 100%;
+    padding: 0px 15px;
+  }
+}
+
+header {
+  background: black;
+}
+header .container {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+header .container .navigation {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+header .container .navigation .logo {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+header .container .navigation .logo .img {
+  margin: auto 0;
+}
+header .container .navigation .logo .text {
+  margin: auto 0;
+  font-weight: 700;
+  font-size: 18.2642px;
+  line-height: 22px;
+}
+header .container .navigation .links {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 0;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+header .container .navigation .links a {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #B5B6B6;
+}
+header .container .buttons {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+header .container .buttons .lang {
+  display: flex;
+  margin: auto 0;
+  justify-content: space-between;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  font-weight: 700;
+  font-size: 16px;
+}
+header .container .buttons .try_now {
+  margin: auto 0;
+}
+header .container .buttons .try_now button {
+  width: 122px;
+  height: 43px;
+  background: #3763FF;
+  border-radius: 65px;
+  font-weight: 700;
+  font-size: 16px;
 }

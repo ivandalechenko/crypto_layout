@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700&family=Inter:wght@300;500&display=swap')
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section
     display: block
@@ -23,7 +25,7 @@ time, mark, audio, video, button
     box-sizing: border-box
     color: white
     transition: .3s
-    font-family: 'Montserrat'
+    font-family: 'Inter Tight'
 img, svg
     transition: .3s
 a:hover, button:hover
@@ -35,5 +37,63 @@ a:hover, button:hover
 a
     text-decoration: none
 
-.meow
-    color: red
+.container
+    width: 1085px
+    margin: 0 auto
+    @media (max-width: 1150px)
+        width: 100%
+        padding: 0px 15px
+
+header
+    background: black
+    .container
+        height: 80px
+        display: flex
+        justify-content: space-between
+        .navigation
+            display: flex
+            justify-content: space-between
+            column-gap: 30px
+            .logo
+                display: flex
+                justify-content: space-between
+                column-gap: 20px
+                .img
+                    margin: auto 0
+                .text
+                    margin: auto 0
+                    font-weight: 700
+                    font-size: 18.2642px
+                    line-height: 22px
+            .links
+                display: flex
+                justify-content: space-between
+                margin: auto 0
+                column-gap: 20px
+                a
+                    font-family: 'Inter'
+                    font-weight: 500
+                    font-size: 15px
+                    line-height: 20px
+                    color: #B5B6B6
+
+        .buttons
+            display: flex
+            justify-content: space-between
+            column-gap: 12px
+            .lang
+                display: flex
+                margin: auto 0
+                justify-content: space-between
+                column-gap: 12px
+                font-weight: 700
+                font-size: 16px
+            .try_now
+                margin: auto 0
+                button
+                    width: 122px
+                    height: 43px
+                    background: #3763FF
+                    border-radius: 65px
+                    font-weight: 700
+                    font-size: 16px
