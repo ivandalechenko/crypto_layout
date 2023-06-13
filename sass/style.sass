@@ -401,20 +401,44 @@ header
                         color: #B5B6B6
                     .price_value
                         margin-top: 6px
-                        font-weight: 700
-                        font-size: 18px
-                        line-height: 22px
-                        letter-spacing: -0.02em
-                        span
-                            padding-left: 6px
-                            font-family: 'Inter'
-                            font-style: normal
-                            font-weight: 300
+                        display: flex
+                        column-gap: 8px
+                        .add_info_type_1, .add_info_type_2, .text
+                            margin: auto 0
+                        .add_info_type_2
+                            background: rgba(149, 248, 164, 0.11)
+                            border-radius: 11px
+                            padding: 6px 12px
+                            font-family: 'Inter Tight'
+                            font-weight: 500
+                            font-size: 14px
+                            line-height: 17px
+                            letter-spacing: -0.02em
+                            color: #FFFFFF
+                        .add_info_type_1
+                            padding: 4px 12px
+                            background: #ADFC06
+                            border-radius: 7px
+                            font-weight: 600
+                            font-size: 14px
+                            line-height: 17px
+                            letter-spacing: -0.02em
+                            color: #000000
+                        .text
+                            font-weight: 700
                             font-size: 18px
                             line-height: 22px
                             letter-spacing: -0.02em
-                            text-decoration-line: line-through
-                            color: rgba(255, 255, 255, 0.5)
+                            span
+                                padding-left: 6px
+                                font-family: 'Inter'
+                                font-style: normal
+                                font-weight: 300
+                                font-size: 18px
+                                line-height: 22px
+                                letter-spacing: -0.02em
+                                text-decoration-line: line-through
+                                color: rgba(255, 255, 255, 0.5)
                 .buttons
                     margin-top: 20px
                     display: flex
@@ -432,3 +456,16 @@ header
                         background: #3763FF
                     button:last-child
                         border: 1px solid rgba(255, 255, 255, 0.25)
+    .secure
+        margin-top: 34px
+        display: flex
+        column-gap: 15px
+        .text, img
+            margin: auto 0
+        .text
+            font-family: 'Inter'
+            font-weight: 500
+            font-size: 15px
+            line-height: 20px
+            color: #B5B6B6
+            padding-right: 15px
