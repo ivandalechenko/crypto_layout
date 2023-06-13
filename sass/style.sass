@@ -456,16 +456,224 @@ header
                         background: #3763FF
                     button:last-child
                         border: 1px solid rgba(255, 255, 255, 0.25)
-    .secure
-        margin-top: 34px
+
+.secure
+    margin-top: 34px
+    display: flex
+    column-gap: 15px
+    .text, img
+        margin: auto 0
+    .text
+        font-family: 'Inter'
+        font-weight: 500
+        font-size: 15px
+        line-height: 20px
+        color: #B5B6B6
+        padding-right: 15px
+.security
+    margin-top: 150px
+    .container
         display: flex
-        column-gap: 15px
-        .text, img
+        justify-content: space-between
+        .img
+            width: 40%
+        .content
+            width: 55%
+            .security_header
+                .small
+                    font-weight: 800
+                    font-size: 16px
+                    line-height: 19px
+                    letter-spacing: 0.205em
+                    text-transform: uppercase
+                    color: #D9E44F
+                .large
+                    font-weight: 700
+                    font-size: 36px
+                    line-height: 44px
+                    letter-spacing: -0.02em
+                    margin-top: 12px
+            .advantages
+                margin-top: 37px
+                display: flex
+                justify-content: space-between
+                flex-wrap: wrap
+                row-gap: 20px
+                .advantages_element
+                    width: 48.4%
+                    background: rgba(255, 255, 255, 0.05)
+                    backdrop-filter: blur(54px)
+                    border-radius: 17px
+                    padding: 16px 16px 24px
+                    .advantages_element_header
+                        font-weight: 700
+                        font-size: 18px
+                        line-height: 22px
+                        letter-spacing: -0.02em
+                        color: #FFFFFF
+                        margin-top: 13px
+                    .advantages_element_text
+                        margin-top: 10px
+                        font-family: 'Inter'
+                        font-weight: 300
+                        font-size: 16px
+                        line-height: 25px
+                        color: #B5B6B6
+.transactions
+    margin-top: 155px
+    .transactions_header
+        .large, .small
+            text-align: center
+        .large
+            font-weight: 700
+            font-size: 36px
+            line-height: 44px
+            letter-spacing: -0.02em
+            color: #FFFFFF
+        .small
+            font-family: 'Inter'
+            font-weight: 300
+            font-size: 16px
+            line-height: 25px
+            color: #B5B6B6
+            margin-top: 12px
+    .navigation
+        display: flex
+        margin-top: 40px
+        .navigation_element:hover
+            color: rgba(255, 255, 255,1)
+            border-bottom: 1px solid rgba(255, 255, 255, 1)
+            cursor: pointer
+        .navigation_element
+            width: 33%
+            text-align: center
+            padding-bottom: 20px
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15)
+            font-weight: 500
+            font-size: 18px
+            line-height: 22px
+            letter-spacing: -0.02em
+            color: rgba(255, 255, 255, 0.5)
+        .active
+            border-bottom: 1px solid rgba(217, 228, 79, 1)
+            color: rgba(255, 255, 255,1)
+    .number
+        width: 7.56%
+    .type
+        width: 7.18%
+    .pair
+        width: 15.13%
+    .date
+        width: 13.7%
+    .count
+        width: 8.43%
+    .price
+        width: 10.3%
+    .volume
+        width: 19.15%
+    .profit
+        width: 18.2%
+    .table_naming
+        margin-top: 32px
+        padding: 0px 20px
+        display: flex
+        padding-bottom: 6px
+        div
+            font-family: 'Inter'
+            font-weight: 400
+            font-size: 14px
+            line-height: 20px
+            color: #FFFFFF
+            opacity: 0.7
+    .table_element
+        margin-top: 6px
+        padding: 0px 20px
+        display: flex
+        height: 60px
+        background: rgba(255, 255, 255, 0.03)
+        border-radius: 12px
+        .number, .type, .pair, .date, .count, .price, .volume, .profit
             margin: auto 0
-        .text
+        .number
+            font-weight: 700
+            font-size: 16px
+            line-height: 19px
+            letter-spacing: -0.02em
+            color: #FFFFFF
+            opacity: 0.5
+        .type
+            .short
+                color: #FF5F72
+            .long
+                color: #D9E44F
+            .direction
+                font-weight: 700
+                font-size: 16px
+                line-height: 19px
+                letter-spacing: -0.02em
+            .leverage
+                font-family: 'Inter'
+                font-weight: 500
+                font-size: 12px
+                line-height: 15px
+                letter-spacing: -0.02em
+                color: #B5B6B6
+        .pair
+            display: flex
+            column-gap: 12px
+            img, .name
+                margin: auto 0
+            .name
+                font-family: 'Inter'
+                font-weight: 500
+                font-size: 15px
+                line-height: 20px
+                color: #FFFFFF
+        .date
             font-family: 'Inter'
             font-weight: 500
             font-size: 15px
             line-height: 20px
-            color: #B5B6B6
-            padding-right: 15px
+            color: #FFFFFF
+            opacity: 0.7
+        .count
+            font-family: 'Inter'
+            font-weight: 500
+            font-size: 15px
+            line-height: 20px
+            color: #FFFFFF
+        .price
+            font-family: 'Inter'
+            font-weight: 700
+            font-size: 15px
+            line-height: 20px
+            letter-spacing: -0.025em
+            color: #FFFFFF
+        .volume
+            font-family: 'Inter'
+            font-weight: 500
+            font-size: 15px
+            line-height: 20px
+            color: #FFFFFF
+            opacity: 0.7
+        .profit
+            display: flex
+            justify-content: space-between
+            .num, .percent
+                margin: auto 0
+            .num
+                font-family: 'Inter'
+                font-weight: 700
+                font-size: 15px
+                line-height: 20px
+                letter-spacing: -0.025em
+                color: #FFFFFF
+            .percent
+                font-family: 'Inter'
+                font-weight: 500
+                font-size: 15px
+                line-height: 20px
+                color: #FFFFFF
+                padding: 4px 12px
+                background: #2CBA65
+                border-radius: 6px

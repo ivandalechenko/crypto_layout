@@ -554,20 +554,275 @@ header .container .buttons .try_now button {
 .offers .offers_list .offer .content .buttons button:last-child {
   border: 1px solid rgba(255, 255, 255, 0.25);
 }
-.offers .secure {
+
+.secure {
   margin-top: 34px;
   display: flex;
   -moz-column-gap: 15px;
        column-gap: 15px;
 }
-.offers .secure .text, .offers .secure img {
+.secure .text, .secure img {
   margin: auto 0;
 }
-.offers .secure .text {
+.secure .text {
   font-family: "Inter";
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
   color: #B5B6B6;
   padding-right: 15px;
+}
+
+.security {
+  margin-top: 150px;
+}
+.security .container {
+  display: flex;
+  justify-content: space-between;
+}
+.security .container .img {
+  width: 40%;
+}
+.security .container .content {
+  width: 55%;
+}
+.security .container .content .security_header .small {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.205em;
+  text-transform: uppercase;
+  color: #D9E44F;
+}
+.security .container .content .security_header .large {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  margin-top: 12px;
+}
+.security .container .content .advantages {
+  margin-top: 37px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+.security .container .content .advantages .advantages_element {
+  width: 48.4%;
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(54px);
+          backdrop-filter: blur(54px);
+  border-radius: 17px;
+  padding: 16px 16px 24px;
+}
+.security .container .content .advantages .advantages_element .advantages_element_header {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  margin-top: 13px;
+}
+.security .container .content .advantages .advantages_element .advantages_element_text {
+  margin-top: 10px;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  color: #B5B6B6;
+}
+
+.transactions {
+  margin-top: 155px;
+}
+.transactions .transactions_header .large, .transactions .transactions_header .small {
+  text-align: center;
+}
+.transactions .transactions_header .large {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+.transactions .transactions_header .small {
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  color: #B5B6B6;
+  margin-top: 12px;
+}
+.transactions .navigation {
+  display: flex;
+  margin-top: 40px;
+}
+.transactions .navigation .navigation_element:hover {
+  color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(255, 255, 255);
+  cursor: pointer;
+}
+.transactions .navigation .navigation_element {
+  width: 33%;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.5);
+}
+.transactions .navigation .active {
+  border-bottom: 1px solid rgb(217, 228, 79);
+  color: rgb(255, 255, 255);
+}
+.transactions .number {
+  width: 7.56%;
+}
+.transactions .type {
+  width: 7.18%;
+}
+.transactions .pair {
+  width: 15.13%;
+}
+.transactions .date {
+  width: 13.7%;
+}
+.transactions .count {
+  width: 8.43%;
+}
+.transactions .price {
+  width: 10.3%;
+}
+.transactions .volume {
+  width: 19.15%;
+}
+.transactions .profit {
+  width: 18.2%;
+}
+.transactions .table_naming {
+  margin-top: 32px;
+  padding: 0px 20px;
+  display: flex;
+  padding-bottom: 6px;
+}
+.transactions .table_naming div {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+.transactions .table_element {
+  margin-top: 6px;
+  padding: 0px 20px;
+  display: flex;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+}
+.transactions .table_element .number, .transactions .table_element .type, .transactions .table_element .pair, .transactions .table_element .date, .transactions .table_element .count, .transactions .table_element .price, .transactions .table_element .volume, .transactions .table_element .profit {
+  margin: auto 0;
+}
+.transactions .table_element .number {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+.transactions .table_element .type .short {
+  color: #FF5F72;
+}
+.transactions .table_element .type .long {
+  color: #D9E44F;
+}
+.transactions .table_element .type .direction {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.02em;
+}
+.transactions .table_element .type .leverage {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.02em;
+  color: #B5B6B6;
+}
+.transactions .table_element .pair {
+  display: flex;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+.transactions .table_element .pair img, .transactions .table_element .pair .name {
+  margin: auto 0;
+}
+.transactions .table_element .pair .name {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+.transactions .table_element .date {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+.transactions .table_element .count {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+.transactions .table_element .price {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.025em;
+  color: #FFFFFF;
+}
+.transactions .table_element .volume {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+.transactions .table_element .profit {
+  display: flex;
+  justify-content: space-between;
+}
+.transactions .table_element .profit .num, .transactions .table_element .profit .percent {
+  margin: auto 0;
+}
+.transactions .table_element .profit .num {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.025em;
+  color: #FFFFFF;
+}
+.transactions .table_element .profit .percent {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFFFFF;
+  padding: 4px 12px;
+  background: #2CBA65;
+  border-radius: 6px;
 }
