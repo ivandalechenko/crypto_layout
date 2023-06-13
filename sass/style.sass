@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700;800&family=Inter:wght@300;500&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;700;800&family=Inter:wght@300;500&display=swap')
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section
@@ -275,10 +275,160 @@ header
             border: 1px solid rgba(55, 99, 255, 1)
             box-shadow: 0px 16px 60px rgba(71, 145, 255, 0.29)
         .offer
-            width: 30%
+            width: 32%
             background: rgba(79, 128, 255, 0.14)
             border: 1px solid rgba(55, 99, 255, 0)
             border-radius: 12px
             min-height: 200px
             .header, .content
                 padding: 24px
+            .header
+                .name
+                    display: flex
+                    column-gap: 10px
+                    .text, .verified
+                        margin: auto 0
+                    .text
+                        font-weight: 700
+                        font-size: 24px
+                        line-height: 29px
+                        letter-spacing: -0.02em
+                        color: #FFFFFF
+                .recomended_deposit
+                    margin-top: 5px
+                    font-family: 'Inter'
+                    font-weight: 300
+                    font-size: 14px
+                    line-height: 20px
+                    color: rgba(255, 255, 255, 0.74)
+                    b
+                        font-weight: 500
+                        font-size: 14px
+                        line-height: 20px
+                        color: #FFFFFF
+                .tags
+                    display: flex
+                    flex-wrap: wrap
+                    margin-top: 10px
+                    column-gap: 6px
+                    row-gap: 6px
+                    .tag
+                        font-family: 'Inter'
+                        font-weight: 500
+                        font-size: 15px
+                        line-height: 20px
+                        color: #FFFFFF
+                        padding: 4px 12px
+                        background: #3763FF
+                        border-radius: 6px
+            .chart
+                img
+                    width: 100%
+                    margin-top: -12px
+                .price_wrapper
+                    display: flex
+                    justify-content: center
+                    .price
+                        padding: 4px 12px
+                        background: rgba(79, 128, 255, 0.14)
+                        border-radius: 6px
+                        font-family: 'Inter Tight'
+                        font-weight: 500
+                        font-size: 14px
+                        line-height: 20px
+                        color: #FFFFFF
+            .content
+                margin-top: -20px
+                .info, .pnl
+                    border-bottom: 1px solid rgba(79, 128, 255, 0.14)
+                    padding-bottom: 20px
+                .pnl
+                    .text
+                        font-family: 'Inter'
+                        font-weight: 500
+                        font-size: 15px
+                        line-height: 20px
+                        color: #B5B6B6
+                    .num
+                        margin-top: 6px
+                        display: flex
+                        justify-content: space-between
+                        .count, .percent
+                            margin: auto 0
+                        .count
+                            font-family: 'Inter Tight'
+                            font-weight: 700
+                            font-size: 24px
+                            line-height: 29px
+                            letter-spacing: -0.02em
+                        .percent
+                            font-family: 'Inter'
+                            font-weight: 500
+                            font-size: 15px
+                            line-height: 20px
+                            color: #1C1D1E
+                            padding: 4px 12px
+                            background: #ACE44F
+                            border-radius: 6px
+                .info
+                    .info_element
+                        margin-top: 18px
+                        display: flex
+                        justify-content: space-between
+                        .name, .value
+                            margin: auto 0
+                        .name
+                            font-family: 'Inter'
+                            font-weight: 400
+                            font-size: 14px
+                            line-height: 20px
+                            color: #B5B6B6
+                        .value
+                            padding: 2px 8px
+                            background: rgba(55, 99, 255, 0.1)
+                            border-radius: 11px
+                            font-weight: 500
+                            font-size: 14px
+                            line-height: 17px
+                            letter-spacing: -0.02em
+                .price
+                    margin-top: 18px
+                    .price_header
+                        font-family: 'Inter'
+                        font-weight: 500
+                        font-size: 15px
+                        line-height: 20px
+                        color: #B5B6B6
+                    .price_value
+                        margin-top: 6px
+                        font-weight: 700
+                        font-size: 18px
+                        line-height: 22px
+                        letter-spacing: -0.02em
+                        span
+                            padding-left: 6px
+                            font-family: 'Inter'
+                            font-style: normal
+                            font-weight: 300
+                            font-size: 18px
+                            line-height: 22px
+                            letter-spacing: -0.02em
+                            text-decoration-line: line-through
+                            color: rgba(255, 255, 255, 0.5)
+                .buttons
+                    margin-top: 20px
+                    display: flex
+                    justify-content: space-between
+                    button
+                        width: 144px
+                        height: 57px
+                        background: none
+                        border-radius: 65px
+                        font-weight: 700
+                        font-size: 16px
+                        line-height: 19px
+                        letter-spacing: -0.02em
+                    button:first-child
+                        background: #3763FF
+                    button:last-child
+                        border: 1px solid rgba(255, 255, 255, 0.25)

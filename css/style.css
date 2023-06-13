@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700;800&family=Inter:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;700;800&family=Inter:wght@300;500&display=swap");
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -339,7 +339,7 @@ header .container .buttons .try_now button {
   box-shadow: 0px 16px 60px rgba(71, 145, 255, 0.29);
 }
 .offers .offers_list .offer {
-  width: 30%;
+  width: 32%;
   background: rgba(79, 128, 255, 0.14);
   border: 1px solid rgba(55, 99, 255, 0);
   border-radius: 12px;
@@ -347,4 +347,181 @@ header .container .buttons .try_now button {
 }
 .offers .offers_list .offer .header, .offers .offers_list .offer .content {
   padding: 24px;
+}
+.offers .offers_list .offer .header .name {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.offers .offers_list .offer .header .name .text, .offers .offers_list .offer .header .name .verified {
+  margin: auto 0;
+}
+.offers .offers_list .offer .header .name .text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+.offers .offers_list .offer .header .recomended_deposit {
+  margin-top: 5px;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.74);
+}
+.offers .offers_list .offer .header .recomended_deposit b {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+.offers .offers_list .offer .header .tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  row-gap: 6px;
+}
+.offers .offers_list .offer .header .tags .tag {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFFFFF;
+  padding: 4px 12px;
+  background: #3763FF;
+  border-radius: 6px;
+}
+.offers .offers_list .offer .chart img {
+  width: 100%;
+  margin-top: -12px;
+}
+.offers .offers_list .offer .chart .price_wrapper {
+  display: flex;
+  justify-content: center;
+}
+.offers .offers_list .offer .chart .price_wrapper .price {
+  padding: 4px 12px;
+  background: rgba(79, 128, 255, 0.14);
+  border-radius: 6px;
+  font-family: "Inter Tight";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+.offers .offers_list .offer .content {
+  margin-top: -20px;
+}
+.offers .offers_list .offer .content .info, .offers .offers_list .offer .content .pnl {
+  border-bottom: 1px solid rgba(79, 128, 255, 0.14);
+  padding-bottom: 20px;
+}
+.offers .offers_list .offer .content .pnl .text {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #B5B6B6;
+}
+.offers .offers_list .offer .content .pnl .num {
+  margin-top: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+.offers .offers_list .offer .content .pnl .num .count, .offers .offers_list .offer .content .pnl .num .percent {
+  margin: auto 0;
+}
+.offers .offers_list .offer .content .pnl .num .count {
+  font-family: "Inter Tight";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.02em;
+}
+.offers .offers_list .offer .content .pnl .num .percent {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #1C1D1E;
+  padding: 4px 12px;
+  background: #ACE44F;
+  border-radius: 6px;
+}
+.offers .offers_list .offer .content .info .info_element {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+.offers .offers_list .offer .content .info .info_element .name, .offers .offers_list .offer .content .info .info_element .value {
+  margin: auto 0;
+}
+.offers .offers_list .offer .content .info .info_element .name {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #B5B6B6;
+}
+.offers .offers_list .offer .content .info .info_element .value {
+  padding: 2px 8px;
+  background: rgba(55, 99, 255, 0.1);
+  border-radius: 11px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+}
+.offers .offers_list .offer .content .price {
+  margin-top: 18px;
+}
+.offers .offers_list .offer .content .price .price_header {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #B5B6B6;
+}
+.offers .offers_list .offer .content .price .price_value {
+  margin-top: 6px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+}
+.offers .offers_list .offer .content .price .price_value span {
+  padding-left: 6px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  text-decoration-line: line-through;
+  color: rgba(255, 255, 255, 0.5);
+}
+.offers .offers_list .offer .content .buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.offers .offers_list .offer .content .buttons button {
+  width: 144px;
+  height: 57px;
+  background: none;
+  border-radius: 65px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.02em;
+}
+.offers .offers_list .offer .content .buttons button:first-child {
+  background: #3763FF;
+}
+.offers .offers_list .offer .content .buttons button:last-child {
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
