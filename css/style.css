@@ -826,3 +826,109 @@ header .container .buttons .try_now button {
   background: #2CBA65;
   border-radius: 6px;
 }
+
+.tutorial {
+  margin-top: 100px;
+  padding: 0px 20px;
+}
+.tutorial .tutorial_inner {
+  background: rgba(55, 99, 255, 0.1);
+  border-radius: 32px;
+  padding-top: 71px;
+  padding-bottom: 85px;
+}
+.tutorial .tutorial_inner .tutorial_header .small {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.205em;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #C6CBFF -6.86%, #FFC6E1 128.43%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.tutorial .tutorial_inner .tutorial_header .large {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  margin-top: 12px;
+}
+.tutorial .tutorial_inner .tutorial_header .add {
+  margin-top: 12px;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  color: #B5B6B6;
+}
+.tutorial .tutorial_inner .path_to_earn {
+  margin-top: 41px;
+  display: flex;
+  -moz-column-gap: 39px;
+       column-gap: 39px;
+}
+.tutorial .tutorial_inner .path_to_earn .numbers {
+  width: 58px;
+  padding: 7px 4px;
+  height: 407px;
+  background: linear-gradient(180deg, #287EFF 0%, #4200FF 34.9%, #AB1AFF 67.71%, rgba(188, 31, 255, 0) 100%);
+  border-radius: 67px;
+}
+.tutorial .tutorial_inner .path_to_earn .numbers button:not(:first-child) {
+  margin-top: 64px;
+}
+.tutorial .tutorial_inner .path_to_earn .numbers button {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 90px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+.tutorial .tutorial_inner .path_to_earn .numbers button:hover {
+  opacity: 1;
+  cursor: default;
+}
+.tutorial .tutorial_inner .path_to_earn .steps .step:not(:first-child) {
+  margin-top: 56px;
+}
+.tutorial .tutorial_inner .path_to_earn .steps .step .location_and_time {
+  display: flex;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+.tutorial .tutorial_inner .path_to_earn .steps .step .location_and_time .location, .tutorial .tutorial_inner .path_to_earn .steps .step .location_and_time .time, .tutorial .tutorial_inner .path_to_earn .steps .step .location_and_time img {
+  margin: auto 0;
+}
+.tutorial .tutorial_inner .path_to_earn .steps .step .location_and_time .location {
+  padding-right: 12px;
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.02em;
+}
+.tutorial .tutorial_inner .path_to_earn .steps .step .location_and_time .time {
+  padding: 4px 12px;
+  background: #3763FF;
+  border-radius: 62px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+.tutorial .tutorial_inner .path_to_earn .steps .step .text {
+  margin-top: 6px;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  color: #B5B6B6;
+}
