@@ -233,17 +233,47 @@ header
                 box-shadow: -7px 39px 47px rgba(0, 0, 0, 0.46)
                 border-radius: 18px
                 transform: rotate(-14.5deg)
+        .stat
+            z-index: 2
+            top: 344px
+            left: 723px
+            button
+                padding: 12px 12px 6px
+                background: rgba(255, 255, 255, 0.1)
+                box-shadow: -7px 39px 47px rgba(0, 0, 0, 0.46)
+                border-radius: 18px
+                transform: rotate(-14.5deg)
 .about_us
     margin-top: 20px
-    // margin-top: 350px
     width: 100%
     padding: 0px 20px
+    position: relative
+    z-index: 2
+    .images
+        display: flex
+        justify-content: center
+        div
+            z-index: -1
+        .light1
+            left: -102px
+            top: -100px
+        .light2
+            left: 85px
+            top: -44px
+        .light3
+            left: -149px
+            top: 282px
+        .light4
+            left: -614px
+            top: 473px
+
     .about_us_inner
         width: 100%
         border-radius: 32px
         background: rgba(55, 99, 255, 0.1)
         padding-top: 65px
         padding-bottom: 150px
+        overflow: hidden
         .container
             h2
                 text-align: center

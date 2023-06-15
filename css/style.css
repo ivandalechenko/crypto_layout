@@ -296,11 +296,48 @@ header .container .buttons .try_now button {
   border-radius: 18px;
   transform: rotate(-14.5deg);
 }
+.usp .container .stat {
+  z-index: 2;
+  top: 344px;
+  left: 723px;
+}
+.usp .container .stat button {
+  padding: 12px 12px 6px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: -7px 39px 47px rgba(0, 0, 0, 0.46);
+  border-radius: 18px;
+  transform: rotate(-14.5deg);
+}
 
 .about_us {
   margin-top: 20px;
   width: 100%;
   padding: 0px 20px;
+  position: relative;
+  z-index: 2;
+}
+.about_us .images {
+  display: flex;
+  justify-content: center;
+}
+.about_us .images div {
+  z-index: -1;
+}
+.about_us .images .light1 {
+  left: -102px;
+  top: -100px;
+}
+.about_us .images .light2 {
+  left: 85px;
+  top: -44px;
+}
+.about_us .images .light3 {
+  left: -149px;
+  top: 282px;
+}
+.about_us .images .light4 {
+  left: -614px;
+  top: 473px;
 }
 .about_us .about_us_inner {
   width: 100%;
@@ -308,6 +345,7 @@ header .container .buttons .try_now button {
   background: rgba(55, 99, 255, 0.1);
   padding-top: 65px;
   padding-bottom: 150px;
+  overflow: hidden;
 }
 .about_us .about_us_inner .container h2 {
   text-align: center;
