@@ -579,6 +579,25 @@ header
         line-height: 20px
         color: #B5B6B6
         padding-right: 15px
+.light_block_2
+    width: 100%
+    overflow: hidden
+    .images
+        display: flex
+        justify-content: center
+        .light1
+            top: -88px
+            left: -21px
+        .light2
+            top: 371px
+            left: -391px
+        .light3
+            top: 388px
+            left: -1553px
+        .light4
+            top: 736px
+            left: -1011px
+
 .security
     margin-top: 150px
     .container
@@ -586,6 +605,11 @@ header
         justify-content: space-between
         .img
             width: 40%
+            .success
+                left: -50px
+            .light
+                left: -518px
+                top: -87px
         .content
             width: 55%
             .security_header
@@ -630,6 +654,8 @@ header
                         color: #B5B6B6
 .transactions
     margin-top: 155px
+    position: relative
+    z-index: 2
     .transactions_header
         .large, .small
             text-align: center
@@ -790,12 +816,32 @@ header
 .tutorial
     margin-top: 100px
     padding: 0px 20px
+    position: relative
+    z-index: 2
     .tutorial_inner
         background: rgba(55, 99, 255, 0.1)
         border-radius: 32px
         padding-top: 71px
         padding-bottom: 85px
+        overflow: hidden
+        .images
+            display: flex
+            justify-content: center
+            .man
+                top: 41px
+                left: -46px
+            .waves
+                top: 187px
+                left: -894px
+                z-index: -1
+            .light
+                top: -31px
+                left: -740px
+                z-index: 0
+
         .tutorial_header
+            position: relative
+            z-index: 2
             .small
                 font-weight: 800
                 font-size: 16px
@@ -821,6 +867,8 @@ header
                 line-height: 25px
                 color: #B5B6B6
         .path_to_earn
+            position: relative
+            z-index: 2
             margin-top: 41px
             display: flex
             column-gap: 39px

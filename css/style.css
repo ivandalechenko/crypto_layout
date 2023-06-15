@@ -712,6 +712,31 @@ header .container .buttons .try_now button {
   padding-right: 15px;
 }
 
+.light_block_2 {
+  width: 100%;
+  overflow: hidden;
+}
+.light_block_2 .images {
+  display: flex;
+  justify-content: center;
+}
+.light_block_2 .images .light1 {
+  top: -88px;
+  left: -21px;
+}
+.light_block_2 .images .light2 {
+  top: 371px;
+  left: -391px;
+}
+.light_block_2 .images .light3 {
+  top: 388px;
+  left: -1553px;
+}
+.light_block_2 .images .light4 {
+  top: 736px;
+  left: -1011px;
+}
+
 .security {
   margin-top: 150px;
 }
@@ -721,6 +746,13 @@ header .container .buttons .try_now button {
 }
 .security .container .img {
   width: 40%;
+}
+.security .container .img .success {
+  left: -50px;
+}
+.security .container .img .light {
+  left: -518px;
+  top: -87px;
 }
 .security .container .content {
   width: 55%;
@@ -774,6 +806,8 @@ header .container .buttons .try_now button {
 
 .transactions {
   margin-top: 155px;
+  position: relative;
+  z-index: 2;
 }
 .transactions .transactions_header .large, .transactions .transactions_header .small {
   text-align: center;
@@ -969,12 +1003,37 @@ header .container .buttons .try_now button {
 .tutorial {
   margin-top: 100px;
   padding: 0px 20px;
+  position: relative;
+  z-index: 2;
 }
 .tutorial .tutorial_inner {
   background: rgba(55, 99, 255, 0.1);
   border-radius: 32px;
   padding-top: 71px;
   padding-bottom: 85px;
+  overflow: hidden;
+}
+.tutorial .tutorial_inner .images {
+  display: flex;
+  justify-content: center;
+}
+.tutorial .tutorial_inner .images .man {
+  top: 41px;
+  left: -46px;
+}
+.tutorial .tutorial_inner .images .waves {
+  top: 187px;
+  left: -894px;
+  z-index: -1;
+}
+.tutorial .tutorial_inner .images .light {
+  top: -31px;
+  left: -740px;
+  z-index: 0;
+}
+.tutorial .tutorial_inner .tutorial_header {
+  position: relative;
+  z-index: 2;
 }
 .tutorial .tutorial_inner .tutorial_header .small {
   font-weight: 800;
@@ -1004,6 +1063,8 @@ header .container .buttons .try_now button {
   color: #B5B6B6;
 }
 .tutorial .tutorial_inner .path_to_earn {
+  position: relative;
+  z-index: 2;
   margin-top: 41px;
   display: flex;
   -moz-column-gap: 39px;
