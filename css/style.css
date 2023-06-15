@@ -1142,6 +1142,20 @@ header .container .buttons .try_now button {
   border-radius: 32px;
   padding-top: 72px;
   padding-bottom: 275px;
+  overflow: hidden;
+}
+.chance .chance_inner .images {
+  display: flex;
+  justify-content: center;
+}
+.chance .chance_inner .images .circles {
+  top: 127px;
+  left: -395px;
+  z-index: 0;
+}
+.chance .chance_inner .images .btc {
+  top: -45px;
+  left: -13px;
 }
 .chance .chance_inner .chance_header .small {
   font-weight: 800;
@@ -1185,6 +1199,8 @@ header .container .buttons .try_now button {
 
 .small_offers {
   margin-top: -65px;
+  position: relative;
+  z-index: 2;
 }
 .small_offers .container {
   display: flex;
