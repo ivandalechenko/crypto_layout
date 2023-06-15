@@ -47,7 +47,7 @@ a {
 }
 
 body {
-  background: #090A0B;
+  background: #000000;
 }
 
 .container {
@@ -128,14 +128,62 @@ header .container .buttons .try_now button {
   font-size: 16px;
 }
 
+.light_block_1 {
+  width: 100%;
+  overflow: hidden;
+}
+.light_block_1 .light {
+  display: flex;
+  justify-content: center;
+}
+.light_block_1 .light .free_image {
+  z-index: 2;
+}
+.light_block_1 .light .el1 {
+  top: 322px;
+  left: -700px;
+  filter: blur(150px);
+}
+.light_block_1 .light .el2 {
+  top: 320px;
+  left: 50px;
+  filter: blur(150px);
+}
+.light_block_1 .light .el3 {
+  top: 25px;
+  left: -300px;
+}
+.light_block_1 .light .el4 {
+  top: 25px;
+  left: -1240px;
+}
+.light_block_1 .light .line {
+  top: 340px;
+  left: -1005px;
+}
+
+.free_image {
+  width: 0px;
+  height: 0px;
+  position: relative;
+}
+
 .usp {
-  margin-top: 90px;
+  padding-top: 90px;
+  padding-bottom: 350px;
+  width: 100%;
+  overflow: hidden;
 }
 .usp .container {
   display: flex;
 }
+.usp .container .images {
+  position: relative;
+}
 .usp .container .usp_text {
   width: 48%;
+  position: relative;
+  z-index: 2;
 }
 .usp .container .usp_text .guarant {
   display: flex;
@@ -194,6 +242,59 @@ header .container .buttons .try_now button {
   height: 43px;
   background: rgba(255, 255, 255, 0.15);
   border-radius: 7px;
+}
+.usp .container .man_with_notebook {
+  top: 152px;
+  left: 126px;
+  z-index: 3;
+}
+.usp .container .chart {
+  top: -93px;
+  left: 401px;
+}
+.usp .container .eth {
+  z-index: 3;
+  top: 196px;
+  left: 752px;
+}
+.usp .container .eth button {
+  padding: 7px 8px 3px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 12.3257px 26.7057px 32.1838px rgba(0, 0, 0, 0.46);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 12.3257px;
+  transform: rotate(17.09deg);
+}
+.usp .container .ai {
+  z-index: 3;
+  top: 128px;
+  left: 899px;
+}
+.usp .container .ai button {
+  padding: 10px 15px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: -11px -18px 38px #6735F4, 18px 39px 47px 1px rgba(0, 0, 0, 0.64);
+  -webkit-backdrop-filter: blur(5.5px);
+          backdrop-filter: blur(5.5px);
+  border-radius: 18px;
+  transform: rotate(13.17deg);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+.usp .container .usdt {
+  z-index: 2;
+  top: 416px;
+  left: 325px;
+}
+.usp .container .usdt button {
+  padding: 12px 12px 6px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: -7px 39px 47px rgba(0, 0, 0, 0.46);
+  border-radius: 18px;
+  transform: rotate(-14.5deg);
 }
 
 .about_us {
