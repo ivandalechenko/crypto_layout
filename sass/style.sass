@@ -38,6 +38,23 @@ a
 body
     background: #000000
 
+.secure
+    margin-top: 34px
+    display: flex
+    column-gap: 15px
+    .medium15, img
+        margin: auto 0
+    .medium15
+        color: #B5B6B6
+        padding-right: 15px
+        @media (max-width: 550px)
+            font-size: 12px
+            line-height: 15px
+.free_image
+    width: 0px
+    height: 0px
+    position: relative
+
 .container
     width: 1085px
     margin: 0 auto
@@ -45,7 +62,156 @@ body
         width: 100%
         padding: 0px 15px
 
+.btn
+    font-family: 'Inter Tight'
+    font-style: normal
+    font-weight: 700
+    font-size: 16px
+    line-height: 19px
+    letter-spacing: -0.02em
+    @media(max-width: 550px)
+        font-size: 14px
+        line-height: 17px
+.small_btn
+    font-family: 'Inter Tight'
+    font-style: normal
+    font-weight: 500
+    font-size: 14px
+    line-height: 17px
+    letter-spacing: -0.02em
+.body
+    font-family: 'Inter'
+    font-style: normal
+    font-weight: 300
+    font-size: 16px
+    line-height: 25px
+    @media (max-width: 550px)
+        font-size: 14px
+        line-height: 22px
+
+.colored_text
+    font-family: 'Inter Tight'
+    font-style: normal
+    font-weight: 800
+    font-size: 16px
+    line-height: 19px
+    letter-spacing: 0.205em
+    text-transform: uppercase
+    @media (max-width: 550px)
+        font-size: 12px
+        line-height: 15px
+h1
+    font-family: 'Inter Tight'
+    font-style: normal
+    font-weight: 700
+    font-size: 44px
+    line-height: 53px
+    letter-spacing: -0.02em
+    @media(max-width: 550px)
+        font-size: 26px
+        line-height: 31px
+h2
+    font-family: 'Inter Tight'
+    font-style: normal
+    font-weight: 700
+    font-size: 36px
+    line-height: 44px
+    letter-spacing: -0.02em
+    @media(max-width: 550px)
+        font-size: 24px
+        line-height: 29px
+
+h3
+    font-family: 'Inter Tight'
+    font-style: normal
+    font-weight: 700
+    font-size: 26px
+    line-height: 31px
+    letter-spacing: -0.02em
+    @media(max-width: 550px)
+        font-size: 18px
+        line-height: 22px
+h4
+    font-family: 'Inter Tight'
+    font-style: normal
+    font-weight: 700
+    font-size: 24px
+    line-height: 29px
+    letter-spacing: -0.02em
+    @media(max-width: 550px)
+        font-size: 17px
+        line-height: 21px
+h5
+    font-family: 'Inter Tight'
+    font-style: normal
+    font-weight: 700
+    font-size: 20px
+    line-height: 24px
+    letter-spacing: -0.02em
+    @media (max-width: 550px)
+        font-size: 14px
+        line-height: 21px
+h6
+    font-family: 'Inter Tight'
+    font-style: normal
+    font-weight: 700
+    font-size: 18px
+    line-height: 22px
+    letter-spacing: -0.02em
+
+.light18
+    font-family: 'Inter'
+    font-style: normal
+    font-weight: 300
+    font-size: 18px
+    line-height: 22px
+    letter-spacing: -0.02em
+
+.medium15
+    font-family: 'Inter'
+    font-style: normal
+    font-weight: 500
+    font-size: 15px
+    line-height: 20px
+.bold15
+    font-family: 'Inter'
+    font-style: normal
+    font-weight: 700
+    font-size: 15px
+    line-height: 20px
+    letter-spacing: -0.025em
+.light14
+    font-family: 'Inter'
+    font-style: normal
+    font-weight: 300
+    font-size: 14px
+    line-height: 20px
+
+.regular14
+    font-family: 'Inter'
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    line-height: 20px
+
+.medium14
+    font-family: 'Inter Tight'
+    font-style: normal
+    font-weight: 500
+    font-size: 14px
+    line-height: 20px
+
+.medium12
+    font-family: 'Inter'
+    font-style: normal
+    font-weight: 500
+    font-size: 12px
+    line-height: 15px
+    letter-spacing: -0.02em
+
 header
+    position: relative
+    z-index: 2
     .container
         height: 80px
         display: flex
@@ -58,45 +224,67 @@ header
                 display: flex
                 justify-content: space-between
                 column-gap: 20px
+                @media(max-width: 550px)
+                    column-gap: 10px
+
                 .img
                     margin: auto 0
+                    @media(max-width: 550px)
+                        img
+                            width: 28px
                 .text
                     margin: auto 0
                     font-weight: 700
                     font-size: 18.2642px
                     line-height: 22px
+                    @media(max-width: 550px)
+                        font-size: 16.0725px
+                        line-height: 19px
             .links
                 display: flex
                 justify-content: space-between
                 margin: auto 0
                 column-gap: 20px
+                @media(max-width: 850px)
+                    display: none
                 a
-                    font-family: 'Inter'
-                    font-weight: 500
-                    font-size: 15px
-                    line-height: 20px
                     color: #B5B6B6
 
         .buttons
             display: flex
             justify-content: space-between
             column-gap: 12px
+            .lang,.try_now,.burger
+                margin: auto 0
+            .burger
+                display: none
+                padding-left: 20px
+                @media(max-width: 850px)
+                    display: block
+                @media(max-width: 550px)
+                    padding-left: 10px
+
+                button
+                    background: none
             .lang
                 display: flex
-                margin: auto 0
                 justify-content: space-between
                 column-gap: 12px
-                font-weight: 700
-                font-size: 16px
+                padding-top: 8px
+                @media(max-width: 550px)
+                    display: none
+                .dd_btn
+                    img
+                        padding-bottom: 5px
             .try_now
-                margin: auto 0
                 button
                     width: 122px
                     height: 43px
                     background: #3763FF
                     border-radius: 65px
-                    font-weight: 700
-                    font-size: 16px
+                    @media(max-width: 550px)
+                        width: 95px
+                        height: 36px
 
 .light_block_1
     width: 100%
@@ -123,132 +311,123 @@ header
         .line
             top: 340px
             left: -1005px
-
-.free_image
-    width: 0px
-    height: 0px
-    position: relative
 .usp
     padding-top: 90px
     padding-bottom: 350px
     width: 100%
     overflow: hidden
+    @media (max-width: 700px)
+        padding-bottom: 510px
+    @media (max-width: 550px)
+        padding-top: 42px
+
     .container
         display: flex
         .images
             position: relative
+            .man_with_notebook
+                top: 152px
+                left: 126px
+                z-index: 3
+            .chart
+                top: -93px
+                left: 401px
+            .eth
+                z-index: 3
+                top: 196px
+                left: 752px
+                button
+                    padding: 7px 8px 3px
+                    background: rgba(255, 255, 255, 0.1)
+                    box-shadow: 12.3257px 26.7057px 32.1838px rgba(0, 0, 0, 0.46)
+                    backdrop-filter: blur(10px)
+                    border-radius: 12.3257px
+                    transform: rotate(17.09deg)
+            .ai
+                z-index: 3
+                top: 128px
+                left: 899px
+                button
+                    padding: 10px 15px
+                    background: rgba(255, 255, 255, 0.1)
+                    box-shadow: -11px -18px 38px #6735F4, 18px 39px 47px 1px rgba(0, 0, 0, 0.64)
+                    backdrop-filter: blur(5.5px)
+                    border-radius: 18px
+                    transform: rotate(13.17deg)
+                    font-weight: 700
+                    font-size: 32px
+                    line-height: 140%
+                    color: #FFFFFF
+            .usdt
+                z-index: 2
+                top: 416px
+                left: 325px
+                button
+                    padding: 12px 12px 6px
+                    background: rgba(255, 255, 255, 0.1)
+                    box-shadow: -7px 39px 47px rgba(0, 0, 0, 0.46)
+                    border-radius: 18px
+                    transform: rotate(-14.5deg)
+            .stat
+                z-index: 2
+                top: 344px
+                left: 723px
+                button
+                    padding: 12px 12px 6px
+                    background: rgba(255, 255, 255, 0.1)
+                    box-shadow: -7px 39px 47px rgba(0, 0, 0, 0.46)
+                    border-radius: 18px
+                    transform: rotate(-14.5deg)
         .usp_text
-            width: 48%
             position: relative
-            z-index: 2
+            z-index: 3
             .guarant
                 display: flex
                 justify-content: left
                 column-gap: 14px
-                .text
-                    font-family: 'Inter'
-                    font-weight: 500
-                    font-size: 15px
-                    line-height: 20px
-                    color: #B5B6B6
+                .medium15
                     margin: auto 0
+                    color: #B5B6B6
+                    @media (max-width: 550px)
+                        font-size: 12px
+                        line-height: 15px
+
             h1
-                font-family: 'Inter Tight'
-                font-style: normal
-                font-weight: 700
-                font-size: 44px
-                line-height: 53px
-                letter-spacing: -0.02em
                 margin-top: 10px
-            h2
-                margin-top: 20px
-                font-family: 'Inter'
-                font-style: normal
-                font-weight: 300
-                font-size: 16px
-                line-height: 25px
+            .body
                 color: #B5B6B6
-                width: 60%
-            .try_free
+            .btn
                 width: 309px
                 height: 57px
                 background: #D9E44F
                 border-radius: 65px
-                font-family: 'Inter Tight'
-                font-weight: 700
-                font-size: 16px
-                line-height: 19px
-                letter-spacing: -0.02em
                 color: #1C1D1E
                 margin-top: 32px
+                @media (max-width: 550px)
+                    margin-top: 24px
+                    width: 162px
+                    height: 48px
+                    background: #3763FF
+                    color: white
             .btns_mobile_download
                 margin-top: 32px
                 display: flex
                 column-gap: 8px
+                @media (max-width: 550px)
+                    display: none
                 button
                     width: 150px
                     height: 43px
                     background: rgba(255, 255, 255, 0.15)
                     border-radius: 7px
-        .man_with_notebook
-            top: 152px
-            left: 126px
-            z-index: 3
-        .chart
-            top: -93px
-            left: 401px
-        .eth
-            z-index: 3
-            top: 196px
-            left: 752px
-            button
-                padding: 7px 8px 3px
-                background: rgba(255, 255, 255, 0.1)
-                box-shadow: 12.3257px 26.7057px 32.1838px rgba(0, 0, 0, 0.46)
-                backdrop-filter: blur(10px)
-                border-radius: 12.3257px
-                transform: rotate(17.09deg)
-        .ai
-            z-index: 3
-            top: 128px
-            left: 899px
-            button
-                padding: 10px 15px
-                background: rgba(255, 255, 255, 0.1)
-                box-shadow: -11px -18px 38px #6735F4, 18px 39px 47px 1px rgba(0, 0, 0, 0.64)
-                backdrop-filter: blur(5.5px)
-                border-radius: 18px
-                transform: rotate(13.17deg)
-                font-weight: 700
-                font-size: 32px
-                line-height: 140%
-                color: #FFFFFF
-        .usdt
-            z-index: 2
-            top: 416px
-            left: 325px
-            button
-                padding: 12px 12px 6px
-                background: rgba(255, 255, 255, 0.1)
-                box-shadow: -7px 39px 47px rgba(0, 0, 0, 0.46)
-                border-radius: 18px
-                transform: rotate(-14.5deg)
-        .stat
-            z-index: 2
-            top: 344px
-            left: 723px
-            button
-                padding: 12px 12px 6px
-                background: rgba(255, 255, 255, 0.1)
-                box-shadow: -7px 39px 47px rgba(0, 0, 0, 0.46)
-                border-radius: 18px
-                transform: rotate(-14.5deg)
 .about_us
     margin-top: 20px
     width: 100%
     padding: 0px 20px
     position: relative
     z-index: 2
+    @media (max-width: 550px)
+        padding: 0px 5px
     .images
         display: flex
         justify-content: center
@@ -269,7 +448,6 @@ header
         .light4
             left: -614px
             top: 473px
-
     .about_us_inner
         width: 100%
         border-radius: 32px
@@ -277,33 +455,38 @@ header
         padding-top: 65px
         padding-bottom: 150px
         overflow: hidden
+        @media (max-width: 550px)
+            padding-top: 32px
+
         .container
-            h2
+            .colored_text
                 text-align: center
-                font-weight: 800
-                font-size: 16px
-                line-height: 19px
-                letter-spacing: 0.205em
-                text-transform: uppercase
                 background: linear-gradient(90deg, #C6CBFF -6.86%, #FFC6E1 128.43%)
                 -webkit-background-clip: text
                 -webkit-text-fill-color: transparent
                 background-clip: text
                 text-fill-color: transparent
-            .header
-                font-weight: 700
-                font-size: 36px
-                line-height: 44px
-                letter-spacing: -0.02em
+                @media (max-width: 550px)
+                    text-align: left
+            h2
                 text-align: center
                 margin-top: 12px
+                @media (max-width: 550px)
+                    text-align: left
+
             .content
                 display: flex
                 justify-content: space-between
+                flex-wrap: wrap
+                row-gap: 20px
                 .advantages
                     width: 48%
+                    @media (max-width: 1000px)
+                        width: 100%
                 .text
                     width: 42%
+                    @media (max-width: 1000px)
+                        width: 100%
                 .advantages
                     display: flex
                     flex-wrap: wrap
@@ -314,10 +497,21 @@ header
                         flex-wrap: wrap
                         row-gap: 20px
                         margin-top: 58px
+                        @media (max-width: 550px)
+                            row-gap: 10px
+                            margin-top: 24px
+
                     .right
                         padding-top: 50px
+                        @media (max-width: 1000px)
+                            padding-top: 0px
                     .left
                         padding-bottom: 50px
+                        display: flex
+                        justify-content: right
+                        @media (max-width: 1000px)
+                            padding-bottom: 0px
+
                     .element
                         width: 100%
                         padding: 20px 20px 30px
@@ -325,197 +519,171 @@ header
                         box-shadow: inset 0px 4px 11px rgba(255, 255, 255, 0.1)
                         backdrop-filter: blur(41px)
                         border-radius: 21px
-                        .element_header
-                            font-weight: 700
-                            font-size: 20px
-                            line-height: 24px
-                            letter-spacing: -0.02em
-                            color: #FFFFFF
+                        max-width: 300px
+                        @media (max-width: 550px)
+                            padding: 24px 12px
+                        h5
                             margin-top: 12px
-                        .element_text
-                            font-family: 'Inter'
-                            font-weight: 300
-                            font-size: 16px
-                            line-height: 25px
+                        .body
                             color: #B5B6B6
                             margin-top: 10px
+                        img
+                            @media (max-width: 550px)
+                                width: 32px
                 .text
                     margin: auto 0
-                    p
-                        font-family: 'Inter'
-                        font-style: normal
-                        font-weight: 300
-                        font-size: 16px
-                        line-height: 25px
-                        color: #FFFFFF
-                    p:not(:first-child)
+                    .body:not(:first-child)
                         margin-top: 40px
-                    p.bold
-                        font-weight: 700
-                        font-size: 20px
-                        line-height: 24px
-                        letter-spacing: -0.02em
-                        color: #FFFFFF
+                        @media (max-width: 550px)
+                            margin-top: 24px
+                    h5
+                        margin-top: 40px
+                        @media (max-width: 550px)
+                            margin-top: 16px
                     .services_about_us_logos
                         margin-top: 25px
                         display: flex
                         justify-content: space-between
                         width: 100%
-
+                        @media (max-width: 550px)
+                            margin-top: 12px
+                        img
+                            @media (max-width: 550px)
+                                height: 16px
 .offers
     margin-top: 74px
+    @media (max-width: 550px)
+        margin-top: 66px
     .header
-        .large
-            font-weight: 700
-            font-size: 36px
-            line-height: 44px
-            letter-spacing: -0.02em
-            color: #FFFFFF
-        .small
-            font-family: 'Inter'
-            font-style: normal
-            font-weight: 300
-            font-size: 16px
-            line-height: 25px
+        .body
             color: #B5B6B6
             margin-top: 12px
     .offers_list
         margin-top: 24px
         display: flex
-        justify-content: space-between
+        justify-content: space-around
+        .offer:not(:first-child)
+            display: none
         .offer:hover
             border: 1px solid rgba(55, 99, 255, 1)
             box-shadow: 0px 16px 60px rgba(71, 145, 255, 0.29)
         .offer
             width: 32%
+            max-width: 350px
             background: rgba(79, 128, 255, 0.14)
             border: 1px solid rgba(55, 99, 255, 0)
             border-radius: 12px
-            min-height: 200px
+            @media (max-width: 550px)
+                width: 100%
+
             .header, .content
                 padding: 24px
+                @media (max-width: 550px)
+                    padding: 12px
             .header
                 .name
                     display: flex
                     column-gap: 10px
-                    .text, .verified
+                    @media (max-width: 550px)
+                        column-gap: 16px
+                    h4, .verified
                         margin: auto 0
-                    .text
-                        font-weight: 700
-                        font-size: 24px
-                        line-height: 29px
-                        letter-spacing: -0.02em
-                        color: #FFFFFF
-                .recomended_deposit
+                .light14
                     margin-top: 5px
-                    font-family: 'Inter'
-                    font-weight: 300
-                    font-size: 14px
-                    line-height: 20px
                     color: rgba(255, 255, 255, 0.74)
-                    b
-                        font-weight: 500
-                        font-size: 14px
-                        line-height: 20px
+                    .medium14
                         color: #FFFFFF
+                        @media (max-width: 550px)
+                            margin-top: 8px
                 .tags
                     display: flex
                     flex-wrap: wrap
                     margin-top: 10px
                     column-gap: 6px
                     row-gap: 6px
+                    @media (max-width: 550px)
+                        margin-top: 12px
                     .tag
-                        font-family: 'Inter'
-                        font-weight: 500
-                        font-size: 15px
-                        line-height: 20px
-                        color: #FFFFFF
                         padding: 4px 12px
                         background: #3763FF
                         border-radius: 6px
+                    .medium15
+                        @media (max-width: 550px)
+                            font-size: 12px
+                            line-height: 15px
+                            letter-spacing: -0.02em
             .chart
+                padding-top: 20px
+                @media (max-width: 550px)
+                    padding-top: 30px
                 img
+                    margin-top: -10px
                     width: 100%
-                    margin-top: -12px
                 .price_wrapper
                     display: flex
                     justify-content: center
+                    margin-top: -6px
                     .price
                         padding: 4px 12px
                         background: rgba(79, 128, 255, 0.14)
                         border-radius: 6px
-                        font-family: 'Inter Tight'
-                        font-weight: 500
-                        font-size: 14px
-                        line-height: 20px
-                        color: #FFFFFF
             .content
                 margin-top: -20px
                 .info, .pnl
                     border-bottom: 1px solid rgba(79, 128, 255, 0.14)
                     padding-bottom: 20px
                 .pnl
-                    .text
-                        font-family: 'Inter'
-                        font-weight: 500
-                        font-size: 15px
-                        line-height: 20px
+                    .medium15
                         color: #B5B6B6
+                        @media (max-width: 550px)
+                            font-size: 12px
+                            line-height: 15px
                     .num
                         margin-top: 6px
                         display: flex
                         justify-content: space-between
-                        .count, .percent
+                        h4 .percent
                             margin: auto 0
-                        .count
-                            font-family: 'Inter Tight'
-                            font-weight: 700
-                            font-size: 24px
-                            line-height: 29px
-                            letter-spacing: -0.02em
                         .percent
-                            font-family: 'Inter'
-                            font-weight: 500
-                            font-size: 15px
-                            line-height: 20px
                             color: #1C1D1E
                             padding: 4px 12px
                             background: #ACE44F
                             border-radius: 6px
+                            @media (max-width: 550px)
+                                font-size: 15px
+                                line-height: 21px
                 .info
                     .info_element
                         margin-top: 18px
                         display: flex
                         justify-content: space-between
+                        @media (max-width: 550px)
+                            margin-top: 12px
                         .name, .value
                             margin: auto 0
                         .name
-                            font-family: 'Inter'
-                            font-weight: 400
-                            font-size: 14px
-                            line-height: 20px
                             color: #B5B6B6
                         .value
                             padding: 2px 8px
                             background: rgba(55, 99, 255, 0.1)
                             border-radius: 11px
-                            font-weight: 500
-                            font-size: 14px
-                            line-height: 17px
                             letter-spacing: -0.02em
+                        .regular14, .medium14
+                            @media (max-width: 550px)
+                                font-size: 12px
+                                line-height: 16px
                 .price
                     margin-top: 18px
-                    .price_header
-                        font-family: 'Inter'
-                        font-weight: 500
-                        font-size: 15px
-                        line-height: 20px
+                    .medium15
                         color: #B5B6B6
+                        @media (max-width: 550px)
+                            font-size: 12px
+                            line-height: 16px
                     .price_value
                         margin-top: 6px
                         display: flex
                         column-gap: 8px
-                        .add_info_type_1, .add_info_type_2, .text
+                        .add_info_type_1, .add_info_type_2, h6
                             margin: auto 0
                         .add_info_type_2
                             background: rgba(149, 248, 164, 0.11)
@@ -536,58 +704,44 @@ header
                             line-height: 17px
                             letter-spacing: -0.02em
                             color: #000000
-                        .text
-                            font-weight: 700
-                            font-size: 18px
-                            line-height: 22px
-                            letter-spacing: -0.02em
-                            span
-                                padding-left: 6px
-                                font-family: 'Inter'
-                                font-style: normal
-                                font-weight: 300
+                        h6
+                            @media (max-width: 550px)
                                 font-size: 18px
                                 line-height: 22px
-                                letter-spacing: -0.02em
-                                text-decoration-line: line-through
+                            .light18
+                                padding-left: 6px
                                 color: rgba(255, 255, 255, 0.5)
+                                @media (max-width: 550px)
+                                    font-size: 16px
+                                    line-height: 19px
                 .buttons
                     margin-top: 20px
                     display: flex
                     justify-content: space-between
+                    flex-wrap: wrap
+                    row-gap: 8px
+                    @media (max-width: 550px)
+                        margin-top: 16px
                     button
                         width: 144px
                         height: 57px
                         background: none
                         border-radius: 65px
-                        font-weight: 700
-                        font-size: 16px
-                        line-height: 19px
-                        letter-spacing: -0.02em
+                        @media (max-width: 550px)
+                            width: 100%
                     button:first-child
                         background: #3763FF
                     button:last-child
                         border: 1px solid rgba(255, 255, 255, 0.25)
-
-.secure
-    margin-top: 34px
-    display: flex
-    column-gap: 15px
-    .text, img
-        margin: auto 0
-    .text
-        font-family: 'Inter'
-        font-weight: 500
-        font-size: 15px
-        line-height: 20px
-        color: #B5B6B6
-        padding-right: 15px
 .light_block_2
     width: 100%
     overflow: hidden
     .images
         display: flex
         justify-content: center
+        .light
+            top: 72px
+            left: -1061px
         .light1
             top: -88px
             left: -21px
@@ -600,14 +754,20 @@ header
         .light4
             top: 736px
             left: -1011px
-
 .security
     margin-top: 150px
+    overflow: hidden
+    @media (max-width: 550px)
+        margin-top: 86px
     .container
         display: flex
         justify-content: space-between
+        flex-wrap: wrap
         .img
             width: 40%
+            @media (max-width: 1000px)
+                width: 100%
+                order: 2
             .success
                 left: -50px
             .light
@@ -615,64 +775,62 @@ header
                 top: -87px
         .content
             width: 55%
+            @media (max-width: 1000px)
+                width: 100%
+                order: 2
             .security_header
-                .small
-                    font-weight: 800
-                    font-size: 16px
-                    line-height: 19px
-                    letter-spacing: 0.205em
-                    text-transform: uppercase
+                @media (max-width: 1000px)
+                    text-align: center
+                @media (max-width: 700px)
+                    text-align: left
+                .colored_text
                     color: #D9E44F
-                .large
-                    font-weight: 700
-                    font-size: 36px
-                    line-height: 44px
-                    letter-spacing: -0.02em
+                h2
                     margin-top: 12px
+                    @media (max-width: 550px)
+                        margin-top: 8px
             .advantages
                 margin-top: 37px
                 display: flex
                 justify-content: space-between
                 flex-wrap: wrap
                 row-gap: 20px
+                @media (max-width: 550px)
+                    margin-top: 16px
+                @media (max-width: 1000px)
+                    justify-content: center
+                    column-gap: 20px
+                @media (max-width: 700px)
+                    justify-content: space-between
+                    row-gap: 12px
+                    column-gap: 12px
                 .advantages_element
                     width: 48.4%
                     background: rgba(255, 255, 255, 0.05)
                     backdrop-filter: blur(54px)
                     border-radius: 17px
                     padding: 16px 16px 24px
-                    .advantages_element_header
-                        font-weight: 700
-                        font-size: 18px
-                        line-height: 22px
-                        letter-spacing: -0.02em
-                        color: #FFFFFF
+                    max-width: 350px
+                    @media (max-width: 450px)
+                        width: 47.9%
+                    img
+                        @media (max-width: 450px)
+                            width: 32px
+                    h6
                         margin-top: 13px
-                    .advantages_element_text
+                    .body
                         margin-top: 10px
-                        font-family: 'Inter'
-                        font-weight: 300
-                        font-size: 16px
-                        line-height: 25px
                         color: #B5B6B6
 .transactions
     margin-top: 155px
     position: relative
     z-index: 2
     .transactions_header
-        .large, .small
+        h2, .body
             text-align: center
-        .large
-            font-weight: 700
-            font-size: 36px
-            line-height: 44px
-            letter-spacing: -0.02em
-            color: #FFFFFF
-        .small
-            font-family: 'Inter'
-            font-weight: 300
-            font-size: 16px
-            line-height: 25px
+            @media (max-width: 900px)
+                text-align: left
+        .body
             color: #B5B6B6
             margin-top: 12px
     .navigation
@@ -687,14 +845,16 @@ header
             text-align: center
             padding-bottom: 20px
             border-bottom: 1px solid rgba(255, 255, 255, 0.15)
-            font-weight: 500
-            font-size: 18px
-            line-height: 22px
-            letter-spacing: -0.02em
             color: rgba(255, 255, 255, 0.5)
+            @media (max-width: 700px)
+                padding-bottom: 12px
+                h6
+                    font-size: 14px
+                    line-height: 17px
         .active
             border-bottom: 1px solid rgba(217, 228, 79, 1)
             color: rgba(255, 255, 255,1)
+
     .number
         width: 7.56%
     .type
@@ -708,21 +868,24 @@ header
     .price
         width: 10.3%
     .volume
-        width: 19.15%
+        width: 16.15%
     .profit
-        width: 18.2%
+        width: 21.2%
+    .short
+        color: #FF5F72
+    .long
+        color: #D9E44F
+    .leverage
+        color: #B5B6B6
     .table_naming
         margin-top: 32px
         padding: 0px 20px
         display: flex
         padding-bottom: 6px
+        @media (max-width: 900px)
+            display: none
         div
-            font-family: 'Inter'
-            font-weight: 400
-            font-size: 14px
-            line-height: 20px
-            color: #FFFFFF
-            opacity: 0.7
+            color: rgba(255,255,255,0.7)
     .table_element
         margin-top: 6px
         padding: 0px 20px
@@ -733,92 +896,90 @@ header
         .number, .type, .pair, .date, .count, .price, .volume, .profit
             margin: auto 0
         .number
-            font-weight: 700
-            font-size: 16px
-            line-height: 19px
-            letter-spacing: -0.02em
-            color: #FFFFFF
             opacity: 0.5
-        .type
-            .short
-                color: #FF5F72
-            .long
-                color: #D9E44F
-            .direction
-                font-weight: 700
-                font-size: 16px
-                line-height: 19px
-                letter-spacing: -0.02em
-            .leverage
-                font-family: 'Inter'
-                font-weight: 500
-                font-size: 12px
-                line-height: 15px
-                letter-spacing: -0.02em
-                color: #B5B6B6
         .pair
             display: flex
             column-gap: 12px
-            img, .name
+            img, div
                 margin: auto 0
-            .name
-                font-family: 'Inter'
-                font-weight: 500
-                font-size: 15px
-                line-height: 20px
-                color: #FFFFFF
         .date
-            font-family: 'Inter'
-            font-weight: 500
-            font-size: 15px
-            line-height: 20px
-            color: #FFFFFF
             opacity: 0.7
-        .count
-            font-family: 'Inter'
-            font-weight: 500
-            font-size: 15px
-            line-height: 20px
-            color: #FFFFFF
-        .price
-            font-family: 'Inter'
-            font-weight: 700
-            font-size: 15px
-            line-height: 20px
-            letter-spacing: -0.025em
-            color: #FFFFFF
         .volume
-            font-family: 'Inter'
-            font-weight: 500
-            font-size: 15px
-            line-height: 20px
-            color: #FFFFFF
             opacity: 0.7
         .profit
             display: flex
             justify-content: space-between
             .num, .percent
                 margin: auto 0
-            .num
-                font-family: 'Inter'
-                font-weight: 700
-                font-size: 15px
-                line-height: 20px
-                letter-spacing: -0.025em
-                color: #FFFFFF
             .percent
-                font-family: 'Inter'
-                font-weight: 500
-                font-size: 15px
-                line-height: 20px
-                color: #FFFFFF
                 padding: 4px 12px
                 background: #2CBA65
                 border-radius: 6px
+    .pc_elements
+        @media (max-width: 900px)
+            display: none
+
+    .mobile_elements
+        display: none
+        @media (max-width: 900px)
+            display: flex
+            justify-content: center
+            flex-wrap: wrap
+            padding-top: 10px
+        button
+            max-width: 460px
+            width: 100%
+            background: #3763FF
+            border-radius: 65px
+            height: 48px
+            margin-top: 24px
+
+        .element
+            background: rgba(255, 255, 255, 0.03)
+            border-radius: 12px
+            padding: 20px
+            max-width: 460px
+            width: 100%
+            margin-top: 12px
+            .pair_and_leverage
+                display: flex
+                justify-content: space-between
+                padding-bottom: 16px
+                .pair
+                    display: flex
+                    column-gap: 12px
+                    .medium15, img
+                        margin: auto 0
+            .info_element:not(:last-child)
+                border-bottom: 1px solid rgba(255, 255, 255, 0.05)
+                padding-bottom: 8px
+            .info_element
+                padding-top: 8px
+                display: flex
+                justify-content: space-between
+                div
+                    margin: auto 0
+                .name, .value
+                    opacity: 0.7
+                .priceprofit
+                    opacity: 1
+                .percent_wrapper
+                    display: flex
+                    column-gap: 16px
+                    div
+                        margin: auto 0
+                .percent
+                    background: #2CBA65
+                    border-radius: 6px
+                    padding: 4px 12px
+
     .security_and_pages
         display: flex
         justify-content: space-between
         margin-top: 23px
+        column-gap: 40px
+        @media (max-width: 900px)
+            display: none
         .pages, .sec
             margin: auto 0
         .sec
@@ -839,18 +1000,21 @@ header
                 line-height: 20px
             .active
                 background: #3763FF
-
 .tutorial
     margin-top: 100px
     padding: 0px 20px
     position: relative
     z-index: 2
+    @media (max-width: 550px)
+        padding: 0px 3px
     .tutorial_inner
         background: rgba(55, 99, 255, 0.1)
         border-radius: 32px
         padding-top: 71px
         padding-bottom: 85px
         overflow: hidden
+        @media (max-width: 550px)
+            padding: 24px 2px
         .images
             display: flex
             justify-content: center
@@ -868,33 +1032,18 @@ header
                 top: -31px
                 left: -740px
                 z-index: 0
-
         .tutorial_header
             position: relative
             z-index: 2
-            .small
-                font-weight: 800
-                font-size: 16px
-                line-height: 19px
-                letter-spacing: 0.205em
-                text-transform: uppercase
+            .colored_text
                 background: linear-gradient(90deg, #C6CBFF -6.86%, #FFC6E1 128.43%)
                 -webkit-background-clip: text
                 -webkit-text-fill-color: transparent
                 background-clip: text
                 text-fill-color: transparent
-            .large
-                font-weight: 700
-                font-size: 36px
-                line-height: 44px
-                letter-spacing: -0.02em
+            h2, .body
                 margin-top: 12px
-            .add
-                margin-top: 12px
-                font-family: 'Inter'
-                font-weight: 300
-                font-size: 16px
-                line-height: 25px
+            .body
                 color: #B5B6B6
         .path_to_earn
             position: relative
@@ -902,12 +1051,19 @@ header
             margin-top: 41px
             display: flex
             column-gap: 39px
+            @media (max-width: 550px)
+                column-gap: 19px
+
             .numbers
-                width: 58px
                 padding: 7px 4px
                 height: 407px
                 background: linear-gradient(180deg, #287EFF 0%, #4200FF 34.9%, #AB1AFF 67.71%, rgba(188, 31, 255, 0) 100%)
                 border-radius: 67px
+                @media (max-width: 550px)
+                    height: 333px
+                @media (max-width: 350px)
+                    display: none
+
                 button:not(:first-child)
                     margin-top: 64px
                 button
@@ -919,52 +1075,59 @@ header
                     font-weight: 700
                     font-size: 16px
                     line-height: 19px
-                    letter-spacing: -0.02em
-                    color: #FFFFFF
+                    @media (max-width: 550px)
+                        font-size: 10.24px
+                        line-height: 12px
+                        width: 32px
+                        height: 32px
                 button:hover
                     opacity: 1
                     cursor: default
             .steps
                 .step:not(:first-child)
                     margin-top: 56px
+                    @media (max-width: 550px)
+                        margin-top: 43px
+
                 .step
                     .location_and_time
                         display: flex
                         column-gap: 12px
-                        .location, .time, img
+                        @media (max-width: 400px)
+                            column-gap: 8px
+                        h4, .time, img
                             margin: auto 0
-                        .location
+                        h4
                             padding-right: 12px
                             border-right: 1px solid rgba(255, 255, 255, 0.25)
-                            font-weight: 700
-                            font-size: 24px
-                            line-height: 29px
-                            letter-spacing: -0.02em
-                        .time
+                            @media (max-width: 400px)
+                                padding-right: 8px
+
+                        .medium15
                             padding: 4px 12px
                             background: #3763FF
                             border-radius: 62px
-                            font-weight: 500
-                            font-size: 15px
-                            line-height: 20px
-                            color: #FFFFFF
-                    .text
+                            @media (max-width: 550px)
+                                font-size: 13px
+                                line-height: 20px
+                    .body
                         margin-top: 6px
-                        font-family: 'Inter'
-                        font-weight: 300
-                        font-size: 16px
-                        line-height: 25px
                         color: #B5B6B6
-
 .chance
     margin-top: 44px
     padding: 0px 20px
+    @media (max-width: 550px)
+        padding: 0px 3px
+
     .chance_inner
         background: #3763FF
         border-radius: 32px
         padding-top: 72px
         padding-bottom: 275px
         overflow: hidden
+        @media (max-width: 550px)
+            padding: 24px 5px
+
         .images
             display: flex
             justify-content: center
@@ -997,41 +1160,19 @@ header
         .chance_header
             z-index: 0
             position: relative
-
-            .small
-                font-weight: 800
-                font-size: 16px
-                line-height: 19px
-                letter-spacing: 0.205em
-                text-transform: uppercase
+            .colored_text
                 background: linear-gradient(90deg, #D4FFBF -6.86%, #C2D0FF 128.43%)
                 -webkit-background-clip: text
                 -webkit-text-fill-color: transparent
                 background-clip: text
                 text-fill-color: transparent
-            .large
+            h2, .body
                 margin-top: 12px
-                font-weight: 700
-                font-size: 36px
-                line-height: 44px
-                letter-spacing: -0.02em
-            .add
-                margin-top: 12px
-                font-family: 'Inter'
-                font-style: normal
-                font-weight: 300
-                font-size: 16px
-                line-height: 25px
-                color: #FFFFFF
             button
                 margin-top: 12px
                 padding: 19px 44px
                 background: #D9E44F
                 border-radius: 65px
-                font-weight: 700
-                font-size: 16px
-                line-height: 19px
-                letter-spacing: -0.02em
                 color: #1C1D1E
 .small_offers
     margin-top: -65px
@@ -1049,6 +1190,11 @@ header
     .container
         display: flex
         justify-content: space-between
+        flex-wrap: wrap
+        @media (max-width: 900px)
+            justify-content: center
+            row-gap: 6px
+
         .offer:hover
             border: 1px solid rgba(55, 99, 255, 1)
             box-shadow: 0px 16px 60px rgba(71, 145, 255, 0.29)
@@ -1058,37 +1204,35 @@ header
             background: #1C1D1E
             border-radius: 17px
             padding: 23px
+            @media (max-width: 900px)
+                width: 100%
+                max-width: 500px
+            @media (max-width: 550px)
+                display: flex
+                justify-content: space-between
+                .info
+                    width: 60%
+                button
+                    width: 38%
             .name
                 display: flex
                 column-gap: 10px
-                .text, .verified
+                h4, .verified
                     margin: auto 0
-                .text
-                    font-weight: 700
-                    font-size: 24px
-                    line-height: 29px
-                    letter-spacing: -0.02em
             .price
                 margin-top: 12px
-                .text
-                    font-family: 'Inter'
-                    font-weight: 500
-                    font-size: 15px
-                    line-height: 20px
+                .medium15
                     color: #B5B6B6
                 .num
                     margin-top: 6px
                     display: flex
                     column-gap: 6px
+                    flex-wrap: wrap
+                    row-gap: 6px
                     div
                         margin: auto 0
-                    .text
-                        font-weight: 700
-                        font-size: 18px
-                        line-height: 22px
-                        letter-spacing: -0.02em
-                        color: white
-                        span
+                    h6
+                        s
                             font-family: 'Inter'
                             font-weight: 300
                             font-size: 18px
@@ -1107,6 +1251,7 @@ header
                         background: #ADFC06
                         border-radius: 7px
                         padding: 4px 12px
+
             button
                 margin-top: 12px
                 background: rgba(255, 255, 255, 0.05)
@@ -1115,8 +1260,20 @@ header
                 display: flex
                 padding: 12px 22px
                 column-gap: 18px
+                @media (max-width: 550px)
+                    padding: 0
+                    display: block
+                    margin: auto 0
+                    padding: 8px 16px
+
                 img, .text
                     margin: auto 0
+                    @media (max-width: 550px)
+                        margin: 0
+
+                img
+                    @media (max-width: 550px)
+                        display: none
 
 footer
     border-top: 1px solid rgba(255, 255, 255, .1)
@@ -1125,20 +1282,15 @@ footer
         display: flex
         justify-content: space-between
         padding: 35px 0px
+        flex-wrap: wrap
+        row-gap: 16px
         .text, button
             margin: auto 0
         .text
-            .large
-                font-weight: 700
-                font-size: 26px
-                line-height: 31px
-                letter-spacing: -0.02em
-                color: #FFFFFF
-            .small
-                font-family: 'Inter'
-                font-weight: 300
-                font-size: 16px
-                line-height: 25px
+            @media (max-width: 900px)
+                width: 100%
+            .body
+                margin-top: 9px
                 color: #B5B6B6
         button
             font-weight: 700
@@ -1154,10 +1306,14 @@ footer
         padding: 30px 0px
         display: flex
         justify-content: space-between
+        flex-wrap: wrap
+        row-gap: 24px
         .logo
             width: 20%
             display: flex
             column-gap: 20px
+            @media (max-width: 900px)
+                width: 100%
             .text, img
                 margin: auto 0
             .text
@@ -1167,6 +1323,8 @@ footer
                 letter-spacing: -0.02em
         .navigation
             width: 39%
+            @media (max-width: 900px)
+                width: 100%
             .navigation_header
                 font-weight: 700
                 font-size: 18px
@@ -1176,6 +1334,9 @@ footer
             .elements
                 display: flex
                 flex-wrap: wrap
+                @media (max-width: 600px)
+                    column-gap: 20px
+                    justify-content: space-between
             .element
                 width: 44%
                 font-family: 'Inter'
@@ -1188,6 +1349,8 @@ footer
 
         .documents
             width: 30%
+            @media (max-width: 900px)
+                width: 100%
             .documents_header
                 font-weight: 700
                 font-size: 18px
@@ -1211,16 +1374,24 @@ footer
         padding: 25px 0px
         display: flex
         justify-content: space-between
+        flex-wrap: wrap
+        row-gap: 22px
         .text
             font-family: 'Inter'
             font-weight: 300
             font-size: 14px
             line-height: 22px
             color: #B5B6B6
+            @media (max-width: 600px)
+                width: 100%
+                order: 2
         .text, .soc_net
             margin: auto 0
         .soc_net
             display: flex
             column-gap: 35px
+            @media (max-width: 600px)
+                width: 100%
+                order: 1
             img
                 margin: auto 0
