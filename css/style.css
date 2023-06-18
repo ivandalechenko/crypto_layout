@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;700;800&family=Inter:wght@300;500&display=swap");
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -25,7 +26,7 @@ time, mark, audio, video, button {
   box-sizing: border-box;
   color: white;
   transition: 0.3s;
-  font-family: "Montserrat";
+  font-family: "Inter Tight";
 }
 
 img, svg {
@@ -33,21 +34,6 @@ img, svg {
 }
 
 a:hover, button:hover {
-  cursor: pointer;
-  opacity: 0.6;
-}
-
-.dnone {
-  display: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-.meow {
-  color: red;
-}r {
   cursor: pointer;
   opacity: 0.6;
 }
@@ -336,6 +322,10 @@ header .container .buttons .try_now button {
 }
 .about_us .images div {
   z-index: -1;
+}
+.about_us .images .box {
+  left: -758px;
+  top: 52px;
 }
 .about_us .images .light1 {
   left: -102px;
@@ -1031,6 +1021,10 @@ header .container .buttons .try_now button {
   display: flex;
   justify-content: center;
 }
+.tutorial .tutorial_inner .images .chart {
+  top: 172px;
+  left: -888px;
+}
 .tutorial .tutorial_inner .images .man {
   top: 41px;
   left: -46px;
@@ -1162,6 +1156,10 @@ header .container .buttons .try_now button {
   display: flex;
   justify-content: center;
 }
+.chance .chance_inner .images .bybit {
+  top: 15px;
+  left: 223px;
+}
 .chance .chance_inner .images .circles {
   top: 127px;
   left: -395px;
@@ -1170,6 +1168,31 @@ header .container .buttons .try_now button {
 .chance .chance_inner .images .btc {
   top: -45px;
   left: -13px;
+}
+.chance .chance_inner .images .rocket {
+  top: -93px;
+  left: -928px;
+  z-index: 0;
+}
+.chance .chance_inner .images .eth {
+  top: 161px;
+  left: 408px;
+}
+.chance .chance_inner .images .usd_t {
+  top: 20px;
+  left: 458px;
+}
+.chance .chance_inner .images .btc_l {
+  top: 149px;
+  left: 238px;
+}
+.chance .chance_inner .images .btc_l img {
+  filter: grayscale(1);
+  opacity: 0.7;
+}
+.chance .chance_inner .chance_header {
+  z-index: 0;
+  position: relative;
 }
 .chance .chance_inner .chance_header .small {
   font-weight: 800;
@@ -1214,13 +1237,29 @@ header .container .buttons .try_now button {
 .small_offers {
   margin-top: -65px;
   position: relative;
+  padding-bottom: 87px;
   z-index: 2;
+  overflow: hidden;
+}
+.small_offers .images {
+  display: flex;
+  justify-content: center;
+}
+.small_offers .images .light {
+  top: 138px;
+  left: -506px;
+  z-index: -1;
 }
 .small_offers .container {
   display: flex;
   justify-content: space-between;
 }
+.small_offers .container .offer:hover {
+  border: 1px solid rgb(55, 99, 255);
+  box-shadow: 0px 16px 60px rgba(71, 145, 255, 0.29);
+}
 .small_offers .container .offer {
+  border: 1px solid rgba(55, 99, 255, 0);
   width: 32.5%;
   background: #1C1D1E;
   border-radius: 17px;
@@ -1303,7 +1342,6 @@ header .container .buttons .try_now button {
 
 footer {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  margin-top: 87px;
   background: rgb(9, 10, 11);
 }
 footer .header {
