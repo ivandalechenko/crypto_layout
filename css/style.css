@@ -1003,6 +1003,36 @@ header .container .buttons .try_now button {
   background: #2CBA65;
   border-radius: 6px;
 }
+.transactions .security_and_pages {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 23px;
+}
+.transactions .security_and_pages .pages, .transactions .security_and_pages .sec {
+  margin: auto 0;
+}
+.transactions .security_and_pages .sec .secure {
+  margin-top: 0px;
+}
+.transactions .security_and_pages .pages {
+  display: flex;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+.transactions .security_and_pages .pages button {
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+.transactions .security_and_pages .pages .active {
+  background: #3763FF;
+}
 
 .tutorial {
   margin-top: 100px;
