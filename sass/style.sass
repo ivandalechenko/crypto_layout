@@ -1124,17 +1124,31 @@ header
             .chart
                 top: 172px
                 left: -888px
+                @media (max-width: 800px)
+                    top: 573px
             .man
                 top: 41px
                 left: -46px
+                @media (max-width: 800px)
+                    top: 677px
+                    left: -165px
+                    img
+                        width: 330px
+                @media (max-width: 550px)
+                    top: 611px
             .waves
                 top: 187px
                 left: -894px
                 z-index: -1
+                @media (max-width: 800px)
+                    top: 645px
             .light
                 top: -31px
                 left: -740px
                 z-index: 0
+                @media (max-width: 800px)
+                    top: 312px
+                    left: -1282px
         .tutorial_header
             position: relative
             z-index: 2
@@ -1229,7 +1243,7 @@ header
         padding-bottom: 275px
         overflow: hidden
         @media (max-width: 550px)
-            padding: 24px 5px
+            padding: 24px 5px 394px
 
         .images
             display: flex
@@ -1237,26 +1251,61 @@ header
             .bybit
                 top: 15px
                 left: 223px
+                @media (max-width: 550px)
+                    top: 216px
+                    left: -88px
+                    img
+                        width: 50px
             .circles
                 top: 127px
                 left: -395px
                 z-index: 0
+                @media (max-width: 550px)
+                    top: 273px
+                    img
+                        width: 578px
             .btc
                 top: -45px
                 left: -13px
+                @media (max-width: 550px)
+                    top: 210px
+                    left: -251px
+                    img
+                        width: 130px
             .rocket
                 top: -93px
                 left: -928px
                 z-index: 0
+                @media (max-width: 550px)
+                    top: 140px
+                    left: -524px
+                    img
+                        width: 700px
+
             .eth
                 top: 161px
                 left: 408px
+                @media (max-width: 550px)
+                    top: 334px
+                    left: 77px
+                    img
+                        width: 70px
             .usd_t
                 top: 20px
                 left: 458px
+                @media (max-width: 550px)
+                    top: 280px
+                    left: 146px
+                    img
+                        width: 30px
             .btc_l
                 top: 149px
                 left: 238px
+                @media (max-width: 550px)
+                    top: 253px
+                    left: -101px
+                    img
+                        width: 500px
                 img
                     filter: grayscale(1)
                     opacity: 0.7
@@ -1290,6 +1339,10 @@ header
             top: 138px
             left: -506px
             z-index: -1
+            @media (max-width: 900px)
+                top: 550px
+            @media (max-width: 550px)
+                top: 400px
     .container
         display: flex
         justify-content: space-between

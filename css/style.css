@@ -1662,19 +1662,49 @@ header .container .buttons .try_now button {
   top: 172px;
   left: -888px;
 }
+@media (max-width: 800px) {
+  .tutorial .tutorial_inner .images .chart {
+    top: 573px;
+  }
+}
 .tutorial .tutorial_inner .images .man {
   top: 41px;
   left: -46px;
+}
+@media (max-width: 800px) {
+  .tutorial .tutorial_inner .images .man {
+    top: 677px;
+    left: -165px;
+  }
+  .tutorial .tutorial_inner .images .man img {
+    width: 330px;
+  }
+}
+@media (max-width: 550px) {
+  .tutorial .tutorial_inner .images .man {
+    top: 611px;
+  }
 }
 .tutorial .tutorial_inner .images .waves {
   top: 187px;
   left: -894px;
   z-index: -1;
 }
+@media (max-width: 800px) {
+  .tutorial .tutorial_inner .images .waves {
+    top: 645px;
+  }
+}
 .tutorial .tutorial_inner .images .light {
   top: -31px;
   left: -740px;
   z-index: 0;
+}
+@media (max-width: 800px) {
+  .tutorial .tutorial_inner .images .light {
+    top: 312px;
+    left: -1282px;
+  }
 }
 .tutorial .tutorial_inner .tutorial_header {
   position: relative;
@@ -1813,7 +1843,7 @@ header .container .buttons .try_now button {
 }
 @media (max-width: 550px) {
   .chance .chance_inner {
-    padding: 24px 5px;
+    padding: 24px 5px 394px;
   }
 }
 .chance .chance_inner .images {
@@ -1824,31 +1854,93 @@ header .container .buttons .try_now button {
   top: 15px;
   left: 223px;
 }
+@media (max-width: 550px) {
+  .chance .chance_inner .images .bybit {
+    top: 216px;
+    left: -88px;
+  }
+  .chance .chance_inner .images .bybit img {
+    width: 50px;
+  }
+}
 .chance .chance_inner .images .circles {
   top: 127px;
   left: -395px;
   z-index: 0;
 }
+@media (max-width: 550px) {
+  .chance .chance_inner .images .circles {
+    top: 273px;
+  }
+  .chance .chance_inner .images .circles img {
+    width: 578px;
+  }
+}
 .chance .chance_inner .images .btc {
   top: -45px;
   left: -13px;
+}
+@media (max-width: 550px) {
+  .chance .chance_inner .images .btc {
+    top: 210px;
+    left: -251px;
+  }
+  .chance .chance_inner .images .btc img {
+    width: 130px;
+  }
 }
 .chance .chance_inner .images .rocket {
   top: -93px;
   left: -928px;
   z-index: 0;
 }
+@media (max-width: 550px) {
+  .chance .chance_inner .images .rocket {
+    top: 140px;
+    left: -524px;
+  }
+  .chance .chance_inner .images .rocket img {
+    width: 700px;
+  }
+}
 .chance .chance_inner .images .eth {
   top: 161px;
   left: 408px;
+}
+@media (max-width: 550px) {
+  .chance .chance_inner .images .eth {
+    top: 334px;
+    left: 77px;
+  }
+  .chance .chance_inner .images .eth img {
+    width: 70px;
+  }
 }
 .chance .chance_inner .images .usd_t {
   top: 20px;
   left: 458px;
 }
+@media (max-width: 550px) {
+  .chance .chance_inner .images .usd_t {
+    top: 280px;
+    left: 146px;
+  }
+  .chance .chance_inner .images .usd_t img {
+    width: 30px;
+  }
+}
 .chance .chance_inner .images .btc_l {
   top: 149px;
   left: 238px;
+}
+@media (max-width: 550px) {
+  .chance .chance_inner .images .btc_l {
+    top: 253px;
+    left: -101px;
+  }
+  .chance .chance_inner .images .btc_l img {
+    width: 500px;
+  }
 }
 .chance .chance_inner .images .btc_l img {
   filter: grayscale(1);
@@ -1891,6 +1983,16 @@ header .container .buttons .try_now button {
   top: 138px;
   left: -506px;
   z-index: -1;
+}
+@media (max-width: 900px) {
+  .small_offers .images .light {
+    top: 550px;
+  }
+}
+@media (max-width: 550px) {
+  .small_offers .images .light {
+    top: 400px;
+  }
 }
 .small_offers .container {
   display: flex;
