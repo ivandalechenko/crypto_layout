@@ -823,21 +823,35 @@ header
         .light
             top: 72px
             left: -1061px
+            @media (max-width: 1000px)
+                top: 474px
+                left: -646px
         .light1
             top: -88px
             left: -21px
+            @media (max-width: 1000px)
+                display: none
         .light2
             top: 371px
             left: -391px
+            @media (max-width: 1000px)
+                display: none
         .light3
             top: 388px
             left: -1553px
+            @media (max-width: 1000px)
+                display: none
         .light4
             top: 736px
             left: -1011px
+            @media (max-width: 1000px)
+                top: 1019px
+                left: -1011px
 .security
     margin-top: 150px
     overflow: hidden
+    @media (max-width: 1000px)
+        padding-bottom: 501px
     @media (max-width: 550px)
         margin-top: 86px
     .container
@@ -849,11 +863,15 @@ header
             @media (max-width: 1000px)
                 width: 100%
                 order: 2
+                display: flex
+                justify-content: center
             .success
                 left: -50px
-            .light
-                left: -518px
-                top: -87px
+                @media (max-width: 1000px)
+                    left: -210px
+                    top: 594px
+                    img
+                        width: 400px
         .content
             width: 55%
             @media (max-width: 1000px)
@@ -906,6 +924,8 @@ header
     margin-top: 155px
     position: relative
     z-index: 2
+    @media (max-width: 1000px)
+        margin-top: 0px
     .transactions_header
         h2, .body
             text-align: center
@@ -1096,6 +1116,8 @@ header
         overflow: hidden
         @media (max-width: 550px)
             padding: 24px 2px
+        @media (max-width: 800px)
+            padding-bottom: 402px
         .images
             display: flex
             justify-content: center

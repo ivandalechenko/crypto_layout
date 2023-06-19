@@ -1204,26 +1204,58 @@ header .container .buttons .try_now button {
   top: 72px;
   left: -1061px;
 }
+@media (max-width: 1000px) {
+  .light_block_2 .images .light {
+    top: 474px;
+    left: -646px;
+  }
+}
 .light_block_2 .images .light1 {
   top: -88px;
   left: -21px;
+}
+@media (max-width: 1000px) {
+  .light_block_2 .images .light1 {
+    display: none;
+  }
 }
 .light_block_2 .images .light2 {
   top: 371px;
   left: -391px;
 }
+@media (max-width: 1000px) {
+  .light_block_2 .images .light2 {
+    display: none;
+  }
+}
 .light_block_2 .images .light3 {
   top: 388px;
   left: -1553px;
+}
+@media (max-width: 1000px) {
+  .light_block_2 .images .light3 {
+    display: none;
+  }
 }
 .light_block_2 .images .light4 {
   top: 736px;
   left: -1011px;
 }
+@media (max-width: 1000px) {
+  .light_block_2 .images .light4 {
+    top: 1019px;
+    left: -1011px;
+  }
+}
 
 .security {
   margin-top: 150px;
   overflow: hidden;
+}
+@media (max-width: 1000px) {
+  .security {
+    padding-bottom: 501px;
+  }
 }
 @media (max-width: 550px) {
   .security {
@@ -1242,14 +1274,21 @@ header .container .buttons .try_now button {
   .security .container .img {
     width: 100%;
     order: 2;
+    display: flex;
+    justify-content: center;
   }
 }
 .security .container .img .success {
   left: -50px;
 }
-.security .container .img .light {
-  left: -518px;
-  top: -87px;
+@media (max-width: 1000px) {
+  .security .container .img .success {
+    left: -210px;
+    top: 594px;
+  }
+  .security .container .img .success img {
+    width: 400px;
+  }
 }
 .security .container .content {
   width: 55%;
@@ -1339,6 +1378,11 @@ header .container .buttons .try_now button {
   margin-top: 155px;
   position: relative;
   z-index: 2;
+}
+@media (max-width: 1000px) {
+  .transactions {
+    margin-top: 0px;
+  }
 }
 .transactions .transactions_header h2, .transactions .transactions_header .body {
   text-align: center;
@@ -1603,6 +1647,11 @@ header .container .buttons .try_now button {
 @media (max-width: 550px) {
   .tutorial .tutorial_inner {
     padding: 24px 2px;
+  }
+}
+@media (max-width: 800px) {
+  .tutorial .tutorial_inner {
+    padding-bottom: 402px;
   }
 }
 .tutorial .tutorial_inner .images {
