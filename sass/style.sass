@@ -298,19 +298,38 @@ header
             top: 322px
             left: -700px
             filter: blur(150px)
+            @media (max-width: 550px)
+                top: 322px
+                left: -185px
+                z-index: 0
+                img
+                    width: 550px
+
         .el2
             top: 320px
             left: 50px
             filter: blur(150px)
+            @media (max-width: 550px)
+                display: none
         .el3
             top: 25px
             left: -300px
+            @media (max-width: 550px)
+                display: none
         .el4
             top: 25px
             left: -1240px
+            @media (max-width: 550px)
+                top: 266px
+                left: -500px
+                z-index: 0
+                img
+                    width: 1111px
         .line
             top: 340px
             left: -1005px
+            @media (max-width: 550px)
+                display: none
 .usp
     padding-top: 90px
     padding-bottom: 350px
@@ -329,13 +348,30 @@ header
                 top: 152px
                 left: 126px
                 z-index: 3
+                @media (max-width: 650px)
+                    left: 50px
+
+                @media (max-width: 550px)
+                    top: 340px
+                    left: -160px
+                    img
+                        width: 550px
             .chart
                 top: -93px
                 left: 401px
+                @media (max-width: 550px)
+                    top: 241px
+                    left: 53px
+
+                    img
+                        width: 384px
             .eth
                 z-index: 3
                 top: 196px
                 left: 752px
+                @media (max-width: 550px)
+                    top: 353px
+                    left: 333px
                 button
                     padding: 7px 8px 3px
                     background: rgba(255, 255, 255, 0.1)
@@ -343,12 +379,23 @@ header
                     backdrop-filter: blur(10px)
                     border-radius: 12.3257px
                     transform: rotate(17.09deg)
+                    @media (max-width: 550px)
+                        border-radius: 12.6919px
+                        padding: 6px 8px 4px
+                        img
+                            width: 16px
             .ai
                 z-index: 3
                 top: 128px
                 left: 899px
+                @media (max-width: 900px)
+                    top: 200px
+                    left: 400px
+                @media (max-width: 550px)
+                    top: 305px
+                    left: 250px
                 button
-                    padding: 10px 15px
+                    padding: 8px 12px
                     background: rgba(255, 255, 255, 0.1)
                     box-shadow: -11px -18px 38px #6735F4, 18px 39px 47px 1px rgba(0, 0, 0, 0.64)
                     backdrop-filter: blur(5.5px)
@@ -358,20 +405,44 @@ header
                     font-size: 32px
                     line-height: 140%
                     color: #FFFFFF
+                    @media (max-width: 550px)
+                        font-size: 18px
+                        box-shadow: -6.30289px -10.3138px 21.7736px #6735F4, 10.3138px 22.3466px 26.9305px 0.57299px rgba(0, 0, 0, 0.64)
+                        border-radius: 10.3138px
             .usdt
                 z-index: 2
                 top: 416px
                 left: 325px
+                @media (max-width: 900px)
+                    top: 356px
+                @media (max-width: 550px)
+                    top: 487px
+                    left: 4px
                 button
                     padding: 12px 12px 6px
                     background: rgba(255, 255, 255, 0.1)
                     box-shadow: -7px 39px 47px rgba(0, 0, 0, 0.46)
                     border-radius: 18px
                     transform: rotate(-14.5deg)
+                    @media (max-width: 550px)
+                        border-radius: 12.6919px
+                        padding: 10px 10px 6px
+                        img
+                            width: 23px
+
             .stat
                 z-index: 2
                 top: 344px
                 left: 723px
+                @media (max-width: 900px)
+                    top: 428px
+                    left: 17px
+                @media (max-width: 550px)
+                    z-index: 3
+                    top: 597px
+                    left: 126px
+                    img
+                        width: 322px
                 button
                     padding: 12px 12px 6px
                     background: rgba(255, 255, 255, 0.1)
@@ -436,18 +507,26 @@ header
         .box
             left: -758px
             top: 52px
+            @media (max-width: 900px)
+
+                left: -301px
+                top: 498px
+
+                img
+                    width: 600px
         .light1
             left: -102px
-            top: -100px
-        .light2
-            left: 85px
-            top: -44px
+            top: -276px
+            @media (max-width: 900px)
+                left: -166px
+                top: -153px
+
         .light3
             left: -149px
             top: 282px
-        .light4
-            left: -614px
-            top: 473px
+            @media (max-width: 900px)
+                left: -1314px
+                top: 345px
     .about_us_inner
         width: 100%
         border-radius: 32px
@@ -455,6 +534,8 @@ header
         padding-top: 65px
         padding-bottom: 150px
         overflow: hidden
+        @media (max-width: 900px)
+            padding-bottom: 210px
         @media (max-width: 550px)
             padding-top: 32px
 
