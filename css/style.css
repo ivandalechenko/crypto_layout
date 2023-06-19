@@ -940,8 +940,15 @@ header .container .buttons .try_now button {
   display: flex;
   justify-content: space-around;
 }
-.offers .offers_list .offer:not(:first-child) {
-  display: none;
+@media (max-width: 1000px) {
+  .offers .offers_list {
+    overflow: auto;
+    justify-content: left;
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+    padding: 0px 15px;
+    margin: 24px -15px 0px;
+  }
 }
 .offers .offers_list .offer:hover {
   border: 1px solid rgb(55, 99, 255);
@@ -949,7 +956,7 @@ header .container .buttons .try_now button {
 }
 .offers .offers_list .offer {
   width: 32%;
-  max-width: 350px;
+  min-width: 300px;
   background: rgba(79, 128, 255, 0.14);
   border: 1px solid rgba(55, 99, 255, 0);
   border-radius: 12px;
@@ -1290,6 +1297,16 @@ header .container .buttons .try_now button {
     width: 400px;
   }
 }
+@media (max-width: 380px) {
+  .security .container .img .success {
+    top: 655px;
+  }
+}
+@media (max-width: 340px) {
+  .security .container .img .success {
+    top: 720px;
+  }
+}
 .security .container .content {
   width: 55%;
 }
@@ -1400,6 +1417,14 @@ header .container .buttons .try_now button {
   display: flex;
   margin-top: 40px;
 }
+@media (max-width: 470px) {
+  .transactions .navigation {
+    overflow: auto;
+    justify-content: left;
+    padding: 0px 15px;
+    margin: 40px -15px 0px;
+  }
+}
 .transactions .navigation .navigation_element:hover {
   color: rgb(255, 255, 255);
   border-bottom: 1px solid rgb(255, 255, 255);
@@ -1408,6 +1433,7 @@ header .container .buttons .try_now button {
 .transactions .navigation .navigation_element {
   width: 33%;
   text-align: center;
+  min-width: 150px;
   padding-bottom: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   color: rgba(255, 255, 255, 0.5);

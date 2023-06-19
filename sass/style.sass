@@ -643,14 +643,19 @@ header
         margin-top: 24px
         display: flex
         justify-content: space-around
-        .offer:not(:first-child)
-            display: none
+        @media (max-width: 1000px)
+            overflow: auto
+            justify-content: left
+            column-gap: 15px
+            padding: 0px 15px
+            margin: 24px -15px 0px
+
         .offer:hover
             border: 1px solid rgba(55, 99, 255, 1)
             box-shadow: 0px 16px 60px rgba(71, 145, 255, 0.29)
         .offer
             width: 32%
-            max-width: 350px
+            min-width: 300px
             background: rgba(79, 128, 255, 0.14)
             border: 1px solid rgba(55, 99, 255, 0)
             border-radius: 12px
@@ -872,6 +877,10 @@ header
                     top: 594px
                     img
                         width: 400px
+                @media (max-width: 380px)
+                    top: 655px
+                @media (max-width: 340px)
+                    top: 720px
         .content
             width: 55%
             @media (max-width: 1000px)
@@ -937,6 +946,11 @@ header
     .navigation
         display: flex
         margin-top: 40px
+        @media (max-width: 470px)
+            overflow: auto
+            justify-content: left
+            padding: 0px 15px
+            margin: 40px -15px 0px
         .navigation_element:hover
             color: rgba(255, 255, 255,1)
             border-bottom: 1px solid rgba(255, 255, 255, 1)
@@ -944,6 +958,7 @@ header
         .navigation_element
             width: 33%
             text-align: center
+            min-width: 150px
             padding-bottom: 20px
             border-bottom: 1px solid rgba(255, 255, 255, 0.15)
             color: rgba(255, 255, 255, 0.5)
