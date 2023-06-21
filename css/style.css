@@ -25,12 +25,11 @@ time, mark, audio, video, button {
   vertical-align: baseline;
   box-sizing: border-box;
   color: white;
-  transition: 0.3s;
   font-family: "Inter Tight";
 }
 
-img, svg {
-  transition: 0.3s;
+a, button {
+  transition: opacity 0.5s;
 }
 
 a:hover, button:hover {
@@ -960,6 +959,7 @@ header .container .buttons .try_now button {
   background: rgba(79, 128, 255, 0.14);
   border: 1px solid rgba(55, 99, 255, 0);
   border-radius: 12px;
+  transition: border 0.5s, box-shadow 0.5s;
 }
 @media (max-width: 550px) {
   .offers .offers_list .offer {
@@ -1431,6 +1431,7 @@ header .container .buttons .try_now button {
   cursor: pointer;
 }
 .transactions .navigation .navigation_element {
+  transition: color 0.5s, border-bottom 0.5s;
   width: 33%;
   text-align: center;
   min-width: 150px;
@@ -1998,7 +1999,6 @@ header .container .buttons .try_now button {
   margin-top: -65px;
   position: relative;
   z-index: 2;
-  overflow: hidden;
 }
 .small_offers .container {
   display: flex;
@@ -2016,6 +2016,7 @@ header .container .buttons .try_now button {
   box-shadow: 0px 16px 60px rgba(71, 145, 255, 0.29);
 }
 .small_offers .container .offer {
+  transition: color 0.5s, box-shadow 0.5s;
   border: 1px solid rgba(55, 99, 255, 0);
   width: 32.5%;
   background: #1C1D1E;

@@ -24,10 +24,11 @@ time, mark, audio, video, button
     vertical-align: baseline
     box-sizing: border-box
     color: white
-    transition: .3s
     font-family: 'Inter Tight'
-img, svg
-    transition: .3s
+
+a, button
+    transition: opacity 0.5s
+
 a:hover, button:hover
     cursor: pointer
     opacity: .6
@@ -659,6 +660,7 @@ header
             background: rgba(79, 128, 255, 0.14)
             border: 1px solid rgba(55, 99, 255, 0)
             border-radius: 12px
+            transition: border .5s, box-shadow .5s
             @media (max-width: 550px)
                 width: 100%
 
@@ -956,6 +958,7 @@ header
             border-bottom: 1px solid rgba(255, 255, 255, 1)
             cursor: pointer
         .navigation_element
+            transition: color .5s, border-bottom .5s
             width: 33%
             text-align: center
             min-width: 150px
@@ -1345,7 +1348,6 @@ header
     margin-top: -65px
     position: relative
     z-index: 2
-    overflow: hidden
     .container
         display: flex
         justify-content: space-between
@@ -1358,6 +1360,7 @@ header
             border: 1px solid rgba(55, 99, 255, 1)
             box-shadow: 0px 16px 60px rgba(71, 145, 255, 0.29)
         .offer
+            transition: color .5s, box-shadow .5s
             border: 1px solid rgba(55, 99, 255, 0)
             width: 32.5%
             background: #1C1D1E
@@ -1521,8 +1524,6 @@ header
                     overflow: hidden
                     transition: margin 500ms, height 500ms
                     -webkit-transition: margin 500ms, height 500ms
-                    // transition: height 500ms ease
-                    // transition: 500ms ease
             .question_arrow
                 padding: 10px
                 width: 36px
