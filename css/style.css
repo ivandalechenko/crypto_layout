@@ -2195,6 +2195,9 @@ header .container .buttons .try_now button {
     margin-top: 0px;
   }
 }
+.faq .questions .question:hover {
+  cursor: pointer;
+}
 .faq .questions .question {
   margin-top: 45px;
   display: flex;
@@ -2236,17 +2239,18 @@ header .container .buttons .try_now button {
   line-height: 19px;
 }
 .faq .questions .question .text .hidden {
-  margin-top: 8px;
   font-family: "Inter";
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-}
-.faq .questions .question .question_arrow:hover {
-  cursor: pointer;
+  overflow: hidden;
+  transition: height 500ms ease;
+  transition: 500ms ease;
 }
 .faq .questions .question .question_arrow {
   padding: 10px;
+  width: 36px;
+  height: 36px;
 }
 @media (max-width: 550px) {
   .faq .questions .question .question_arrow {

@@ -1485,6 +1485,8 @@ header
         @media (max-width: 550px)
             margin-top: 0px
 
+        .question:hover
+            cursor: pointer
         .question
             margin-top: 45px
             display: flex
@@ -1512,22 +1514,23 @@ header
                     font-size: 16px
                     line-height: 19px
                 .hidden
-                    margin-top: 8px
                     font-family: 'Inter'
                     font-weight: 400
                     font-size: 16px
                     line-height: 22px
-            .question_arrow:hover
-                cursor: pointer
+                    overflow: hidden
+                    transition: height 500ms ease
+                    transition: 500ms ease
             .question_arrow
                 padding: 10px
+                width: 36px
+                height: 36px
                 @media (max-width: 550px)
                     order: 1
                 .minus
                     display: none
                 .plus_mob
                     display: none
-
                 @media (max-width: 550px)
                     .plus_mob
                         display: block
