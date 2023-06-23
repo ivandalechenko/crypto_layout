@@ -1393,6 +1393,14 @@ h6 {
   color: #B5B6B6;
 }
 
+.short {
+  color: #FF5F72;
+}
+
+.long {
+  color: #D9E44F;
+}
+
 .transactions {
   margin-top: 155px;
   position: relative;
@@ -1403,36 +1411,36 @@ h6 {
     margin-top: 0px;
   }
 }
-.transactions .transactions_header h2, .transactions .transactions_header .body {
+.transactions_transactions_header_h2, .transactions_transactions_header_body {
   text-align: center;
 }
 @media (max-width: 900px) {
-  .transactions .transactions_header h2, .transactions .transactions_header .body {
+  .transactions_transactions_header_h2, .transactions_transactions_header_body {
     text-align: left;
   }
 }
-.transactions .transactions_header .body {
+.transactions_transactions_header_body {
   color: #B5B6B6;
   margin-top: 12px;
 }
-.transactions .navigation {
+.transactions_navigation {
   display: flex;
   margin-top: 40px;
 }
 @media (max-width: 470px) {
-  .transactions .navigation {
+  .transactions_navigation {
     overflow: auto;
     justify-content: left;
     padding: 0px 15px;
     margin: 40px -15px 0px;
   }
 }
-.transactions .navigation .navigation_element:hover {
+.transactions_navigation_navigation_element:hover {
   color: rgb(255, 255, 255);
   border-bottom: 1px solid rgb(255, 255, 255);
   cursor: pointer;
 }
-.transactions .navigation .navigation_element {
+.transactions_navigation_navigation_element {
   transition: color 0.5s, border-bottom 0.5s;
   width: 33%;
   text-align: center;
@@ -1442,66 +1450,60 @@ h6 {
   color: rgba(255, 255, 255, 0.5);
 }
 @media (max-width: 700px) {
-  .transactions .navigation .navigation_element {
+  .transactions_navigation_navigation_element {
     padding-bottom: 12px;
   }
-  .transactions .navigation .navigation_element h6 {
+  .transactions_navigation_navigation_element_h6 {
     font-size: 14px;
     line-height: 17px;
   }
 }
-.transactions .navigation .active {
+.transactions_navigation_active {
   border-bottom: 1px solid rgb(217, 228, 79);
   color: rgb(255, 255, 255);
 }
-.transactions .number {
-  width: 7.56%;
-}
-.transactions .type {
-  width: 7.18%;
-}
-.transactions .pair {
-  width: 15.13%;
-}
-.transactions .date {
-  width: 13.7%;
-}
-.transactions .count {
-  width: 8.43%;
-}
-.transactions .price {
-  width: 10.3%;
-}
-.transactions .volume {
-  width: 16.15%;
-}
-.transactions .profit {
-  width: 21.2%;
-}
-.transactions .short {
-  color: #FF5F72;
-}
-.transactions .long {
-  color: #D9E44F;
-}
-.transactions .leverage {
-  color: #B5B6B6;
-}
-.transactions .table_naming {
+.transactions_table_naming {
   margin-top: 32px;
   padding: 0px 20px;
   display: flex;
   padding-bottom: 6px;
 }
 @media (max-width: 900px) {
-  .transactions .table_naming {
+  .transactions_table_naming {
     display: none;
   }
 }
-.transactions .table_naming div {
+.transactions_table_naming_number {
+  width: 7.56%;
+}
+.transactions_table_naming_type {
+  width: 7.18%;
+}
+.transactions_table_naming_pair {
+  width: 15.13%;
+}
+.transactions_table_naming_date {
+  width: 13.7%;
+}
+.transactions_table_naming_count {
+  width: 8.43%;
+}
+.transactions_table_naming_price {
+  width: 10.3%;
+}
+.transactions_table_naming_volume {
+  width: 16.15%;
+}
+.transactions_table_naming_profit {
+  width: 21.2%;
+}
+.transactions_table_naming_leverage {
+  color: #B5B6B6;
+}
+.transactions_table_naming_element {
   color: rgba(255, 255, 255, 0.7);
 }
-.transactions .table_element {
+.transactions_pc_elements_table_element {
   margin-top: 6px;
   padding: 0px 20px;
   display: flex;
@@ -1509,55 +1511,82 @@ h6 {
   background: rgba(255, 255, 255, 0.03);
   border-radius: 12px;
 }
-.transactions .table_element .number, .transactions .table_element .type, .transactions .table_element .pair, .transactions .table_element .date, .transactions .table_element .count, .transactions .table_element .price, .transactions .table_element .volume, .transactions .table_element .profit {
+.transactions_pc_elements_table_element_number {
+  width: 7.56%;
+}
+.transactions_pc_elements_table_element_type {
+  width: 7.18%;
+}
+.transactions_pc_elements_table_element_pair {
+  width: 15.13%;
+}
+.transactions_pc_elements_table_element_date {
+  width: 13.7%;
+}
+.transactions_pc_elements_table_element_count {
+  width: 8.43%;
+}
+.transactions_pc_elements_table_element_price {
+  width: 10.3%;
+}
+.transactions_pc_elements_table_element_volume {
+  width: 16.15%;
+}
+.transactions_pc_elements_table_element_profit {
+  width: 21.2%;
+}
+.transactions_pc_elements_table_element_leverage {
+  color: #B5B6B6;
+}
+.transactions_pc_elements_table_element_number, .transactions_pc_elements_table_element_type, .transactions_pc_elements_table_element_pair, .transactions_pc_elements_table_element_date, .transactions_pc_elements_table_element_count, .transactions_pc_elements_table_element_price, .transactions_pc_elements_table_element_volume, .transactions_pc_elements_table_element_profit {
   margin: auto 0;
 }
-.transactions .table_element .number {
+.transactions_pc_elements_table_element_number {
   opacity: 0.5;
 }
-.transactions .table_element .pair {
+.transactions_pc_elements_table_element_pair {
   display: flex;
   -moz-column-gap: 12px;
        column-gap: 12px;
 }
-.transactions .table_element .pair img, .transactions .table_element .pair div {
+.transactions_pc_elements_table_element_pair_img, .transactions_pc_elements_table_element_pair_medium15 {
   margin: auto 0;
 }
-.transactions .table_element .date {
+.transactions_pc_elements_table_element_date {
   opacity: 0.7;
 }
-.transactions .table_element .volume {
+.transactions_pc_elements_table_element_volume {
   opacity: 0.7;
 }
-.transactions .table_element .profit {
+.transactions_pc_elements_table_element_profit {
   display: flex;
   justify-content: space-between;
 }
-.transactions .table_element .profit .num, .transactions .table_element .profit .percent {
+.transactions_pc_elements_table_element_profit_count, .transactions_pc_elements_table_element_profit_percent {
   margin: auto 0;
 }
-.transactions .table_element .profit .percent {
+.transactions_pc_elements_table_element_profit_percent {
   padding: 4px 12px;
   background: #2CBA65;
   border-radius: 6px;
 }
 @media (max-width: 900px) {
-  .transactions .pc_elements {
+  .transactions_pc_elements_table_element {
     display: none;
   }
 }
-.transactions .mobile_elements {
+.transactions_mobile_elements {
   display: none;
 }
 @media (max-width: 900px) {
-  .transactions .mobile_elements {
+  .transactions_mobile_elements {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding-top: 10px;
   }
 }
-.transactions .mobile_elements button {
+.transactions_mobile_elements_button {
   max-width: 460px;
   width: 100%;
   background: #3763FF;
@@ -1565,7 +1594,7 @@ h6 {
   height: 48px;
   margin-top: 24px;
 }
-.transactions .mobile_elements .element {
+.transactions_mobile_elements_element {
   background: rgba(255, 255, 255, 0.03);
   border-radius: 12px;
   padding: 20px;
@@ -1573,51 +1602,51 @@ h6 {
   width: 100%;
   margin-top: 12px;
 }
-.transactions .mobile_elements .element .pair_and_leverage {
+.transactions_mobile_elements_element_pair_and_leverage {
   display: flex;
   justify-content: space-between;
   padding-bottom: 16px;
 }
-.transactions .mobile_elements .element .pair_and_leverage .pair {
+.transactions_mobile_elements_element_pair_and_leverage_pair {
   display: flex;
   -moz-column-gap: 12px;
        column-gap: 12px;
 }
-.transactions .mobile_elements .element .pair_and_leverage .pair .medium15, .transactions .mobile_elements .element .pair_and_leverage .pair img {
+.transactions_mobile_elements_element_pair_and_leverage_pair_medium15, .transactions_mobile_elements_element_pair_and_leverage_pair_img {
   margin: auto 0;
 }
-.transactions .mobile_elements .element .info_element:not(:last-child) {
+.transactions_mobile_elements_element_info_element:not(:last-child) {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   padding-bottom: 8px;
 }
-.transactions .mobile_elements .element .info_element {
+.transactions_mobile_elements_element_info_element {
   padding-top: 8px;
   display: flex;
   justify-content: space-between;
 }
-.transactions .mobile_elements .element .info_element div {
+.transactions_mobile_elements_element_info_element_name, .transactions_mobile_elements_element_info_element_value {
   margin: auto 0;
 }
-.transactions .mobile_elements .element .info_element .name, .transactions .mobile_elements .element .info_element .value {
+.transactions_mobile_elements_element_info_element_name, .transactions_mobile_elements_element_info_element_value {
   opacity: 0.7;
 }
-.transactions .mobile_elements .element .info_element .priceprofit {
+.transactions_mobile_elements_element_info_element_priceprofit {
   opacity: 1;
 }
-.transactions .mobile_elements .element .info_element .percent_wrapper {
+.transactions_mobile_elements_element_info_element_percent_wrapper {
   display: flex;
   -moz-column-gap: 16px;
        column-gap: 16px;
 }
-.transactions .mobile_elements .element .info_element .percent_wrapper div {
+.transactions_mobile_elements_element_info_element_percent_wrapper .medium15 {
   margin: auto 0;
 }
-.transactions .mobile_elements .element .info_element .percent {
+.transactions_mobile_elements_element_info_element_percent {
   background: #2CBA65;
   border-radius: 6px;
   padding: 4px 12px;
 }
-.transactions .security_and_pages {
+.transactions_security_and_pages {
   display: flex;
   justify-content: space-between;
   margin-top: 23px;
@@ -1625,22 +1654,22 @@ h6 {
        column-gap: 40px;
 }
 @media (max-width: 900px) {
-  .transactions .security_and_pages {
+  .transactions_security_and_pages {
     display: none;
   }
 }
-.transactions .security_and_pages .pages, .transactions .security_and_pages .sec {
+.transactions_security_and_pages_pages, .transactions_security_and_pages_sec {
   margin: auto 0;
 }
-.transactions .security_and_pages .sec .secure {
+.transactions_security_and_pages_sec_secure {
   margin-top: 0px;
 }
-.transactions .security_and_pages .pages {
+.transactions_security_and_pages_pages {
   display: flex;
   -moz-column-gap: 8px;
        column-gap: 8px;
 }
-.transactions .security_and_pages .pages button {
+.transactions_security_and_pages_pages_button {
   width: 48px;
   height: 48px;
   background: rgba(255, 255, 255, 0.05);
@@ -1651,7 +1680,7 @@ h6 {
   font-size: 15px;
   line-height: 20px;
 }
-.transactions .security_and_pages .pages .active {
+.transactions_security_and_pages_pages_active {
   background: #3763FF;
 }
 
