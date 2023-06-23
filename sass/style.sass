@@ -43,9 +43,9 @@ body
     margin-top: 34px
     display: flex
     column-gap: 15px
-    .medium15, img
+    &_medium15, &_img
         margin: auto 0
-    .medium15
+    &_medium15
         color: #B5B6B6
         padding-right: 15px
         @media (max-width: 550px)
@@ -210,124 +210,126 @@ h6
     line-height: 15px
     letter-spacing: -0.02em
 
-header
+.header
     position: relative
     z-index: 2
-    .container
+    &_container
         height: 80px
         display: flex
         justify-content: space-between
-        .navigation
+    &_navigation
+        display: flex
+        justify-content: space-between
+        column-gap: 30px
+        &_logo
             display: flex
             justify-content: space-between
-            column-gap: 30px
-            .logo
-                display: flex
-                justify-content: space-between
-                column-gap: 20px
-                @media(max-width: 550px)
-                    column-gap: 10px
+            column-gap: 20px
+            @media(max-width: 550px)
+                column-gap: 10px
 
-                .img
-                    margin: auto 0
-                    @media(max-width: 550px)
-                        img
-                            width: 28px
-                .text
-                    margin: auto 0
-                    font-weight: 700
-                    font-size: 18.2642px
-                    line-height: 22px
-                    @media(max-width: 550px)
-                        font-size: 16.0725px
-                        line-height: 19px
-            .links
-                display: flex
-                justify-content: space-between
+            &_img
                 margin: auto 0
-                column-gap: 20px
-                @media(max-width: 850px)
-                    display: none
-                a
-                    color: #B5B6B6
+                @media(max-width: 550px)
+                    img
+                        width: 28px
+            &_text
+                margin: auto 0
+                font-weight: 700
+                font-size: 18.2642px
+                line-height: 22px
+                @media(max-width: 550px)
+                    font-size: 16.0725px
+                    line-height: 19px
+        &_links
+            display: flex
+            justify-content: space-between
+            margin: auto 0
+            column-gap: 20px
+            @media(max-width: 850px)
+                display: none
+            &_a
+                color: #B5B6B6
 
-        .buttons
+    &_buttons
+        display: flex
+        justify-content: space-between
+        column-gap: 12px
+        &_lang,&_try_now,&_burger
+            margin: auto 0
+        &_burger
+            display: none
+            padding-left: 20px
+            @media(max-width: 850px)
+                display: block
+            @media(max-width: 550px)
+                padding-left: 10px
+            &_btn
+                background: none
+        &_lang
             display: flex
             justify-content: space-between
             column-gap: 12px
-            .lang,.try_now,.burger
-                margin: auto 0
-            .burger
+            padding-top: 8px
+            @media(max-width: 550px)
                 display: none
-                padding-left: 20px
-                @media(max-width: 850px)
-                    display: block
+            &_dd_btn
+                &_img
+                    padding-bottom: 5px
+        &_try_now
+            &_btn
+                width: 122px
+                height: 43px
+                background: #3763FF
+                border-radius: 65px
                 @media(max-width: 550px)
-                    padding-left: 10px
+                    width: 95px
+                    height: 36px
 
-                button
-                    background: none
-            .lang
-                display: flex
-                justify-content: space-between
-                column-gap: 12px
-                padding-top: 8px
-                @media(max-width: 550px)
-                    display: none
-                .dd_btn
-                    img
-                        padding-bottom: 5px
-            .try_now
-                button
-                    width: 122px
-                    height: 43px
-                    background: #3763FF
-                    border-radius: 65px
-                    @media(max-width: 550px)
-                        width: 95px
-                        height: 36px
-
-.light_block_1
+.lb1
     width: 100%
     overflow: hidden
-    .light
+    &_light
         display: flex
         justify-content: center
-        .free_image
-            z-index: 2
-        .el1
+        &_el1
             top: 322px
+            z-index: 1
             left: -700px
             filter: blur(150px)
             @media (max-width: 550px)
                 top: 322px
                 left: -185px
                 z-index: 0
-                img
+                &_img
                     width: 550px
 
-        .el2
+        &_el2
             top: 320px
+            z-index: 1
             left: 50px
             filter: blur(150px)
             @media (max-width: 550px)
                 display: none
-        .el3
+        &_el3
             top: 25px
+            z-index: 1
             left: -300px
             @media (max-width: 550px)
                 display: none
-        .el4
+        &_el4
             top: 25px
+            z-index: 1
             left: -1240px
             @media (max-width: 550px)
                 top: 266px
                 left: -500px
                 z-index: 0
-                img
+                &_img
                     width: 1111px
-        .line
+        &_line
             top: 340px
+            z-index: 0
             left: -1005px
             @media (max-width: 550px)
                 display: none
@@ -341,157 +343,157 @@ header
     @media (max-width: 550px)
         padding-top: 42px
 
-    .container
+    &_container
         display: flex
-        .images
-            position: relative
-            .man_with_notebook
-                top: 152px
-                left: 126px
-                z-index: 3
-                @media (max-width: 650px)
-                    left: 50px
+    &_images
+        position: relative
 
-                @media (max-width: 550px)
-                    top: 340px
-                    left: -160px
-                    img
-                        width: 550px
-            .chart
-                top: -93px
-                left: 401px
-                @media (max-width: 550px)
-                    top: 241px
-                    left: 53px
-
-                    img
-                        width: 384px
-            .eth
-                z-index: 3
-                top: 196px
-                left: 752px
-                @media (max-width: 550px)
-                    top: 353px
-                    left: 333px
-                button
-                    padding: 7px 8px 3px
-                    background: rgba(255, 255, 255, 0.1)
-                    box-shadow: 12.3257px 26.7057px 32.1838px rgba(0, 0, 0, 0.46)
-                    backdrop-filter: blur(10px)
-                    border-radius: 12.3257px
-                    transform: rotate(17.09deg)
-                    @media (max-width: 550px)
-                        border-radius: 12.6919px
-                        padding: 6px 8px 4px
-                        img
-                            width: 16px
-            .ai
-                z-index: 3
-                top: 128px
-                left: 899px
-                @media (max-width: 900px)
-                    top: 200px
-                    left: 400px
-                @media (max-width: 550px)
-                    top: 305px
-                    left: 250px
-                button
-                    padding: 8px 12px
-                    background: rgba(255, 255, 255, 0.1)
-                    box-shadow: -11px -18px 38px #6735F4, 18px 39px 47px 1px rgba(0, 0, 0, 0.64)
-                    backdrop-filter: blur(5.5px)
-                    border-radius: 18px
-                    transform: rotate(13.17deg)
-                    font-weight: 700
-                    font-size: 32px
-                    line-height: 140%
-                    color: #FFFFFF
-                    @media (max-width: 550px)
-                        font-size: 18px
-                        box-shadow: -6.30289px -10.3138px 21.7736px #6735F4, 10.3138px 22.3466px 26.9305px 0.57299px rgba(0, 0, 0, 0.64)
-                        border-radius: 10.3138px
-            .usdt
-                z-index: 2
-                top: 416px
-                left: 325px
-                @media (max-width: 900px)
-                    top: 356px
-                @media (max-width: 550px)
-                    top: 487px
-                    left: 4px
-                button
-                    padding: 12px 12px 6px
-                    background: rgba(255, 255, 255, 0.1)
-                    box-shadow: -7px 39px 47px rgba(0, 0, 0, 0.46)
-                    border-radius: 18px
-                    transform: rotate(-14.5deg)
-                    @media (max-width: 550px)
-                        border-radius: 12.6919px
-                        padding: 10px 10px 6px
-                        img
-                            width: 23px
-
-            .stat
-                z-index: 2
-                top: 344px
-                left: 723px
-                @media (max-width: 900px)
-                    top: 428px
-                    left: 17px
-                @media (max-width: 550px)
-                    z-index: 3
-                    top: 597px
-                    left: 126px
-                    img
-                        width: 322px
-                button
-                    padding: 12px 12px 6px
-                    background: rgba(255, 255, 255, 0.1)
-                    box-shadow: -7px 39px 47px rgba(0, 0, 0, 0.46)
-                    border-radius: 18px
-                    transform: rotate(-14.5deg)
-        .usp_text
-            position: relative
+        &_man_with_notebook
+            top: 152px
+            left: 126px
             z-index: 3
-            .guarant
-                display: flex
-                justify-content: left
-                column-gap: 14px
-                .medium15
-                    margin: auto 0
-                    color: #B5B6B6
-                    @media (max-width: 550px)
-                        font-size: 12px
-                        line-height: 15px
+            @media (max-width: 650px)
+                left: 50px
 
-            h1
-                margin-top: 10px
-            .body
+            @media (max-width: 550px)
+                top: 340px
+                left: -160px
+                &_img
+                    width: 550px
+        &_chart
+            top: -93px
+            left: 401px
+            @media (max-width: 550px)
+                top: 241px
+                left: 53px
+
+                &_img
+                    width: 384px
+        &_eth
+            z-index: 3
+            top: 196px
+            left: 752px
+            @media (max-width: 550px)
+                top: 353px
+                left: 333px
+            &_button
+                padding: 7px 8px 3px
+                background: rgba(255, 255, 255, 0.1)
+                box-shadow: 12.3257px 26.7057px 32.1838px rgba(0, 0, 0, 0.46)
+                backdrop-filter: blur(10px)
+                border-radius: 12.3257px
+                transform: rotate(17.09deg)
+                @media (max-width: 550px)
+                    border-radius: 12.6919px
+                    padding: 6px 8px 4px
+                    &_img
+                        width: 16px
+        &_ai
+            z-index: 3
+            top: 128px
+            left: 899px
+            @media (max-width: 900px)
+                top: 200px
+                left: 400px
+            @media (max-width: 550px)
+                top: 305px
+                left: 250px
+            &_button
+                padding: 8px 12px
+                background: rgba(255, 255, 255, 0.1)
+                box-shadow: -11px -18px 38px #6735F4, 18px 39px 47px 1px rgba(0, 0, 0, 0.64)
+                backdrop-filter: blur(5.5px)
+                border-radius: 18px
+                transform: rotate(13.17deg)
+                font-weight: 700
+                font-size: 32px
+                line-height: 140%
+                color: #FFFFFF
+                @media (max-width: 550px)
+                    font-size: 18px
+                    box-shadow: -6.30289px -10.3138px 21.7736px #6735F4, 10.3138px 22.3466px 26.9305px 0.57299px rgba(0, 0, 0, 0.64)
+                    border-radius: 10.3138px
+        &_usdt
+            z-index: 2
+            top: 416px
+            left: 325px
+            @media (max-width: 900px)
+                top: 356px
+            @media (max-width: 550px)
+                top: 487px
+                left: 4px
+            &_button
+                padding: 12px 12px 6px
+                background: rgba(255, 255, 255, 0.1)
+                box-shadow: -7px 39px 47px rgba(0, 0, 0, 0.46)
+                border-radius: 18px
+                transform: rotate(-14.5deg)
+                @media (max-width: 550px)
+                    border-radius: 12.6919px
+                    padding: 10px 10px 6px
+                    &_img
+                        width: 23px
+
+        &_stat
+            z-index: 2
+            top: 344px
+            left: 723px
+            @media (max-width: 900px)
+                top: 428px
+                left: 17px
+            @media (max-width: 550px)
+                z-index: 3
+                top: 597px
+                left: 126px
+                &_img
+                    width: 322px
+            &_button
+                padding: 12px 12px 6px
+                background: rgba(255, 255, 255, 0.1)
+                box-shadow: -7px 39px 47px rgba(0, 0, 0, 0.46)
+                border-radius: 18px
+                transform: rotate(-14.5deg)
+    &_text
+        position: relative
+        z-index: 3
+        &_guarant
+            display: flex
+            justify-content: left
+            column-gap: 14px
+            &_medium15
+                margin: auto 0
                 color: #B5B6B6
-            .btn
-                width: 309px
-                height: 57px
-                background: #D9E44F
-                border-radius: 65px
-                color: #1C1D1E
-                margin-top: 32px
                 @media (max-width: 550px)
-                    margin-top: 24px
-                    width: 162px
-                    height: 48px
-                    background: #3763FF
-                    color: white
-            .btns_mobile_download
-                margin-top: 32px
-                display: flex
-                column-gap: 8px
-                @media (max-width: 550px)
-                    display: none
-                button
-                    width: 150px
-                    height: 43px
-                    background: rgba(255, 255, 255, 0.15)
-                    border-radius: 7px
+                    font-size: 12px
+                    line-height: 15px
+        &_h1
+            margin-top: 10px
+        &_body
+            color: #B5B6B6
+        &_button
+            width: 309px
+            height: 57px
+            background: #D9E44F
+            border-radius: 65px
+            color: #1C1D1E
+            margin-top: 32px
+            @media (max-width: 550px)
+                margin-top: 24px
+                width: 162px
+                height: 48px
+                background: #3763FF
+                color: white
+        &_btns_mobile_download
+            margin-top: 32px
+            display: flex
+            column-gap: 8px
+            @media (max-width: 550px)
+                display: none
+            &_button
+                width: 150px
+                height: 43px
+                background: rgba(255, 255, 255, 0.15)
+                border-radius: 7px
 .about_us
     margin-top: 20px
     width: 100%
@@ -500,12 +502,12 @@ header
     z-index: 2
     @media (max-width: 550px)
         padding: 0px 5px
-    .images
+    &_images
         display: flex
         justify-content: center
         div
             z-index: -1
-        .box
+        &_box
             left: -758px
             top: 52px
             @media (max-width: 900px)
@@ -513,22 +515,22 @@ header
                 left: -301px
                 top: 498px
 
-                img
+                &_img
                     width: 600px
-        .light1
+        &_light1
             left: -102px
             top: -276px
             @media (max-width: 900px)
                 left: -166px
                 top: -153px
 
-        .light3
+        &_light3
             left: -149px
             top: 282px
             @media (max-width: 900px)
                 left: -1314px
                 top: 345px
-    .about_us_inner
+    &_inner
         width: 100%
         border-radius: 32px
         background: rgba(55, 99, 255, 0.1)
@@ -540,107 +542,106 @@ header
         @media (max-width: 550px)
             padding-top: 32px
 
-        .container
-            .colored_text
-                text-align: center
-                background: linear-gradient(90deg, #C6CBFF -6.86%, #FFC6E1 128.43%)
-                -webkit-background-clip: text
-                -webkit-text-fill-color: transparent
-                background-clip: text
-                text-fill-color: transparent
-                @media (max-width: 550px)
-                    text-align: left
-            h2
-                text-align: center
-                margin-top: 12px
-                @media (max-width: 550px)
-                    text-align: left
+    &_colored_text
+        text-align: center
+        background: linear-gradient(90deg, #C6CBFF -6.86%, #FFC6E1 128.43%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        background-clip: text
+        text-fill-color: transparent
+        @media (max-width: 550px)
+            text-align: left
+    &_h2
+        text-align: center
+        margin-top: 12px
+        @media (max-width: 550px)
+            text-align: left
 
-            .content
+    &_content
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        row-gap: 20px
+        &_advantages
+            width: 48%
+            @media (max-width: 1000px)
+                width: 100%
+        &_text
+            width: 42%
+            @media (max-width: 1000px)
+                width: 100%
+        &_advantages
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            &_left, &_right
                 display: flex
-                justify-content: space-between
+                width: 48.3%
                 flex-wrap: wrap
                 row-gap: 20px
-                .advantages
-                    width: 48%
-                    @media (max-width: 1000px)
-                        width: 100%
-                .text
-                    width: 42%
-                    @media (max-width: 1000px)
-                        width: 100%
-                .advantages
-                    display: flex
-                    flex-wrap: wrap
-                    justify-content: space-between
-                    .left, .right
-                        display: flex
-                        width: 48.3%
-                        flex-wrap: wrap
-                        row-gap: 20px
-                        margin-top: 58px
+                margin-top: 58px
+                @media (max-width: 550px)
+                    row-gap: 10px
+                    margin-top: 24px
+                &_element
+                    width: 100%
+                    padding: 20px 20px 30px
+                    background: rgba(255, 255, 255, 0.05)
+                    box-shadow: inset 0px 4px 11px rgba(255, 255, 255, 0.1)
+                    backdrop-filter: blur(41px)
+                    border-radius: 21px
+                    max-width: 300px
+                    @media (max-width: 550px)
+                        padding: 24px 12px
+                    &_h5
+                        margin-top: 12px
+                    &_body
+                        color: #B5B6B6
+                        margin-top: 10px
+                    &_img
                         @media (max-width: 550px)
-                            row-gap: 10px
-                            margin-top: 24px
+                            width: 32px
 
-                    .right
-                        padding-top: 50px
-                        @media (max-width: 1000px)
-                            padding-top: 0px
-                    .left
-                        padding-bottom: 50px
-                        display: flex
-                        justify-content: right
-                        @media (max-width: 1000px)
-                            padding-bottom: 0px
+            &_right
+                padding-top: 50px
+                @media (max-width: 1000px)
+                    padding-top: 0px
+            &_left
+                padding-bottom: 50px
+                display: flex
+                justify-content: right
+                @media (max-width: 1000px)
+                    padding-bottom: 0px
 
-                    .element
-                        width: 100%
-                        padding: 20px 20px 30px
-                        background: rgba(255, 255, 255, 0.05)
-                        box-shadow: inset 0px 4px 11px rgba(255, 255, 255, 0.1)
-                        backdrop-filter: blur(41px)
-                        border-radius: 21px
-                        max-width: 300px
-                        @media (max-width: 550px)
-                            padding: 24px 12px
-                        h5
-                            margin-top: 12px
-                        .body
-                            color: #B5B6B6
-                            margin-top: 10px
-                        img
-                            @media (max-width: 550px)
-                                width: 32px
-                .text
-                    margin: auto 0
-                    .body:not(:first-child)
-                        margin-top: 40px
-                        @media (max-width: 550px)
-                            margin-top: 24px
-                    h5
-                        margin-top: 40px
-                        @media (max-width: 550px)
-                            margin-top: 16px
-                    .services_about_us_logos
-                        margin-top: 25px
-                        display: flex
-                        justify-content: space-between
-                        width: 100%
-                        @media (max-width: 550px)
-                            margin-top: 12px
-                        img
-                            @media (max-width: 550px)
-                                height: 16px
+        &_text
+            margin: auto 0
+            &_body:not(:first-child)
+                margin-top: 40px
+                @media (max-width: 550px)
+                    margin-top: 24px
+            &_h5
+                margin-top: 40px
+                @media (max-width: 550px)
+                    margin-top: 16px
+            &_services_about_us_logos
+                margin-top: 25px
+                display: flex
+                justify-content: space-between
+                width: 100%
+                @media (max-width: 550px)
+                    margin-top: 12px
+                &_img
+                    @media (max-width: 550px)
+                        height: 16px
 .offers
     margin-top: 74px
     @media (max-width: 550px)
         margin-top: 66px
-    .header
-        .body
+    &_header
+        &_body
             color: #B5B6B6
             margin-top: 12px
-    .offers_list
+    &_offers_list
         margin-top: 24px
         display: flex
         justify-content: space-around
@@ -651,10 +652,10 @@ header
             padding: 0px 15px
             margin: 24px -15px 0px
 
-        .offer:hover
+        &_offer:hover
             border: 1px solid rgba(55, 99, 255, 1)
             box-shadow: 0px 16px 60px rgba(71, 145, 255, 0.29)
-        .offer
+        &_offer
             width: 32%
             min-width: 300px
             background: rgba(79, 128, 255, 0.14)
@@ -664,26 +665,26 @@ header
             @media (max-width: 550px)
                 width: 100%
 
-            .header, .content
+            &_header, &_content
                 padding: 24px
                 @media (max-width: 550px)
                     padding: 12px
-            .header
-                .name
+            &_header
+                &_name
                     display: flex
                     column-gap: 10px
                     @media (max-width: 550px)
                         column-gap: 16px
-                    h4, .verified
+                    &_h4, &_verified
                         margin: auto 0
-                .light14
+                &_light14
                     margin-top: 5px
                     color: rgba(255, 255, 255, 0.74)
-                    .medium14
+                    &_medium14
                         color: #FFFFFF
                         @media (max-width: 550px)
                             margin-top: 8px
-                .tags
+                &_tags
                     display: flex
                     flex-wrap: wrap
                     margin-top: 10px
@@ -691,48 +692,48 @@ header
                     row-gap: 6px
                     @media (max-width: 550px)
                         margin-top: 12px
-                    .tag
+                    &_tag
                         padding: 4px 12px
                         background: #3763FF
                         border-radius: 6px
-                    .medium15
+                    &_medium15
                         @media (max-width: 550px)
                             font-size: 12px
                             line-height: 15px
                             letter-spacing: -0.02em
-            .chart
+            &_chart
                 padding-top: 20px
                 @media (max-width: 550px)
                     padding-top: 30px
-                img
+                &_img
                     margin-top: -10px
                     width: 100%
-                .price_wrapper
+                &_price_wrapper
                     display: flex
                     justify-content: center
                     margin-top: -6px
-                    .price
+                    &_price
                         padding: 4px 12px
                         background: rgba(79, 128, 255, 0.14)
                         border-radius: 6px
-            .content
+            &_content
                 margin-top: -20px
-                .info, .pnl
+                &_info, &_pnl
                     border-bottom: 1px solid rgba(79, 128, 255, 0.14)
                     padding-bottom: 20px
-                .pnl
-                    .medium15
+                &_pnl
+                    &_medium15
                         color: #B5B6B6
                         @media (max-width: 550px)
                             font-size: 12px
                             line-height: 15px
-                    .num
+                    &_num
                         margin-top: 6px
                         display: flex
                         justify-content: space-between
-                        h4 .percent
+                        &_h4 &_percent
                             margin: auto 0
-                        .percent
+                        &_percent
                             color: #1C1D1E
                             padding: 4px 12px
                             background: #ACE44F
@@ -740,40 +741,40 @@ header
                             @media (max-width: 550px)
                                 font-size: 15px
                                 line-height: 21px
-                .info
-                    .info_element
+                &_info
+                    &_info_element
                         margin-top: 18px
                         display: flex
                         justify-content: space-between
                         @media (max-width: 550px)
                             margin-top: 12px
-                        .name, .value
+                        &_name, &_value
                             margin: auto 0
-                        .name
+                        &_name
                             color: #B5B6B6
-                        .value
+                        &_value
                             padding: 2px 8px
                             background: rgba(55, 99, 255, 0.1)
                             border-radius: 11px
                             letter-spacing: -0.02em
-                        .regular14, .medium14
+                        &_regular14, &_medium14
                             @media (max-width: 550px)
                                 font-size: 12px
                                 line-height: 16px
-                .price
+                &_price
                     margin-top: 18px
-                    .medium15
+                    &_medium15
                         color: #B5B6B6
                         @media (max-width: 550px)
                             font-size: 12px
                             line-height: 16px
-                    .price_value
+                    &_price_value
                         margin-top: 6px
                         display: flex
                         column-gap: 8px
-                        .add_info_type_1, .add_info_type_2, h6
+                        &_add_info_type_1, &_add_info_type_2, &_h6
                             margin: auto 0
-                        .add_info_type_2
+                        &_add_info_type_2
                             background: rgba(149, 248, 164, 0.11)
                             border-radius: 11px
                             padding: 6px 12px
@@ -783,7 +784,7 @@ header
                             line-height: 17px
                             letter-spacing: -0.02em
                             color: #FFFFFF
-                        .add_info_type_1
+                        &_add_info_type_1
                             padding: 4px 12px
                             background: #ADFC06
                             border-radius: 7px
@@ -792,17 +793,17 @@ header
                             line-height: 17px
                             letter-spacing: -0.02em
                             color: #000000
-                        h6
+                        &_h6
                             @media (max-width: 550px)
                                 font-size: 18px
                                 line-height: 22px
-                            .light18
+                            &_light18
                                 padding-left: 6px
                                 color: rgba(255, 255, 255, 0.5)
                                 @media (max-width: 550px)
                                     font-size: 16px
                                     line-height: 19px
-                .buttons
+                &_buttons
                     margin-top: 20px
                     display: flex
                     justify-content: space-between
@@ -810,16 +811,16 @@ header
                     row-gap: 8px
                     @media (max-width: 550px)
                         margin-top: 16px
-                    button
+                    &_button
                         width: 144px
                         height: 57px
                         background: none
                         border-radius: 65px
                         @media (max-width: 550px)
                             width: 100%
-                    button:first-child
+                    &_button:first-child
                         background: #3763FF
-                    button:last-child
+                    &_button:last-child
                         border: 1px solid rgba(255, 255, 255, 0.25)
 .light_block_2
     width: 100%
