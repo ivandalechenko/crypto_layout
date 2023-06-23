@@ -1695,7 +1695,7 @@ h6 {
     padding: 0px 3px;
   }
 }
-.tutorial .tutorial_inner {
+.tutorial_inner {
   background: rgba(55, 99, 255, 0.1);
   border-radius: 32px;
   padding-top: 71px;
@@ -1703,85 +1703,85 @@ h6 {
   overflow: hidden;
 }
 @media (max-width: 550px) {
-  .tutorial .tutorial_inner {
+  .tutorial_inner {
     padding: 24px 2px;
   }
 }
 @media (max-width: 800px) {
-  .tutorial .tutorial_inner {
+  .tutorial_inner {
     padding-bottom: 402px;
   }
 }
-.tutorial .tutorial_inner .images {
+.tutorial_images {
   display: flex;
   justify-content: center;
 }
-.tutorial .tutorial_inner .images .chart {
+.tutorial_images_chart {
   top: 172px;
   left: -888px;
 }
 @media (max-width: 800px) {
-  .tutorial .tutorial_inner .images .chart {
+  .tutorial_images_chart {
     top: 573px;
   }
 }
-.tutorial .tutorial_inner .images .man {
+.tutorial_images_man {
   top: 41px;
   left: -46px;
 }
 @media (max-width: 800px) {
-  .tutorial .tutorial_inner .images .man {
+  .tutorial_images_man {
     top: 677px;
     left: -165px;
   }
-  .tutorial .tutorial_inner .images .man img {
+  .tutorial_images_man_img {
     width: 330px;
   }
 }
 @media (max-width: 550px) {
-  .tutorial .tutorial_inner .images .man {
+  .tutorial_images_man {
     top: 611px;
   }
 }
-.tutorial .tutorial_inner .images .waves {
+.tutorial_images_waves {
   top: 187px;
   left: -894px;
   z-index: -1;
 }
 @media (max-width: 800px) {
-  .tutorial .tutorial_inner .images .waves {
+  .tutorial_images_waves {
     top: 645px;
   }
 }
-.tutorial .tutorial_inner .images .light {
+.tutorial_images_light {
   top: -31px;
   left: -740px;
   z-index: 0;
 }
 @media (max-width: 800px) {
-  .tutorial .tutorial_inner .images .light {
+  .tutorial_images_light {
     top: 312px;
     left: -1282px;
   }
 }
-.tutorial .tutorial_inner .tutorial_header {
+.tutorial_header {
   position: relative;
-  z-index: 2;
+  z-index: 4;
 }
-.tutorial .tutorial_inner .tutorial_header .colored_text {
+.tutorial_header_colored_text {
   background: linear-gradient(90deg, #C6CBFF -6.86%, #FFC6E1 128.43%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
 }
-.tutorial .tutorial_inner .tutorial_header h2, .tutorial .tutorial_inner .tutorial_header .body {
+.tutorial_header_h2, .tutorial_header_body {
   margin-top: 12px;
 }
-.tutorial .tutorial_inner .tutorial_header .body {
+.tutorial_header_body {
   color: #B5B6B6;
 }
-.tutorial .tutorial_inner .path_to_earn {
+.tutorial_path_to_earn {
   position: relative;
   z-index: 2;
   margin-top: 41px;
@@ -1790,31 +1790,31 @@ h6 {
        column-gap: 39px;
 }
 @media (max-width: 550px) {
-  .tutorial .tutorial_inner .path_to_earn {
+  .tutorial_path_to_earn {
     -moz-column-gap: 19px;
          column-gap: 19px;
   }
 }
-.tutorial .tutorial_inner .path_to_earn .numbers {
+.tutorial_path_to_earn_numbers {
   padding: 7px 4px;
   height: 407px;
   background: linear-gradient(180deg, #287EFF 0%, #4200FF 34.9%, #AB1AFF 67.71%, rgba(188, 31, 255, 0) 100%);
   border-radius: 67px;
 }
 @media (max-width: 550px) {
-  .tutorial .tutorial_inner .path_to_earn .numbers {
+  .tutorial_path_to_earn_numbers {
     height: 333px;
   }
 }
 @media (max-width: 350px) {
-  .tutorial .tutorial_inner .path_to_earn .numbers {
+  .tutorial_path_to_earn_numbers {
     display: none;
   }
 }
-.tutorial .tutorial_inner .path_to_earn .numbers button:not(:first-child) {
+.tutorial_path_to_earn_numbers_button:not(:first-child) {
   margin-top: 64px;
 }
-.tutorial .tutorial_inner .path_to_earn .numbers button {
+.tutorial_path_to_earn_numbers_button {
   display: block;
   width: 50px;
   height: 50px;
@@ -1825,60 +1825,60 @@ h6 {
   line-height: 19px;
 }
 @media (max-width: 550px) {
-  .tutorial .tutorial_inner .path_to_earn .numbers button {
+  .tutorial_path_to_earn_numbers_button {
     font-size: 10.24px;
     line-height: 12px;
     width: 32px;
     height: 32px;
   }
 }
-.tutorial .tutorial_inner .path_to_earn .numbers button:hover {
+.tutorial_path_to_earn_numbers_button:hover {
   opacity: 1;
   cursor: default;
 }
-.tutorial .tutorial_inner .path_to_earn .steps .step:not(:first-child) {
+.tutorial_path_to_earn_steps_step:not(:first-child) {
   margin-top: 56px;
 }
 @media (max-width: 550px) {
-  .tutorial .tutorial_inner .path_to_earn .steps .step:not(:first-child) {
+  .tutorial_path_to_earn_steps_step:not(:first-child) {
     margin-top: 43px;
   }
 }
-.tutorial .tutorial_inner .path_to_earn .steps .step .location_and_time {
+.tutorial_path_to_earn_steps_step_location_and_time {
   display: flex;
   -moz-column-gap: 12px;
        column-gap: 12px;
 }
 @media (max-width: 400px) {
-  .tutorial .tutorial_inner .path_to_earn .steps .step .location_and_time {
+  .tutorial_path_to_earn_steps_step_location_and_time {
     -moz-column-gap: 8px;
          column-gap: 8px;
   }
 }
-.tutorial .tutorial_inner .path_to_earn .steps .step .location_and_time h4, .tutorial .tutorial_inner .path_to_earn .steps .step .location_and_time .time, .tutorial .tutorial_inner .path_to_earn .steps .step .location_and_time img {
+.tutorial_path_to_earn_steps_step_location_and_time_h4, .tutorial_path_to_earn_steps_step_location_and_time_time, .tutorial_path_to_earn_steps_step_location_and_time_img {
   margin: auto 0;
 }
-.tutorial .tutorial_inner .path_to_earn .steps .step .location_and_time h4 {
+.tutorial_path_to_earn_steps_step_location_and_time_h4 {
   padding-right: 12px;
   border-right: 1px solid rgba(255, 255, 255, 0.25);
 }
 @media (max-width: 400px) {
-  .tutorial .tutorial_inner .path_to_earn .steps .step .location_and_time h4 {
+  .tutorial_path_to_earn_steps_step_location_and_time_h4 {
     padding-right: 8px;
   }
 }
-.tutorial .tutorial_inner .path_to_earn .steps .step .location_and_time .medium15 {
+.tutorial_path_to_earn_steps_step_location_and_time_medium15 {
   padding: 4px 12px;
   background: #3763FF;
   border-radius: 62px;
 }
 @media (max-width: 550px) {
-  .tutorial .tutorial_inner .path_to_earn .steps .step .location_and_time .medium15 {
+  .tutorial_path_to_earn_steps_step_location_and_time_medium15 {
     font-size: 13px;
     line-height: 20px;
   }
 }
-.tutorial .tutorial_inner .path_to_earn .steps .step .body {
+.tutorial_path_to_earn_steps_step_body {
   margin-top: 6px;
   color: #B5B6B6;
 }
