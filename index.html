@@ -9,9 +9,9 @@
 
 </head>
 
-<body>
+<body id='body'>
     <div class="lb1">
-        <div class="lb1_light">
+        <div class="lb1_light" id="lb1">
             <div class="lb1_light_line free_image">
                 <img class="lozad" src="img/usp_images/line.webp" alt="">
             </div>
@@ -28,50 +28,93 @@
                 <!-- <img class="lozad lb1_light_el4_img" src="img/usp_images/el4.svg" alt=""> -->
             </div>
         </div>
-        <header class="header">
+        <header class="header" id="header">
             <div class="header_container container">
-                <div class="header_navigation">
-                    <div class="header_navigation_logo">
-                        <div class="header_navigation_logo_img">
-                            <img class="lozad" src="img/logo.svg" alt="">
+                <div class="header_pc">
+                    <div class="header_navigation">
+                        <div class="header_navigation_logo">
+                            <div class="header_navigation_logo_img">
+                                <img class="lozad" src="img/logo.svg" alt="">
+                            </div>
+                            <div class="header_navigation_logo_text">
+                                TradeCoinAi
+                            </div>
                         </div>
-                        <div class="header_navigation_logo_text">
-                            TradeCoinAi
+                        <div class="header_navigation_links">
+                            <a href="#" class="header_navigation_links_a medium15">All trades</a>
+                            <a href="#" class="header_navigation_links_a medium15">How it works</a>
+                            <a href="#" class="header_navigation_links_a medium15">Pricing</a>
+                            <a href="#" class="header_navigation_links_a medium15">Trading</a>
                         </div>
                     </div>
-                    <div class="header_navigation_links">
-                        <a href="#" class="header_navigation_links_a medium15">All trades</a>
-                        <a href="#" class="header_navigation_links_a medium15">How it works</a>
-                        <a href="#" class="header_navigation_links_a medium15">Pricing</a>
-                        <a href="#" class="header_navigation_links_a medium15">Trading</a>
+                    <div class="header_buttons">
+                        <div class="header_buttons_lang">
+                            <div class="header_buttons_lang_img">
+                                <img class="lozad" src="img/flags/usa.png" alt="">
+                            </div>
+                            <div class="header_buttons_lang_btn btn">
+                                English
+                            </div>
+                            <div class="header_buttons_lang_dd_btn">
+                                <img class="lozad header_buttons_lang_dd_btn_img" src="img/flags/arrow_down.png" alt="">
+                            </div>
+                        </div>
+                        <div class="header_buttons_try_now">
+                            <button class="header_buttons_try_now_btn btn">
+                                Try now
+                            </button>
+                        </div>
+                        <div class="header_buttons_burger">
+                            <button class="header_buttons_burger_btn" id="burger_menu_button">
+                                <img class="lozad" src="img/burger.svg">
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <div class="header_buttons">
-                    <div class="header_buttons_lang">
-                        <div class="header_buttons_lang_img">
-                            <img class="lozad" src="img/flags/usa.png" alt="">
-                        </div>
-                        <div class="header_buttons_lang_btn btn">
-                            English
-                        </div>
-                        <div class="header_buttons_lang_dd_btn">
-                            <img class="lozad header_buttons_lang_dd_btn_img" src="img/flags/arrow_down.png" alt="">
-                        </div>
+                <div class="header_mobile" id="mobile_menu" style="height: 0px">
+                    <div class="header_mobile_menu_element">
+                        <a href="#" class="header_mobile_menu_element_a medium15">All trades</a>
                     </div>
-                    <div class="header_buttons_try_now">
-                        <button class="header_buttons_try_now_btn btn">
-                            Try now
+                    <div class="header_mobile_menu_element">
+                        <a href="#" class="header_mobile_menu_element_a medium15">How it works</a>
+                    </div>
+                    <div class="header_mobile_menu_element">
+                        <a href="#" class="header_mobile_menu_element_a medium15">Pricing</a>
+                    </div>
+                    <div class="header_mobile_menu_element">
+                        <a href="#" class="header_mobile_menu_element_a medium15">Trading</a>
+                    </div>
+                    <div class="header_mobile_menu_element">
+                        <button
+                            class="header_mobile_menu_element_button header_mobile_menu_element_button_active btn"><img
+                                src="img/flags/usa.png">
+                            <div class="text">English</div>
                         </button>
-                    </div>
-                    <div class="header_buttons_burger">
-                        <button class="header_buttons_burger_btn">
-                            <img class="lozad" src="img/burger.svg">
+                        <button
+                            class="header_mobile_menu_element_button header_mobile_menu_element_button_active btn"><img
+                                src="img/flags/usa.png">
+                            <div class="text">English</div>
+                        </button>
+                        <button
+                            class="header_mobile_menu_element_button header_mobile_menu_element_button_active btn"><img
+                                src="img/flags/usa.png">
+                            <div class="text">English</div>
+                        </button>
+                        <button
+                            class="header_mobile_menu_element_button header_mobile_menu_element_button_active btn"><img
+                                src="img/flags/usa.png">
+                            <div class="text">English</div>
+                        </button>
+                        <button
+                            class="header_mobile_menu_element_button header_mobile_menu_element_button_active btn"><img
+                                src="img/flags/usa.png">
+                            <div class="text">English</div>
                         </button>
                     </div>
                 </div>
             </div>
         </header>
-        <div class="usp">
+        <div class="usp" id="usp">
             <div class="usp_container container">
                 <div class="usp_images">
                     <div class="usp_images_chart free_image">
@@ -1346,11 +1389,10 @@
                                 things.
                             </div>
                         </div>
-                        <div class="faq_questions_question_question_arrow">
-                            <img class="lozad faq_questions_question_question_arrow_plus" src="img/quest/plus.svg">
-                            <img class="lozad faq_questions_question_question_arrow_plus_mob"
-                                src="img/quest/plus_mob.svg">
-                            <img class="lozad faq_questions_question_question_arrow_minus" src="img/quest/minus.svg">
+                        <div class="faq_questions_question_question_arrow faq_questions_question_show">
+                            <img class="lozad plus" src="img/quest/plus.svg">
+                            <img class="lozad plus_mob" src="img/quest/plus_mob.svg">
+                            <img class="lozad minus" src="img/quest/minus.svg">
                         </div>
                     </div>
                     <div class="faq_questions_question">
@@ -1368,10 +1410,9 @@
                             </div>
                         </div>
                         <div class="faq_questions_question_question_arrow">
-                            <img class="lozad faq_questions_question_question_arrow_plus" src="img/quest/plus.svg">
-                            <img class="lozad faq_questions_question_question_arrow_plus_mob"
-                                src="img/quest/plus_mob.svg">
-                            <img class="lozad faq_questions_question_question_arrow_minus" src="img/quest/minus.svg">
+                            <img class="lozad plus" src="img/quest/plus.svg">
+                            <img class="lozad plus_mob" src="img/quest/plus_mob.svg">
+                            <img class="lozad minus" src="img/quest/minus.svg">
                         </div>
                     </div>
                     <div class="faq_questions_question">
@@ -1388,10 +1429,9 @@
                             </div>
                         </div>
                         <div class="faq_questions_question_question_arrow">
-                            <img class="lozad faq_questions_question_question_arrow_plus" src="img/quest/plus.svg">
-                            <img class="lozad faq_questions_question_question_arrow_plus_mob"
-                                src="img/quest/plus_mob.svg">
-                            <img class="lozad faq_questions_question_question_arrow_minus" src="img/quest/minus.svg">
+                            <img class="lozad plus" src="img/quest/plus.svg">
+                            <img class="lozad plus_mob" src="img/quest/plus_mob.svg">
+                            <img class="lozad minus" src="img/quest/minus.svg">
                         </div>
                     </div>
                     <div class="faq_questions_question">
@@ -1408,10 +1448,9 @@
                             </div>
                         </div>
                         <div class="faq_questions_question_question_arrow">
-                            <img class="lozad faq_questions_question_question_arrow_plus" src="img/quest/plus.svg">
-                            <img class="lozad faq_questions_question_question_arrow_plus_mob"
-                                src="img/quest/plus_mob.svg">
-                            <img class="lozad faq_questions_question_question_arrow_minus" src="img/quest/minus.svg">
+                            <img class="lozad plus" src="img/quest/plus.svg">
+                            <img class="lozad plus_mob" src="img/quest/plus_mob.svg">
+                            <img class="lozad minus" src="img/quest/minus.svg">
                         </div>
                     </div>
                 </div>

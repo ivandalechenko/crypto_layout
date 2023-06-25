@@ -37,7 +37,7 @@ a:hover, button:hover
 a
     text-decoration: none
 body
-    background: #000000
+    background: rgb(9, 10, 11)
 
 .secure
     margin-top: 34px
@@ -210,10 +210,20 @@ h6
     line-height: 15px
     letter-spacing: -0.02em
 
+.filter_blur
+    filter: blur(4px) brightness(0.5)
+.no_scroll
+    height: 100vh
+    overflow: hidden
 .header
     position: relative
     z-index: 2
-    &_container
+    &_mobile
+        // display: none
+        overflow: hidden
+        transition: height 500ms
+        -webkit-transition: height 500ms
+    &_pc
         height: 80px
         display: flex
         justify-content: space-between
@@ -271,7 +281,7 @@ h6
             justify-content: space-between
             column-gap: 12px
             padding-top: 8px
-            @media(max-width: 550px)
+            @media(max-width: 850px)
                 display: none
             &_dd_btn
                 &_img
@@ -286,12 +296,46 @@ h6
                     width: 95px
                     height: 36px
 
+.show_mobile_menu
+    background: rgb(9, 10, 11)
+    border-radius: 0px 0px 24px 24px
+    .header_mobile
+        display: block
+        background: rgb(9, 10, 11)
+        &_menu_element
+            margin: 0px -15px
+            text-align: center
+            padding: 16px 0px
+            border-bottom: 1px solid rgba(255,255,255,0.1)
+            &_a
+                color: #B5B6B6
+            &_button:first-child
+                margin-left: 15px
+            &_button
+                padding: 12px 16px
+                background: rgba(255, 255, 255, 0.05)
+                border-radius: 22px
+                display: flex
+                column-gap: 12px
+                img, .text
+                    margin: auto 0
+                &_active
+                    background: #3763FF
+
+        &_menu_element:last-child
+            border-bottom: none
+            border-radius: 0px 0px 24px 24px
+            display: flex
+            justify-content: left
+            column-gap: 8px
+            overflow: auto
 .lb1
     width: 100%
     overflow: hidden
     &_light
         display: flex
         justify-content: center
+        transition: filter 500ms
         &_el1_svg
             top: 322px
             z-index: 1
@@ -308,7 +352,7 @@ h6
             z-index: 1
             left: -1074px
             @media (max-width: 550px)
-                top: -281px
+                top: -60px
                 left: -601px
                 z-index: 0
                 &_img
@@ -351,6 +395,7 @@ h6
             @media (max-width: 550px)
                 display: none
 .usp
+    transition: filter 500ms
     padding-top: 90px
     padding-bottom: 350px
     width: 100%
@@ -431,7 +476,7 @@ h6
                     box-shadow: -6.30289px -10.3138px 21.7736px #6735F4, 10.3138px 22.3466px 26.9305px 0.57299px rgba(0, 0, 0, 0.64)
                     border-radius: 10.3138px
         &_usdt
-            z-index: 2
+            z-index: 3
             top: 416px
             left: 325px
             @media (max-width: 900px)
@@ -1576,21 +1621,21 @@ h6
                 height: 36px
                 @media (max-width: 550px)
                     order: 1
-                &_minus
+                .minus
                     display: none
-                &_plus_mob
+                .plus_mob
                     display: none
                 @media (max-width: 550px)
-                    &_plus_mob
+                    .plus_mob
                         display: block
-                    &_plus
+                    .plus
                         display: none
             &_show
-                &_minus
+                .minus
                     display: block
-                &_plus
+                .plus
                     display: none
-                &_plus_mob
+                .plus_mob
                     display: none
             &_dot, &_text, &_question_arrow
                 margin: auto 0

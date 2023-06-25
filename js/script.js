@@ -1,4 +1,23 @@
 document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById('burger_menu_button').onclick = () => {
+        elBlock = document.getElementById('mobile_menu')
+        if (elBlock.style.height === "0px") {
+            document.getElementById('header').classList.add('show_mobile_menu')
+            document.getElementById('usp').classList.add('filter_blur')
+            document.getElementById('lb1').classList.add('filter_blur')
+            document.getElementById('body').classList.add('no_scroll')
+            elBlock.style.height = `${elBlock.scrollHeight}px`
+
+        } else {
+            document.getElementById('body').classList.remove('no_scroll')
+            document.getElementById('lb1').classList.remove('filter_blur')
+            document.getElementById('usp').classList.remove('filter_blur')
+            elBlock.style.height = `${elBlock.scrollHeight}px`;
+            window.getComputedStyle(elBlock, null).getPropertyValue("height");
+            elBlock.style.height = "0";
+            setTimeout(() => { document.getElementById('header').classList.remove('show_mobile_menu') }, 400);
+        }
+    }
     var elements = document.querySelectorAll(".faq_questions_question");
     for (var i = 0; i < elements.length; i++) {
         elements[i].onclick = function () {
