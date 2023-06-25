@@ -300,6 +300,11 @@ h6 {
   overflow: hidden;
   transition: height 500ms;
   -webkit-transition: height 500ms;
+  height: 305px;
+  position: absolute;
+  width: 100%;
+  margin: 0px -15px;
+  padding: 0px 15px;
 }
 .header_pc {
   height: 80px;

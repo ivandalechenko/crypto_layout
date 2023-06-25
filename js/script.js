@@ -34,19 +34,25 @@ document.addEventListener("DOMContentLoaded", () => {
         };
     }
     // Плавная прокрутка к якорям
-    const anchors = document.querySelectorAll('a[href*="#"]')
-    for (let anchor of anchors) {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault()
+    document.querySelectorAll('a[href^="#"').forEach(link => {
 
-            const blockID = anchor.getAttribute('href').substr(1)
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
 
-            document.getElementById(blockID).scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            })
-        })
-    }
+            let href = this.getAttribute('href').substring(1);
+
+            const scrollTarget = document.getElementById(href);
+
+            const topOffset = 70; // если не нужен отступ сверху 
+            const elementPosition = scrollTarget.getBoundingClientRect().top;
+            const offsetPosition = elementPosition - topOffset;
+
+            window.scrollBy({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        });
+    });
     // Показ и скрытие ответов к вопросам
     var elements = document.querySelectorAll(".faq_questions_question");
     for (var i = 0; i < elements.length; i++) {
