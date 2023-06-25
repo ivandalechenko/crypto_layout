@@ -3,21 +3,31 @@ document.addEventListener("DOMContentLoaded", () => {
         elBlock = document.getElementById('mobile_menu')
         if (elBlock.style.height === "0px") {
             document.getElementById('header').classList.add('show_mobile_menu')
-            // document.getElementById('usp').classList.add('filter_blur')
-            // document.getElementById('lb1').classList.add('filter_blur')
+            document.getElementById('usp').classList.add('filter_blur')
+            document.getElementById('lb1').classList.add('filter_blur')
             document.getElementById('body').classList.add('no_scroll')
             elBlock.style.height = `${elBlock.scrollHeight}px`
 
         } else {
-            document.getElementById('body').classList.remove('no_scroll')
-            // document.getElementById('lb1').classList.remove('filter_blur')
-            // document.getElementById('usp').classList.remove('filter_blur')
-            elBlock.style.height = `${elBlock.scrollHeight}px`;
-            window.getComputedStyle(elBlock, null).getPropertyValue("height");
-            elBlock.style.height = "0";
-            setTimeout(() => { document.getElementById('header').classList.remove('show_mobile_menu') }, 400);
+            hide_menu()
         }
     }
+    function hide_menu() {
+        document.getElementById('body').classList.remove('no_scroll')
+        document.getElementById('lb1').classList.remove('filter_blur')
+        document.getElementById('usp').classList.remove('filter_blur')
+        document.getElementById('mobile_menu').style.height = `${elBlock.scrollHeight}px`;
+        window.getComputedStyle(document.getElementById('mobile_menu'), null).getPropertyValue("height");
+        document.getElementById('mobile_menu').style.height = "0";
+        setTimeout(() => { document.getElementById('header').classList.remove('show_mobile_menu') }, 400);
+    }
+    var elements = document.querySelectorAll(".header_mobile_menu_element_a");
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].onclick = function () {
+            hide_menu()
+        };
+    }
+
     var elements = document.querySelectorAll(".faq_questions_question");
     for (var i = 0; i < elements.length; i++) {
         elements[i].onclick = function () {

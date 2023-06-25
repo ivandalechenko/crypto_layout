@@ -284,7 +284,7 @@ h6 {
 }
 
 .filter_blur {
-  filter: blur(4px) brightness(0.5);
+  filter: brightness(0.5);
 }
 
 .no_scroll {
