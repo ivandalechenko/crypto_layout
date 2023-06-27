@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;700&family=Inter:wght@100;200;300;600;700;800;900&display=swap')
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section
+    display: block
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button
+    margin: 0
+    padding: 0
+    border: 0
+    font-size: 100%
+    font: inherit
+    vertical-align: baseline
+    box-sizing: border-box
+    color: white
+    transition: .3s
+    font-family: 'Montserrat'
+img, svg
+    transition: .3s
+a:hover, button:hover
+    cursor: pointer
+    opacity: .6
+
+.free_image
+    width: 0px
+    height: 0px
+    position: relative
+
+.dnone
+    display: none
+a
+    text-decoration: none
+
+body
+    background-color: #000000
+
+.elements
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    .left
+        width: 50%
+        @media (max-width: 800px)
+            width: 100%
+        .container
+            padding-top: 170px
+            width: 500px
+            margin: 0 auto
+            padding-left: 140px
+            display: flex
+            justify-content: center
+            flex-wrap: wrap
+            @media (max-width: 1150px)
+                padding-left: 0px
+                width: 100%
+                padding: 0px 15px
+                padding-top: 170px
+            @media (max-width: 800px)
+                max-width: 500px
+                padding-top: 15px
+
+        .logo
+            width: 100%
+            display: flex
+            justify-content: center
+            column-gap: 16px
+            .text, img
+                margin: auto 0
+            .text
+                color: white
+                font-size: 18.264px
+                font-family: Inter Tight
+                font-weight: 700
+                letter-spacing: -0.365px
+        h1
+            font-size: 36px
+            color: #ffff
+            font-family: 'Inter Tight'
+            font-weight: 700
+            margin-top: 22px
+            letter-spacing: -0.72px
+            @media (max-width: 800px)
+                margin-top: 32px
+                font-size: 24px
+                letter-spacing: -0.48px
+        h2
+            color: #B5B6B6
+            font-size: 16px
+            font-family: "Inter"
+            margin-top: 16px
+            font-weight: 300
+            @media (max-width: 800px)
+                margin-top: 6px
+                font-size: 14px
+        .log_reg_switcher_buttons
+            display: flex
+            justify-content: center
+            background-color: rgba(255, 255, 255, 0.05)
+            border-radius: 12px
+            margin-top: 20px
+            padding: 4px
+            column-gap: 8px
+            @media (max-width: 800px)
+                margin-top: 16px
+            button
+                background-color: transparent
+                width: 176px
+                height: 47px
+                font-size: 16px
+                font-family: Inter Tight
+                font-weight: 700
+                letter-spacing: -0.32px
+                border-radius: 12px
+                @media (max-width: 800px)
+                    width: 160px
+                    height: 44px
+                @media (max-width: 400px)
+                    width: 130px
+                    height: 40px
+            .active
+                background-color: rgba(255, 255, 255, 0.1)
+        .input_block:first-child
+            margin-top: 20px
+        .input_block
+            margin-top: 10px
+            border-radius: 11px
+            width: 100%
+            padding: 13px 20px
+            border: 1px solid #272829
+            display: flex
+            column-gap: 16px
+            max-width: 360px
+            img, .label_and_input
+                margin: auto 0
+            .label_and_input
+                padding-left: 16px
+                border-left: 1px solid #272829
+                display: flex
+                justify-content: left
+                row-gap: 4px
+                flex-wrap: wrap
+                .label
+                    color: #B5B6B6
+                    font-size: 12px
+                    font-family: "Inter"
+                    font-weight: 500
+                    letter-spacing: -0.24px
+                    width: 100%
+                input
+                    background: none
+                    border: none
+                    color: white
+                    outline: none
+                    font-size: 15px
+                    font-family: "Inter"
+                    font-weight: 500
+                    line-height: 20px
+                    @media (max-width: 500px)
+                        font-size: 12px
+
+        .login_button
+            button
+                color: #ffff
+                width: 366px
+                height: 57px
+                background-color: rgba(55, 99, 255, 1)
+                border-radius: 65px
+                padding: 19px 44px 19px 44px
+                font-size: 16px
+                font-family: "Inter Tight"
+                font-weight: 700
+                letter-spacing: -0.32px
+                margin-top: 20px
+                @media (max-width: 400px)
+                    max-width: 280px
+        .forgot_password
+            display: flex
+            justify-content: center
+            margin-top: 20px
+            column-gap: 8px
+            .text, .a
+                margin: auto 0
+            .text
+                color: #B5B6B6
+                font-size: 14px
+                font-family: Inter
+                line-height: 20px
+            .a
+                a
+                    color: #D9E44F
+                    font-size: 14px
+                    font-family: Inter Tight
+                    font-weight: 700
+                    letter-spacing: -0.28px
+
+    .right
+        width: 50%
+        min-height: 100vh
+        background: linear-gradient(180deg, rgba(18, 70, 255, 0.68) 0%, rgba(18, 47, 147, 0.00) 100%)
+        overflow: hidden
+        @media (max-width: 800px)
+            width: 100%
+            background: linear-gradient(0deg, rgba(18, 70, 255, 0.68) 0%, rgba(18, 47, 147, 0.00) 100%)
+            min-height: auto
+            height: 500px
+            display: flex
+            justify-content: center
+        .line
+            left: -34px
+            top: -39px
+            @media (max-width: 1050px)
+                left: -100px
+            @media (max-width: 800px)
+                left: -365px
+                top: -25px
+                img
+                    width: 600px
+        .safe
+            left: 13px
+            top: 333px
+            animation: safe_anim 12s infinite alternate ease-in-out
+            @media (max-width: 1050px)
+                left: -100px
+            @media (max-width: 800px)
+                left: -235px
+                top: 157px
+                img
+                    width: 400px
+            @keyframes safe_anim
+                0%
+                    transform: translate(0px, 0px)
+                100%
+                    transform: translate(90px, 10px)
+        .eth
+            left: 297px
+            top: 255px
+            animation: eth_anim 14s infinite alternate ease-in-out
+            @media (max-width: 1050px)
+                left: 200px
+            @media (max-width: 800px)
+                left: 9px
+                top: 111px
+                img
+                    width: 130px
+            @keyframes eth_anim
+                0%
+                    transform: translate(0px, 0px)
+                100%
+                    transform: translate(100px, -100px)
+
+        .btc
+            left: 57px
+            top: -22px
+            animation: btc_anim 20s infinite alternate ease-in-out
+            @media (max-width: 1050px)
+                left: -50px
+            @media (max-width: 800px)
+                left: -219px
+                top: 20px
+                img
+                    width: 210px
+            @keyframes btc_anim
+                0%
+                    transform: translate(0px, 0px)
+                100%
+                    transform: translate(-20px, 90px)
