@@ -328,7 +328,7 @@ h6
                 &_active
                     background: #3763FF
 
-        &_menu_element:last-child
+        &_menu_element_last
             border-bottom: none
             border-radius: 0px 0px 24px 24px
             display: flex
@@ -552,8 +552,6 @@ h6
                 max-width: 300px
                 min-width: 160px
                 height: 48px
-                background: #3763FF
-                color: white
         &_btns_mobile_download
             margin-top: 32px
             display: flex
@@ -1262,12 +1260,16 @@ h6
             @media (max-width: 800px)
                 top: 645px
         &_light
-            top: -31px
-            left: -740px
+
+            top: -380px
+            left: -335px
+            transform: rotate(18deg)
             z-index: 0
+            opacity: 0.7
             @media (max-width: 800px)
                 top: 312px
                 left: -1282px
+                transform: rotate(0deg)
     &_header
         position: relative
         z-index: 4
@@ -1541,17 +1543,19 @@ h6
 .lb3
     overflow: hidden
     &_images
+        display: flex
+        justify-content: center
         @media (max-width: 550px)
             display: none
         &_light1
             top: 351px
-            left: -828px
+            left: -1563px
         &_light2
             top: 32px
-            left: -210px
+            left: -880px
         &_light3
             top: 113px
-            left: 928px
+            left: 28px
 
 .faq
     position: relative
