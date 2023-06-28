@@ -778,7 +778,7 @@ h6
             box-shadow: 0px 16px 60px rgba(71, 145, 255, 0.29)
         &_offer
             width: 32%
-            min-width: 300px
+            min-width: 302px
             background: rgba(79, 128, 255, 0.14)
             border: 1px solid rgba(55, 99, 255, 0)
             border-radius: 12px
@@ -1330,6 +1330,10 @@ h6
             text-fill-color: transparent
         &_h2, &_body
             margin-top: 12px
+        &_h2
+            width: 600px
+            @media (max-width: 800px)
+                width: 100%
         &_body
             color: #B5B6B6
     &_path_to_earn
@@ -1341,14 +1345,15 @@ h6
         @media (max-width: 550px)
             column-gap: 19px
         &_numbers_fone
-            width: 0px
             height: auto
-            &_inner
+            width: 58px
+            background: linear-gradient(180deg, #287EFF 0%, #4200FF 34.9%, #AB1AFF 67.71%, rgba(188, 31, 255, 0) 95%)
+            border-radius: 67px
+            @media (max-width: 550px)
+                width: 40px
         &_numbers
             padding: 7px 4px
             height: 407px
-            background: linear-gradient(180deg, #287EFF 0%, #4200FF 34.9%, #AB1AFF 67.71%, rgba(188, 31, 255, 0) 100%)
-            border-radius: 67px
             @media (max-width: 550px)
                 height: 333px
             @media (max-width: 350px)
@@ -1374,12 +1379,21 @@ h6
                 opacity: 1
                 cursor: default
         &_steps
+            margin-left: -92px
+            margin-top: 9px
+            width: 550px
+            @media (max-width: 800px)
+                width: 100%
+            @media (max-width: 550px)
+                margin-left: -55px
+                margin-top: 5px
             &_step:not(:first-child)
                 margin-top: 62px
                 @media (max-width: 550px)
                     margin-top: 43px
-
             &_step
+                display: flex
+                column-gap: 30px
                 &_location_and_time
                     display: flex
                     column-gap: 12px
@@ -1421,61 +1435,84 @@ h6
     &_images
         display: flex
         justify-content: center
-        &_bybit
-            top: 15px
-            left: 223px
+        &_rocket
+            top: -319px
+            left: -928px
+            z-index: 0
+            @media (max-width: 900px)
+                top: -130px
+                left: -728px
+                &_img
+                    width: 1000px
             @media (max-width: 550px)
-                top: 216px
+                top: -20px
+                left: -524px
+                &_img
+                    width: 700px
+        &_bybit
+            top: -211px
+            left: 223px
+            @media (max-width: 900px)
+                top: 67px
+                left: -229px
+
+            @media (max-width: 550px)
+                top: 30px
                 left: -88px
                 &_img
                     width: 50px
         &_circles
-            top: 127px
+            top: -99px
             left: -395px
             z-index: 0
             @media (max-width: 550px)
-                top: 273px
+                top: 47px
                 &_img
                     width: 578px
         &_btc
-            top: -45px
-            left: -13px
+            top: -291px
+            left: 25px
+            @media (max-width: 1100px)
+                top: -340px
+                left: 80px
+            @media (max-width: 900px)
+                top: 3px
+                left: -410px
             @media (max-width: 550px)
-                top: 210px
+                top: -16px
                 left: -251px
                 &_img
                     width: 130px
-        &_rocket
-            top: -93px
-            left: -928px
-            z-index: 0
-            @media (max-width: 550px)
-                top: 140px
-                left: -524px
-                &_img
-                    width: 700px
-
         &_eth
-            top: 161px
+            top: -65px
             left: 408px
+            @media (max-width: 900px)
+                top: -26px
+                left: -113px
             @media (max-width: 550px)
-                top: 334px
+                top: 148px
                 left: 77px
                 &_img
                     width: 70px
         &_usd_t
-            top: 20px
+            top: -206px
             left: 458px
+            @media (max-width: 900px)
+                top: 17px
+                left: 228px
             @media (max-width: 550px)
-                top: 280px
+                top: 54px
                 left: 146px
                 &_img
                     width: 30px
         &_btc_l
-            top: 149px
+            top: -77px
             left: 238px
+            @media (max-width: 900px)
+                top: -116px
+                left: -34px
             @media (max-width: 550px)
-                top: 253px
+                top: 60px
                 left: -101px
                 &_img
                     width: 500px
@@ -1493,6 +1530,12 @@ h6
             text-fill-color: transparent
         &_h2, &_body
             margin-top: 12px
+        &_h2
+            width: 100%
+            max-width: 586px
+        &_body
+            width: 100%
+            max-width: 586px
         &_button
             margin-top: 12px
             padding: 19px 44px

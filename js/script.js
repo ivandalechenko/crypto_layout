@@ -120,8 +120,10 @@ document.addEventListener("DOMContentLoaded", () => {
     faq.forEach(function (aq, i, faq) {
         if (i == 0) {
             var style = 'style="margin-top: 8px"'
+            var style2 = 'faq_questions_question_show'
         } else {
             var style = 'style="height: 0px"'
+            var style2 = ''
         }
         document.getElementById('faq_list').innerHTML += `
             <div class="faq_questions_question">
@@ -136,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     `+ aq['answer'] + `
                     </div>
                 </div>
-                <div class="faq_questions_question_question_arrow faq_questions_question_show">
+                <div class="faq_questions_question_question_arrow `+ style2 + `">
                     <img class="lozad plus" src="img/quest/plus.svg">
                     <img class="lozad plus_mob" src="img/quest/plus_mob.svg">
                     <img class="lozad minus" src="img/quest/minus.svg">

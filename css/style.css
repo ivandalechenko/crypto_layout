@@ -1135,7 +1135,7 @@ h6 {
 }
 .offers_offers_list_offer {
   width: 32%;
-  min-width: 300px;
+  min-width: 302px;
   background: rgba(79, 128, 255, 0.14);
   border: 1px solid rgba(55, 99, 255, 0);
   border-radius: 12px;
@@ -1968,6 +1968,14 @@ h6 {
 .tutorial_header_h2, .tutorial_header_body {
   margin-top: 12px;
 }
+.tutorial_header_h2 {
+  width: 600px;
+}
+@media (max-width: 800px) {
+  .tutorial_header_h2 {
+    width: 100%;
+  }
+}
 .tutorial_header_body {
   color: #B5B6B6;
 }
@@ -1986,14 +1994,19 @@ h6 {
   }
 }
 .tutorial_path_to_earn_numbers_fone {
-  width: 0px;
   height: auto;
+  width: 58px;
+  background: linear-gradient(180deg, #287EFF 0%, #4200FF 34.9%, #AB1AFF 67.71%, rgba(188, 31, 255, 0) 95%);
+  border-radius: 67px;
+}
+@media (max-width: 550px) {
+  .tutorial_path_to_earn_numbers_fone {
+    width: 40px;
+  }
 }
 .tutorial_path_to_earn_numbers {
   padding: 7px 4px;
   height: 407px;
-  background: linear-gradient(180deg, #287EFF 0%, #4200FF 34.9%, #AB1AFF 67.71%, rgba(188, 31, 255, 0) 100%);
-  border-radius: 67px;
 }
 @media (max-width: 550px) {
   .tutorial_path_to_earn_numbers {
@@ -2030,6 +2043,22 @@ h6 {
   opacity: 1;
   cursor: default;
 }
+.tutorial_path_to_earn_steps {
+  margin-left: -92px;
+  margin-top: 9px;
+  width: 550px;
+}
+@media (max-width: 800px) {
+  .tutorial_path_to_earn_steps {
+    width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  .tutorial_path_to_earn_steps {
+    margin-left: -55px;
+    margin-top: 5px;
+  }
+}
 .tutorial_path_to_earn_steps_step:not(:first-child) {
   margin-top: 62px;
 }
@@ -2037,6 +2066,11 @@ h6 {
   .tutorial_path_to_earn_steps_step:not(:first-child) {
     margin-top: 43px;
   }
+}
+.tutorial_path_to_earn_steps_step {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 .tutorial_path_to_earn_steps_step_location_and_time {
   display: flex;
@@ -2101,13 +2135,42 @@ h6 {
   display: flex;
   justify-content: center;
 }
+.chance_images_rocket {
+  top: -319px;
+  left: -928px;
+  z-index: 0;
+}
+@media (max-width: 900px) {
+  .chance_images_rocket {
+    top: -130px;
+    left: -728px;
+  }
+  .chance_images_rocket_img {
+    width: 1000px;
+  }
+}
+@media (max-width: 550px) {
+  .chance_images_rocket {
+    top: -20px;
+    left: -524px;
+  }
+  .chance_images_rocket_img {
+    width: 700px;
+  }
+}
 .chance_images_bybit {
-  top: 15px;
+  top: -211px;
   left: 223px;
+}
+@media (max-width: 900px) {
+  .chance_images_bybit {
+    top: 67px;
+    left: -229px;
+  }
 }
 @media (max-width: 550px) {
   .chance_images_bybit {
-    top: 216px;
+    top: 30px;
     left: -88px;
   }
   .chance_images_bybit_img {
@@ -2115,52 +2178,56 @@ h6 {
   }
 }
 .chance_images_circles {
-  top: 127px;
+  top: -99px;
   left: -395px;
   z-index: 0;
 }
 @media (max-width: 550px) {
   .chance_images_circles {
-    top: 273px;
+    top: 47px;
   }
   .chance_images_circles_img {
     width: 578px;
   }
 }
 .chance_images_btc {
-  top: -45px;
-  left: -13px;
+  top: -291px;
+  left: 25px;
+}
+@media (max-width: 1100px) {
+  .chance_images_btc {
+    top: -340px;
+    left: 80px;
+  }
+}
+@media (max-width: 900px) {
+  .chance_images_btc {
+    top: 3px;
+    left: -410px;
+  }
 }
 @media (max-width: 550px) {
   .chance_images_btc {
-    top: 210px;
+    top: -16px;
     left: -251px;
   }
   .chance_images_btc_img {
     width: 130px;
   }
 }
-.chance_images_rocket {
-  top: -93px;
-  left: -928px;
-  z-index: 0;
-}
-@media (max-width: 550px) {
-  .chance_images_rocket {
-    top: 140px;
-    left: -524px;
-  }
-  .chance_images_rocket_img {
-    width: 700px;
-  }
-}
 .chance_images_eth {
-  top: 161px;
+  top: -65px;
   left: 408px;
+}
+@media (max-width: 900px) {
+  .chance_images_eth {
+    top: -26px;
+    left: -113px;
+  }
 }
 @media (max-width: 550px) {
   .chance_images_eth {
-    top: 334px;
+    top: 148px;
     left: 77px;
   }
   .chance_images_eth_img {
@@ -2168,12 +2235,18 @@ h6 {
   }
 }
 .chance_images_usd_t {
-  top: 20px;
+  top: -206px;
   left: 458px;
+}
+@media (max-width: 900px) {
+  .chance_images_usd_t {
+    top: 17px;
+    left: 228px;
+  }
 }
 @media (max-width: 550px) {
   .chance_images_usd_t {
-    top: 280px;
+    top: 54px;
     left: 146px;
   }
   .chance_images_usd_t_img {
@@ -2181,12 +2254,18 @@ h6 {
   }
 }
 .chance_images_btc_l {
-  top: 149px;
+  top: -77px;
   left: 238px;
+}
+@media (max-width: 900px) {
+  .chance_images_btc_l {
+    top: -116px;
+    left: -34px;
+  }
 }
 @media (max-width: 550px) {
   .chance_images_btc_l {
-    top: 253px;
+    top: 60px;
     left: -101px;
   }
   .chance_images_btc_l_img {
@@ -2210,6 +2289,14 @@ h6 {
 }
 .chance_header_h2, .chance_header_body {
   margin-top: 12px;
+}
+.chance_header_h2 {
+  width: 100%;
+  max-width: 586px;
+}
+.chance_header_body {
+  width: 100%;
+  max-width: 586px;
 }
 .chance_header_button {
   margin-top: 12px;
