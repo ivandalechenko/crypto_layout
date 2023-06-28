@@ -271,7 +271,7 @@ h6
         display: flex
         justify-content: space-between
         column-gap: 12px
-        &_lang,&_try_now,&_burger
+        &_lang,&_log_reg,&_burger
             margin: auto 0
         &_burger
             display: none
@@ -292,8 +292,21 @@ h6
             &_dd_btn
                 &_img
                     padding-bottom: 5px
-        &_try_now
-            &_btn
+        &_log_reg
+            display: flex
+            column-gap: 8px
+            @media (max-width: 450px)
+                display: none
+            &_btn_log
+                width: 122px
+                height: 43px
+                background: rgba(255, 255, 255, 0.10)
+
+                border-radius: 65px
+                @media(max-width: 550px)
+                    width: 95px
+                    height: 36px
+            &_btn_reg
                 width: 122px
                 height: 43px
                 background: #3763FF
@@ -308,6 +321,31 @@ h6
     .header_mobile
         display: block
         background: rgb(9, 10, 11)
+        &_menu_element_log_reg
+            display: none
+            @media (max-width: 450px)
+                display: block
+            &_buttons
+                display: flex
+                justify-content: center
+                column-gap: 8px
+                &_btn_log
+                    width: 122px
+                    height: 43px
+                    background: rgba(255, 255, 255, 0.10)
+
+                    border-radius: 65px
+                    @media(max-width: 550px)
+                        width: 95px
+                        height: 36px
+                &_btn_reg
+                    width: 122px
+                    height: 43px
+                    background: #3763FF
+                    border-radius: 65px
+                    @media(max-width: 550px)
+                        width: 95px
+                        height: 36px
         &_menu_element
             margin: 0px -15px
             text-align: center
@@ -420,6 +458,8 @@ h6
             top: 152px
             left: 126px
             z-index: 3
+            @media (max-width: 900px)
+                top: 200px
             @media (max-width: 650px)
                 left: 50px
 
@@ -487,6 +527,8 @@ h6
             left: 325px
             @media (max-width: 900px)
                 top: 356px
+            @media (max-width: 650px)
+                top: 280px
             @media (max-width: 550px)
                 top: 487px
                 left: 4px
@@ -507,7 +549,7 @@ h6
             top: 344px
             left: 723px
             @media (max-width: 900px)
-                top: 428px
+                top: 478px
                 left: 17px
             @media (max-width: 550px)
                 z-index: 3
@@ -531,13 +573,24 @@ h6
             &_medium15
                 margin: auto 0
                 color: #B5B6B6
+                width: 500px
                 @media (max-width: 550px)
+                    width: 100%
                     font-size: 12px
                     line-height: 15px
         &_h1
             margin-top: 10px
+            width: 530px
+            @media (max-width: 550px)
+                width: 100%
         &_body
             color: #B5B6B6
+            width: 450px
+            @media (max-width: 900px)
+                width: 380px
+            @media (max-width: 550px)
+                width: 100%
+
         &_button
             width: 300px
             padding: 0px 15px
@@ -577,35 +630,27 @@ h6
 
         &_box
             left: -758px
-            top: 52px
+            top: -612px
             z-index: -1
             @media (max-width: 900px)
-
                 left: -301px
-                top: 498px
-
+                top: -278px
                 &_img
                     width: 600px
         &_light1_svg
             left: -102px
-            top: -276px
+            top: -836px
             @media (max-width: 900px)
                 left: -166px
-                top: -153px
+                top: -713px
         &_light1
             left: -572px
             z-index: -2
-            top: -79px
+            top: -639px
             @media (max-width: 900px)
                 left: -960px
-                top: 313px
+                top: -400px
 
-        &_light3
-            left: -149px
-            top: 282px
-            @media (max-width: 900px)
-                left: -1314px
-                top: 345px
     &_inner
         width: 100%
         border-radius: 32px
@@ -908,8 +953,7 @@ h6
             top: 72px
             left: -1061px
             @media (max-width: 1000px)
-                top: 474px
-                left: -646px
+                display: none
         &_light1
             top: -88px
             left: -21px
@@ -931,6 +975,8 @@ h6
             @media (max-width: 1000px)
                 top: 1019px
                 left: -1011px
+            @media (max-width: 500px)
+                top: 1519px
 .security
     margin-top: 150px
     overflow: hidden
@@ -955,18 +1001,22 @@ h6
             top: -280px
             @media (max-width: 1000px)
                 left: -210px
-                top: 594px
+                top: 40px
                 &_img
                     width: 400px
-            @media (max-width: 380px)
-                top: 655px
-            @media (max-width: 340px)
-                top: 720px
+        &_light
+            display: none
+            @media (max-width: 1000px)
+                display: block
+                left: -365px
+                top: -77px
+                &_img
+                    width: 800px
     &_content
         width: 55%
         @media (max-width: 1000px)
             width: 100%
-            order: 2
+            order: 1
         &_security_header
             @media (max-width: 1000px)
                 text-align: center
@@ -1548,14 +1598,14 @@ h6
         @media (max-width: 550px)
             display: none
         &_light1
-            top: 351px
-            left: -1563px
+            top: 735px
+            left: -1319px
         &_light2
             top: 32px
             left: -880px
         &_light3
-            top: 113px
-            left: 28px
+            top: 329px
+            left: -100px
 
 .faq
     position: relative
