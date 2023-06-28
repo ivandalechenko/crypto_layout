@@ -1207,6 +1207,7 @@ h6 {
 }
 .offers_offers_list_offer_chart {
   padding-top: 20px;
+  height: 140px;
 }
 @media (max-width: 550px) {
   .offers_offers_list_offer_chart {
@@ -2407,6 +2408,8 @@ h6 {
   padding: 12px 22px;
   -moz-column-gap: 18px;
        column-gap: 18px;
+  text-align: center;
+  width: 170px;
 }
 @media (max-width: 550px) {
   .small_offers_offer_button {
@@ -2414,6 +2417,7 @@ h6 {
     display: block;
     margin: auto 0;
     padding: 8px 16px;
+    width: 40%;
   }
 }
 .small_offers_offer_button_img, .small_offers_offer_button_text {

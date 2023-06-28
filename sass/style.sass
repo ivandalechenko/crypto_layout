@@ -211,7 +211,6 @@ h6
     letter-spacing: -0.02em
 
 .filter_blur
-    // filter: blur(2px) brightness(0.5)
     filter: brightness(0.5)
 .no_scroll
     height: 100vh
@@ -824,6 +823,7 @@ h6
                             letter-spacing: -0.02em
             &_chart
                 padding-top: 20px
+                height: 140px
                 @media (max-width: 550px)
                     padding-top: 30px
                 &_img
@@ -1621,12 +1621,14 @@ h6
             display: flex
             padding: 12px 22px
             column-gap: 18px
+            text-align: center
+            width: 170px
             @media (max-width: 550px)
                 padding: 0
                 display: block
                 margin: auto 0
                 padding: 8px 16px
-
+                width: 40%
             &_img, &_text
                 margin: auto 0
                 @media (max-width: 550px)
