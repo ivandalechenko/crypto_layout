@@ -1904,21 +1904,21 @@ h6 {
   justify-content: center;
 }
 .tutorial_images_chart {
-  top: 172px;
+  top: -427px;
   left: -888px;
 }
 @media (max-width: 800px) {
   .tutorial_images_chart {
-    top: 573px;
+    top: -27px;
   }
 }
 .tutorial_images_man {
-  top: 41px;
+  top: -559px;
   left: -46px;
 }
 @media (max-width: 800px) {
   .tutorial_images_man {
-    top: 677px;
+    top: 77px;
     left: -165px;
   }
   .tutorial_images_man_img {
@@ -1927,21 +1927,21 @@ h6 {
 }
 @media (max-width: 550px) {
   .tutorial_images_man {
-    top: 611px;
+    top: 11px;
   }
 }
 .tutorial_images_waves {
-  top: 187px;
+  top: -413px;
   left: -894px;
   z-index: -1;
 }
 @media (max-width: 800px) {
   .tutorial_images_waves {
-    top: 645px;
+    top: 45px;
   }
 }
 .tutorial_images_light {
-  top: -380px;
+  top: -980px;
   left: -335px;
   transform: rotate(18deg);
   z-index: 0;
@@ -1949,7 +1949,7 @@ h6 {
 }
 @media (max-width: 800px) {
   .tutorial_images_light {
-    top: 312px;
+    top: -329px;
     left: -1282px;
     transform: rotate(0deg);
   }
@@ -1984,6 +1984,10 @@ h6 {
     -moz-column-gap: 19px;
          column-gap: 19px;
   }
+}
+.tutorial_path_to_earn_numbers_fone {
+  width: 0px;
+  height: auto;
 }
 .tutorial_path_to_earn_numbers {
   padding: 7px 4px;
