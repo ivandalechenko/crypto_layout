@@ -225,7 +225,7 @@ body {
     font-size: 12px;
   }
 }
-.elements .left .login_button button {
+.elements .left .log_reg_button button {
   color: white;
   width: 366px;
   height: 57px;
@@ -239,7 +239,7 @@ body {
   margin-top: 20px;
 }
 @media (max-width: 400px) {
-  .elements .left .login_button button {
+  .elements .left .log_reg_button button {
     max-width: 280px;
   }
 }

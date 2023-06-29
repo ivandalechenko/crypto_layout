@@ -2047,7 +2047,7 @@ h6 {
 .tutorial_path_to_earn_steps {
   margin-left: -92px;
   margin-top: 9px;
-  width: 550px;
+  width: 575px;
 }
 @media (max-width: 800px) {
   .tutorial_path_to_earn_steps {
@@ -2088,12 +2088,13 @@ h6 {
   margin: auto 0;
 }
 .tutorial_path_to_earn_steps_step_location_and_time_h4 {
-  padding-right: 12px;
+  display: flex;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
 }
-@media (max-width: 400px) {
-  .tutorial_path_to_earn_steps_step_location_and_time_h4 {
-    padding-right: 8px;
-  }
+.tutorial_path_to_earn_steps_step_location_and_time_h4 img {
+  padding-left: 12px;
+  border-left: 1px solid rgba(255, 255, 255, 0.25);
 }
 .tutorial_path_to_earn_steps_step_location_and_time_medium15 {
   padding: 4px 12px;
@@ -2106,7 +2107,7 @@ h6 {
     line-height: 20px;
   }
 }
-.tutorial_path_to_earn_steps_step_body {
+.tutorial_path_to_earn_steps_step_location_and_time_body {
   margin-top: 6px;
   color: #B5B6B6;
 }

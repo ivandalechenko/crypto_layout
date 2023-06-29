@@ -1381,7 +1381,7 @@ h6
         &_steps
             margin-left: -92px
             margin-top: 9px
-            width: 550px
+            width: 575px
             @media (max-width: 800px)
                 width: 100%
             @media (max-width: 550px)
@@ -1402,10 +1402,13 @@ h6
                     &_h4, &_time, &_img
                         margin: auto 0
                     &_h4
-                        padding-right: 12px
-                        // border-right: 1px solid rgba(255, 255, 255, 0.25)
-                        @media (max-width: 400px)
-                            padding-right: 8px
+                        display: flex
+                        column-gap: 12px
+                        // @media (max-width: 400px)
+                            // padding-right: 8px
+                        img
+                            padding-left: 12px
+                            border-left: 1px solid rgba(255, 255, 255, 0.25)
 
                     &_medium15
                         padding: 4px 12px
@@ -1414,9 +1417,10 @@ h6
                         @media (max-width: 550px)
                             font-size: 13px
                             line-height: 20px
-                &_body
-                    margin-top: 6px
-                    color: #B5B6B6
+                    &_body
+                        margin-top: 6px
+                        color: #B5B6B6
+
 .chance
     margin-top: 44px
     padding: 0px 20px
