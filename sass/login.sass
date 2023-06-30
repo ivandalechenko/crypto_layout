@@ -60,6 +60,8 @@ body
             margin-top: 10px
             width: 100%
             overflow: hidden
+            max-width: 360px
+
         .container
             padding-top: 170px
             width: 500px
@@ -268,22 +270,44 @@ body
                 top: -25px
                 img
                     width: 600px
-        .safe
-            left: 13px
-            top: 333px
-            animation: safe_anim 12s infinite alternate ease-in-out
+        .shadow
+            left: -44px
+            top: 535px
+            animation: shadow_anim 12s infinite alternate ease-in-out
             @media (max-width: 1050px)
-                left: -100px
+                left: -140px
             @media (max-width: 800px)
-                left: -235px
-                top: 157px
-                img
-                    width: 400px
-            @keyframes safe_anim
+                left: -259px
+                top: 313px
+            @keyframes shadow_anim
                 0%
                     transform: translate(0px, 0px)
                 100%
                     transform: translate(90px, 10px)
+        .safe
+            left: 80px
+            top: 333px
+            animation: safe_anim 12s infinite alternate ease-in-out
+            @media (max-width: 1050px)
+                left: -40px
+            @media (max-width: 800px)
+                left: -150px
+                top: 157px
+                img
+                    width: 300px
+            @keyframes safe_anim
+                0%
+                    transform: translate(0px, 0px) rotate(0deg)
+                100%
+                    transform: translate(90px, 10px) rotate(10deg)
+        .rotate
+            animation: rotate_anim 0.5s cubic-bezier(0.67, -0.25, 0.29, 1.27) alternate
+            @keyframes rotate_anim
+                0%
+                    transform: rotate(0deg)
+                100%
+                    transform: rotate(1080deg)
+
         .eth
             left: 297px
             top: 255px
@@ -297,9 +321,9 @@ body
                     width: 130px
             @keyframes eth_anim
                 0%
-                    transform: translate(0px, 0px)
+                    transform: translate(0px, 0px) rotate(0deg)
                 100%
-                    transform: translate(100px, -100px)
+                    transform: translate(100px, -100px) rotate(-5deg)
 
         .btc
             left: 57px
@@ -314,6 +338,6 @@ body
                     width: 210px
             @keyframes btc_anim
                 0%
-                    transform: translate(0px, 0px)
+                    transform: translate(0px, 0px) rotate(0deg)
                 100%
-                    transform: translate(-20px, 90px)
+                    transform: translate(-20px, 90px) rotate(8deg)

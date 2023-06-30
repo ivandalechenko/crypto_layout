@@ -77,6 +77,7 @@ body {
   margin-top: 10px;
   width: 100%;
   overflow: hidden;
+  max-width: 360px;
 }
 .elements .left .container {
   padding-top: 170px;
@@ -355,31 +356,66 @@ body {
     width: 600px;
   }
 }
-.elements .right .safe {
-  left: 13px;
-  top: 333px;
-  animation: safe_anim 12s infinite alternate ease-in-out;
+.elements .right .shadow {
+  left: -44px;
+  top: 535px;
+  animation: shadow_anim 12s infinite alternate ease-in-out;
 }
 @media (max-width: 1050px) {
-  .elements .right .safe {
-    left: -100px;
+  .elements .right .shadow {
+    left: -140px;
   }
 }
 @media (max-width: 800px) {
-  .elements .right .safe {
-    left: -235px;
-    top: 157px;
-  }
-  .elements .right .safe img {
-    width: 400px;
+  .elements .right .shadow {
+    left: -259px;
+    top: 313px;
   }
 }
-@keyframes safe_anim {
+@keyframes shadow_anim {
   0% {
     transform: translate(0px, 0px);
   }
   100% {
     transform: translate(90px, 10px);
+  }
+}
+.elements .right .safe {
+  left: 80px;
+  top: 333px;
+  animation: safe_anim 12s infinite alternate ease-in-out;
+}
+@media (max-width: 1050px) {
+  .elements .right .safe {
+    left: -40px;
+  }
+}
+@media (max-width: 800px) {
+  .elements .right .safe {
+    left: -150px;
+    top: 157px;
+  }
+  .elements .right .safe img {
+    width: 300px;
+  }
+}
+@keyframes safe_anim {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  100% {
+    transform: translate(90px, 10px) rotate(10deg);
+  }
+}
+.elements .right .rotate {
+  animation: rotate_anim 0.5s cubic-bezier(0.67, -0.25, 0.29, 1.27) alternate;
+}
+@keyframes rotate_anim {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(1080deg);
   }
 }
 .elements .right .eth {
@@ -403,10 +439,10 @@ body {
 }
 @keyframes eth_anim {
   0% {
-    transform: translate(0px, 0px);
+    transform: translate(0px, 0px) rotate(0deg);
   }
   100% {
-    transform: translate(100px, -100px);
+    transform: translate(100px, -100px) rotate(-5deg);
   }
 }
 .elements .right .btc {
@@ -430,9 +466,9 @@ body {
 }
 @keyframes btc_anim {
   0% {
-    transform: translate(0px, 0px);
+    transform: translate(0px, 0px) rotate(0deg);
   }
   100% {
-    transform: translate(-20px, 90px);
+    transform: translate(-20px, 90px) rotate(8deg);
   }
 }

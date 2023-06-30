@@ -3,6 +3,10 @@ function switch_to_sign_up() {
     document.getElementById("login_switcher").classList.remove('active')
     document.getElementById("signup_switcher").classList.add('active')
 
+    document.getElementById('safe').classList.add('rotate')
+    setTimeout(() => { document.getElementById('safe').setAttribute('src', 'img/login/usd.png') }, 250)
+    setTimeout(() => { document.getElementById('safe').classList.remove('rotate') }, 500)
+
     show_inp(document.getElementById("username"))
     show_inp(document.getElementById("rpassword"))
     show(document.getElementById("create_password_label"), 17, 10)
@@ -16,6 +20,10 @@ function switch_to_log_in() {
     document.getElementById("login_switcher").classList.add('active')
     document.getElementById("signup_switcher").classList.remove('active')
 
+    document.getElementById('safe').classList.add('rotate')
+    setTimeout(() => { document.getElementById('safe').setAttribute('src', 'img/login/safe.png') }, 250)
+    setTimeout(() => { document.getElementById('safe').classList.remove('rotate') }, 500)
+
     hide_inp(document.getElementById("username"))
     hide_inp(document.getElementById("rpassword"))
     hide(document.getElementById("create_password_label"))
@@ -23,6 +31,7 @@ function switch_to_log_in() {
     hide(document.getElementById("accept_terms"))
 
 }
+
 
 function hide(el) {
     el.style.height = "0px";
