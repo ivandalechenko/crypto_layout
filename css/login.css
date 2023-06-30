@@ -177,6 +177,10 @@ body {
 .elements .left .log_reg_switcher_buttons .active {
   background-color: rgba(255, 255, 255, 0.1);
 }
+.elements .left .log_reg_switcher_buttons button:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  opacity: 1;
+}
 .elements .left .input_block:first-child {
   margin-top: 20px;
 }
@@ -198,9 +202,21 @@ body {
   padding-left: 16px;
   border-left: 1px solid #272829;
   display: flex;
-  justify-content: left;
-  row-gap: 4px;
+  justify-content: space-between;
   flex-wrap: wrap;
+}
+.elements .left .input_block .label_and_input .inp, .elements .left .input_block .label_and_input .eye {
+  margin: auto 0;
+}
+.elements .left .input_block .label_and_input .eye {
+  padding-top: 6px;
+}
+.elements .left .input_block .label_and_input .inp {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  row-gap: 4px;
+  width: 70%;
 }
 .elements .left .input_block .label_and_input .label {
   color: #B5B6B6;

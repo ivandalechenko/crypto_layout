@@ -129,6 +129,9 @@ body
                     height: 40px
             .active
                 background-color: rgba(255, 255, 255, 0.1)
+            button:hover
+                background-color: rgba(255, 255, 255, 0.15)
+                opacity: 1
         .input_block:first-child
             margin-top: 20px
         .input_block
@@ -146,9 +149,18 @@ body
                 padding-left: 16px
                 border-left: 1px solid #272829
                 display: flex
-                justify-content: left
-                row-gap: 4px
+                justify-content: space-between
                 flex-wrap: wrap
+                .inp, .eye
+                    margin: auto 0
+                .eye
+                    padding-top: 6px
+                .inp
+                    display: flex
+                    justify-content: left
+                    flex-wrap: wrap
+                    row-gap: 4px
+                    width: 70%
                 .label
                     color: #B5B6B6
                     font-size: 12px
