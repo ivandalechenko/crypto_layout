@@ -28,7 +28,7 @@
                     <button class="active" id="login_switcher">Log in</button>
                     <button id="signup_switcher">Sign up</button>
                 </div>
-                <div class="input_block">
+                <div class="input_block" id="email">
                     <img src="img/login/mail.svg">
                     <div class="label_and_input">
                         <div class="label">
@@ -37,7 +37,19 @@
                         <input type="text" placeholder="Enter your e-mail">
                     </div>
                 </div>
-                <div class="input_block">
+                <div class="input_block" id="username">
+                    <img src="img/login/user.svg">
+                    <div class="label_and_input">
+                        <div class="label">
+                            Your username
+                        </div>
+                        <input type="text" placeholder="Example: Trader23">
+                    </div>
+                </div>
+                <div id="create_password_label">
+                    Create password
+                </div>
+                <div class="input_block" id="password">
                     <img src="img/login/dots.svg">
                     <div class="label_and_input">
                         <div class="inp">
@@ -48,15 +60,38 @@
                         </div>
                         <div class="eye">
                             <img src="img/login/eye.svg">
-                            <!-- <img class="eye_open" src="img/login/eye.svg"> -->
-                            <!-- <img class="eye_closed dnone" src="img/login/eye_closed.svg"> -->
                         </div>
+                    </div>
+                </div>
+                <div class="input_block" id="rpassword">
+                    <img src="img/login/dots.svg">
+                    <div class="label_and_input">
+                        <div class="inp">
+                            <div class="label">
+                                Repeat password
+                            </div>
+                            <input type="text" placeholder="Repeat your password">
+                        </div>
+                        <div class="eye">
+                            <img src="img/login/eye.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="forgot_password" id="accept_terms">
+                    <button class="check_box" id="accept_t_and_p">
+                        <img class="onone" id="accept_t_and_p_check_img" src="img/login/check.svg">
+                    </button>
+                    <div class="text">
+                        I accept
+                        <a href="#">Terms & Condition</a>
+                        and
+                        <a href="#">Privacy Policy</a>
                     </div>
                 </div>
                 <div class="log_reg_button">
                     <button id="btn_login">Log in</button>
                 </div>
-                <div class="forgot_password">
+                <div class="forgot_password" id="forgot_password">
                     <div class="text">
                         Forgot your password
                     </div>

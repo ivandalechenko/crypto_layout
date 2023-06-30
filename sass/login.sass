@@ -52,6 +52,14 @@ body
         width: 50%
         @media (max-width: 800px)
             width: 100%
+        #create_password_label
+            font-size: 14px
+            font-family: Inter Tight
+            font-weight: 700
+            letter-spacing: -0.28px
+            margin-top: 10px
+            width: 100%
+            overflow: hidden
         .container
             padding-top: 170px
             width: 500px
@@ -139,20 +147,24 @@ body
             border-radius: 11px
             width: 100%
             padding: 13px 20px
-            border: 1px solid #272829
+            border: 1px solid rgba(27,28,29,1)
             display: flex
             column-gap: 16px
             max-width: 360px
+            overflow: hidden
+            transition: height 300ms, padding 200ms, border 1000ms
             img, .label_and_input
                 margin: auto 0
             .label_and_input
                 padding-left: 16px
-                border-left: 1px solid #272829
+                border-left: 1px solid rgba(27,28,29,1)
                 display: flex
                 justify-content: space-between
                 flex-wrap: wrap
                 .inp, .eye
                     margin: auto 0
+                .eye:hover
+                    cursor: pointer
                 .eye
                     padding-top: 6px
                 .inp
@@ -179,7 +191,6 @@ body
                     line-height: 20px
                     @media (max-width: 500px)
                         font-size: 12px
-
         .log_reg_button
             button
                 color: #ffff
@@ -200,6 +211,21 @@ body
             justify-content: center
             margin-top: 20px
             column-gap: 8px
+            overflow: hidden
+            .check_box:hover
+                opacity: 1
+            .check_box
+                height: 24px
+                width: 24px
+                border: 1px solid rgba(255, 255, 255, 0.25)
+                border-radius: 7px
+                background: none
+                .onone
+                    opacity: 0
+                img
+                    transition: opacity 200ms
+                    width: 14px
+
             .text, .a
                 margin: auto 0
             .text
@@ -207,13 +233,18 @@ body
                 font-size: 14px
                 font-family: Inter
                 line-height: 20px
+                a
+                    font-size: 14px
+                    font-family: Inter
+                    line-height: 20px
             .a
                 a
-                    color: #D9E44F
                     font-size: 14px
                     font-family: Inter Tight
                     font-weight: 700
                     letter-spacing: -0.28px
+            a
+                color: #D9E44F
 
     .right
         width: 50%
