@@ -44,12 +44,14 @@ function show(el, h, mt) {
 function hide_inp(el) {
     el.style.padding = `0px 20px`;
     el.style.height = "0px";
+    el.style.marginTop = "0px";
     setTimeout(() => { el.style.border = "1px solid rgba(27,28,29,0)"; }, 100)
 }
 
 function show_inp(el) {
     el.style.height = `65px`
     el.style.padding = `13px 20px`;
+    el.style.marginTop = "10px";
     setTimeout(() => { el.style.border = "1px solid rgba(27,28,29,1)"; }, 100)
 
 }
@@ -80,4 +82,19 @@ function switch_to_code() {
 
 function switch_to_code() {
     console.log('code')
+}
+
+
+document.getElementById("recovery_password").onclick = () => { show_modal() }
+document.getElementById("back_to_login").onclick = () => { hide_modal() }
+
+function show_modal() {
+    document.getElementById("left").classList.add('w0')
+    document.getElementById("right").classList.add('w0')
+    document.getElementById("modal").classList.remove('w0')
+}
+function hide_modal() {
+    document.getElementById("left").classList.remove('w0')
+    document.getElementById("right").classList.remove('w0')
+    document.getElementById("modal").classList.add('w0')
 }
