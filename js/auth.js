@@ -83,8 +83,6 @@ function switch_to_code() {
 function switch_to_code() {
     console.log('code')
 }
-
-
 document.getElementById("recovery_password").onclick = () => { show_modal() }
 document.getElementById("back_to_login").onclick = () => { hide_modal() }
 
@@ -92,9 +90,58 @@ function show_modal() {
     document.getElementById("left").classList.add('w0')
     document.getElementById("right").classList.add('w0')
     document.getElementById("modal").classList.remove('w0')
+
+    document.getElementById("modal_h2").innerHTML = `
+    Forget password?<br> Not a problem
+    `
+    document.getElementById("modal_body").innerHTML = `
+    Provide us e-mail of your account and we will send a code to your mailbox
+    `
+    hide(document.getElementById("didnt_recieve_the_code"))
+    hide_inp(document.getElementById("modal_password"))
+    hide_inp(document.getElementById("modal_rpassword"))
+
+
 }
 function hide_modal() {
     document.getElementById("left").classList.remove('w0')
     document.getElementById("right").classList.remove('w0')
     document.getElementById("modal").classList.add('w0')
 }
+
+
+document.getElementById("send_a_code").onclick = () => {
+    document.getElementById("modal_h2").innerHTML = `
+    Enter code
+    `
+    document.getElementById("modal_body").innerHTML = `
+    We had sent code to tradexeth@gmail.com. Please check the mail and provide the code
+    `
+    document.getElementById("send_a_code").classList.add('dnone')
+    document.getElementById("reset_password_button").classList.remove('dnone')
+    show(document.getElementById("didnt_recieve_the_code"), 20, 20)
+    hide(document.getElementById("dont_have_account"))
+
+    hide_inp(document.getElementById("modal_email"))
+}
+
+document.getElementById("reset_password_button").onclick = () => {
+    document.getElementById("modal_h2").innerHTML = `
+    Create new password
+    `
+    document.getElementById("modal_body").innerHTML = `
+    The password must be at least 8 and no more than 14 characters long. The password must consist of Latin letters (A-z), Arabic numerals (0-9) and special characters
+    `
+    document.getElementById("reset_password_button").classList.add('dnone')
+    document.getElementById("change_password").classList.remove('dnone')
+
+    hide(document.getElementById("didnt_recieve_the_code"))
+
+
+    show_inp(document.getElementById('modal_password'))
+    show_inp(document.getElementById('modal_rpassword'))
+
+    hide_inp(document.getElementById("modal_email"))
+}
+
+

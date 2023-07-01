@@ -112,14 +112,44 @@
                     </button>
                 </div>
                 <div class="form">
-                    <h2>
+                    <h2 id="modal_h2">
                         Forget password?<br> Not a problem
                     </h2>
-                    <div class="body">
+
+                    <div class="input_block" id="modal_password">
+                        <img src="img/login/dots.svg">
+                        <div class="label_and_input">
+                            <div class="inp">
+                                <div class="label">
+                                    Your password
+                                </div>
+                                <input type="text" placeholder="Enter your password">
+                            </div>
+                            <div class="eye">
+                                <img src="img/login/eye.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input_block" id="modal_rpassword">
+                        <img src="img/login/dots.svg">
+                        <div class="label_and_input">
+                            <div class="inp">
+                                <div class="label">
+                                    Repeat password
+                                </div>
+                                <input type="text" placeholder="Repeat your password">
+                            </div>
+                            <div class="eye">
+                                <img src="img/login/eye.svg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="body" id="modal_body">
                         Provide us e-mail of your account and we will send a code to your mailbox
                     </div>
 
-                    <div class="input_block" id="reset_password">
+                    <div class="input_block" id="modal_email">
                         <img src="img/login/mail.svg">
                         <div class="label_and_input">
                             <div class="inp">
@@ -130,13 +160,26 @@
                             </div>
                         </div>
                     </div>
-                    <button id="reset_password_button">
+                    <button class="send_code_btn" id="send_a_code">
                         Send a code
                     </button>
+                    <button class="send_code_btn dnone" id="reset_password_button">
+                        Recover password
+                    </button>
+                    <button class="send_code_btn dnone" id="change_password">
+                        Change password
+                    </button>
+
+                    <div class="text_with_a" id="didnt_recieve_the_code">
+                        I didn't receive the code?
+                        <button>
+                            Send again
+                        </button>
+                    </div>
                 </div>
-                <div class="text_with_a">
+                <div class="text_with_a" id="dont_have_account">
                     You don't have account yet?
-                    <button>
+                    <button id="dont_have_account_btn">
                         Sign up
                     </button>
                 </div>
