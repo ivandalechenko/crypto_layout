@@ -100,6 +100,14 @@ function show_modal() {
     hide(document.getElementById("didnt_recieve_the_code"))
     hide_inp(document.getElementById("modal_password"))
     hide_inp(document.getElementById("modal_rpassword"))
+    show(document.getElementById("dont_have_account"), 20, 20)
+    show_inp(document.getElementById("modal_email"))
+
+
+    document.getElementById("send_a_code").classList.remove('dnone')
+    document.getElementById("reset_password_button").classList.add('dnone')
+    document.getElementById("change_password").classList.add('dnone')
+
 
 
 }
