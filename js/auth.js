@@ -61,6 +61,15 @@ document.getElementById("accept_t_and_p").onclick = () => {
 }
 
 
+var code_input_elements = document.querySelectorAll(".code_input_element");
+for (var i = 0; i < code_input_elements.length; i++) {
+    code_input_elements[i].oninput = function () {
+        console.log(this.nextElementSibling)
+        this.nextElementSibling.focus()
+    }
+}
+
+
 var elements = document.querySelectorAll(".eye");
 for (var i = 0; i < elements.length; i++) {
     elements[i].onclick = function () {
@@ -107,6 +116,7 @@ function show_modal() {
     document.getElementById("send_a_code").classList.remove('dnone')
     document.getElementById("reset_password_button").classList.add('dnone')
     document.getElementById("change_password").classList.add('dnone')
+    hide(document.getElementById("code_input"))
 
 
 
@@ -129,6 +139,7 @@ document.getElementById("send_a_code").onclick = () => {
     document.getElementById("reset_password_button").classList.remove('dnone')
     show(document.getElementById("didnt_recieve_the_code"), 20, 20)
     hide(document.getElementById("dont_have_account"))
+    show(document.getElementById("code_input"), 90, 24)
 
     hide_inp(document.getElementById("modal_email"))
 }
@@ -143,6 +154,7 @@ document.getElementById("reset_password_button").onclick = () => {
     document.getElementById("reset_password_button").classList.add('dnone')
     document.getElementById("change_password").classList.remove('dnone')
 
+    hide(document.getElementById("code_input"))
     hide(document.getElementById("didnt_recieve_the_code"))
 
 

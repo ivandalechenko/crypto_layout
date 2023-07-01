@@ -52,12 +52,12 @@ body
     flex-wrap: wrap
     .modal
         overflow: hidden
-        transition: width 500ms ease-out
+        transition: width 700ms ease-out, opacity 400ms ease-out
         width: 100%
         display: flex
         justify-content: center
-        min-height: 100vh
         flex-wrap: wrap
+        padding: 0px 10px
         .fone
             width: 0px
             height: 0px
@@ -104,7 +104,9 @@ body
                     padding-right: 10px
 
         .modal_inner
-            width: 450px
+            width: 100%
+            max-width: 450px
+            // @media (max-width: 500px)
             .back
                 text-align: center
                 padding: 100px 0px 40px
@@ -114,6 +116,34 @@ body
                 backdrop-filter: blur(150px)
                 border-radius: 17px
                 padding: 30px
+                @media (max-width:800px)
+                    padding: 30px 15px
+                .code_input
+                    margin-top: 24px
+                    overflow: hidden
+                    display: flex
+                    justify-content: space-between
+                    input:focus
+                        border: 1px solid #3763FF
+                        background: rgba(255, 255, 255, 0.05)
+
+                    input
+                        color: white
+                        outline: none
+                        width: 13%
+                        height: 86px
+                        text-align: center
+                        font-size: 24px
+                        font-family: Inter Tight
+                        font-style: normal
+                        font-weight: 700
+                        line-height: normal
+                        letter-spacing: -0.48px
+                        background: none
+                        border-radius: 11px
+                        border: 1px solid #272829
+                        transition: border 200ms, background 200ms
+
                 h2
                     font-size: 36px
                     font-family: Inter Tight
@@ -121,6 +151,9 @@ body
                     font-weight: 700
                     line-height: normal
                     letter-spacing: -0.72px
+                    @media (max-width:800px)
+                        font-size: 24px
+                        letter-spacing: -0.48px
                 .body
                     font-size: 16px
                     font-family: Inter
@@ -129,6 +162,9 @@ body
                     line-height: 25px
                     margin-top: 20px
                     color: #B5B6B6
+                    @media (max-width:800px)
+                        margin-top: 10px
+                        font-size: 14px
                 .input_block
                     margin-top: 20px
                     border-radius: 11px
@@ -192,7 +228,7 @@ body
 
     .left
         overflow: hidden
-        transition: width 500ms ease-out
+        transition: width 700ms ease-out, opacity 300ms ease-out
         width: 50%
         @media (max-width: 800px)
             width: 100%
@@ -377,7 +413,7 @@ body
                 margin: auto 0
             .text
                 color: #B5B6B6
-                font-size: 14px
+                font-size: 13px
                 font-family: Inter
                 line-height: 20px
                 a
@@ -398,7 +434,7 @@ body
         min-height: 100vh
         background: linear-gradient(180deg, rgba(18, 70, 255, 0.68) 0%, rgba(18, 47, 147, 0.00) 100%)
         overflow: hidden
-        transition: width 500ms ease-out
+        transition: width 700ms ease-out, opacity 300ms ease-out
         @media (max-width: 800px)
             width: 100%
             background: linear-gradient(0deg, rgba(18, 70, 255, 0.68) 0%, rgba(18, 47, 147, 0.00) 100%)
@@ -492,5 +528,8 @@ body
     width: 100% !important
 .w0
     width: 0px !important
+    padding: 0px !important
+    height: 0px
+    opacity: 0 !important
 .left_hide
     transform: translateX(-2000px)
