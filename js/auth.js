@@ -96,9 +96,16 @@ document.getElementById("recovery_password").onclick = () => { show_modal() }
 document.getElementById("back_to_login").onclick = () => { hide_modal() }
 
 function show_modal() {
-    document.getElementById("left").classList.add('w0')
-    document.getElementById("right").classList.add('w0')
-    document.getElementById("modal").classList.remove('w0')
+    document.getElementById("left").classList.add('o0')
+    document.getElementById("right").classList.add('o0')
+    setTimeout(() => {
+        document.getElementById("left").classList.add('dnone')
+        document.getElementById("right").classList.add('dnone')
+        document.getElementById("modal").classList.remove('o0')
+        setTimeout(() => {
+            document.getElementById("modal").classList.remove('dnone')
+        }, 100)
+    }, 300)
 
     document.getElementById("modal_h2").innerHTML = `
     Forget password?<br> Not a problem
@@ -122,9 +129,16 @@ function show_modal() {
 
 }
 function hide_modal() {
-    document.getElementById("left").classList.remove('w0')
-    document.getElementById("right").classList.remove('w0')
-    document.getElementById("modal").classList.add('w0')
+    document.getElementById("modal").classList.add('o0')
+    setTimeout(() => {
+        document.getElementById("left").classList.remove('dnone')
+        document.getElementById("right").classList.remove('dnone')
+        document.getElementById("modal").classList.add('dnone')
+        setTimeout(() => {
+            document.getElementById("left").classList.remove('o0')
+            document.getElementById("right").classList.remove('o0')
+        }, 100)
+    }, 300)
 }
 
 
