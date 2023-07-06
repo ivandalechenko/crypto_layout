@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;700;800&family=Inter:wght@300;500&display=swap");
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -24,30 +25,15 @@ time, mark, audio, video, button {
   vertical-align: baseline;
   box-sizing: border-box;
   color: white;
-  transition: 0.3s;
-  font-family: "Montserrat";
+  font-family: "Inter Tight";
 }
 
-img, svg {
-  transition: 0.3s;
+a, button {
+  transition: opacity 0.5s;
 }
 
 a:hover, button:hover {
   cursor: pointer;
-  opacity: 0.6;
-}
-
-.dnone {
-  display: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-.meow {
-  color: red;
-}r: pointer;
   opacity: 0.6;
 }
 
@@ -230,6 +216,45 @@ h5 {
 }
 
 h6 {
+  font-family: "Inter Tight";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+}
+
+.h4 {
+  font-family: "Inter Tight";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.02em;
+}
+@media (max-width: 550px) {
+  .h4 {
+    font-size: 17px;
+    line-height: 21px;
+  }
+}
+
+.h5 {
+  font-family: "Inter Tight";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+}
+@media (max-width: 550px) {
+  .h5 {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.h6 {
   font-family: "Inter Tight";
   font-style: normal;
   font-weight: 700;
@@ -1770,6 +1795,7 @@ h6 {
 .transactions_pc_elements_table_element_profit_percent {
   padding: 4px 12px;
   background: #2CBA65;
+  text-shadow: 0px 0px 5px black;
   border-radius: 6px;
 }
 @media (max-width: 900px) {
@@ -1845,6 +1871,7 @@ h6 {
 }
 .transactions_mobile_elements_element_info_element_percent {
   background: #2CBA65;
+  text-shadow: 0px 0px 5px black;
   border-radius: 6px;
   padding: 4px 12px;
 }
