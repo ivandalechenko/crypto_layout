@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById('faq_list').innerHTML += `
             <div class="faq_questions_question">
                 <div class="faq_questions_question_dot">
-                    <img class="lozad" src="img/quest/dot.svg">
+                    <img alt="dot" class="lozad" src="img/quest/dot.svg">
                 </div>
                 <div class="faq_questions_question_text">
                     <div class="faq_questions_question_text_visible">
@@ -139,9 +139,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                 </div>
                 <div class="faq_questions_question_question_arrow `+ style2 + `">
-                    <img class="lozad plus" src="img/quest/plus.svg">
-                    <img class="lozad plus_mob" src="img/quest/plus_mob.svg">
-                    <img class="lozad minus" src="img/quest/minus.svg">
+                    <img alt="show answer" class="lozad plus" src="img/quest/plus.svg">
+                    <img alt="show answer" class="lozad plus_mob" src="img/quest/plus_mob.svg">
+                    <img alt="hide answer" class="lozad minus" src="img/quest/minus.svg">
                 </div>
             </div>
         `
