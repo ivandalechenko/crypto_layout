@@ -584,7 +584,7 @@ h6 {
   }
   .lb1_light_el1_img {
     width: 1650px;
-    heigth: 1630px;
+    heigth: 1650px;
   }
 }
 .lb1_light_el2 {
@@ -902,17 +902,17 @@ h6 {
 }
 .about_us_images_box {
   left: -758px;
-  top: -612px;
+  top: -582px;
   z-index: -1;
 }
 @media (max-width: 900px) {
   .about_us_images_box {
     left: -301px;
-    top: -278px;
+    top: -308px;
   }
   .about_us_images_box_img {
     width: 600px;
-    height: 680px;
+    height: 600px;
   }
 }
 .about_us_images_light1_svg {
@@ -2223,6 +2223,7 @@ h6 {
   }
   .chance_images_btc_img {
     width: 130px;
+    height: 130px;
   }
 }
 .chance_images_eth {
