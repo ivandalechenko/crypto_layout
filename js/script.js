@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById('all_styles').removeAttribute("disabled");
+
     // Открытие-закрытие меню с кнопки
     document.getElementById('burger_menu_button').onclick = () => {
         elBlock = document.getElementById('mobile_menu')
