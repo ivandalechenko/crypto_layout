@@ -38,7 +38,6 @@ a
     text-decoration: none
 body
     background: rgb(9, 10, 11)
-
 .secure
     margin-top: 34px
     display: flex
@@ -276,6 +275,7 @@ h6
                 @media(max-width: 550px)
                     img
                         width: 28px
+                        height: 28px
             &_text
                 margin: auto 0
                 font-weight: 700
@@ -407,17 +407,6 @@ h6
         display: flex
         justify-content: center
         transition: filter 500ms
-        &_el1_svg
-            top: 322px
-            z-index: 1
-            left: -700px
-            filter: blur(150px)
-            @media (max-width: 550px)
-                top: 322px
-                left: -185px
-                z-index: 0
-                &_img
-                    width: 550px
         &_el1
             top: -160px
             z-index: 1
@@ -428,37 +417,13 @@ h6
                 z-index: 0
                 &_img
                     width: 1650px
-
-        &_el2_svg
-            top: 320px
-            z-index: 1
-            left: 50px
-            filter: blur(150px)
-            @media (max-width: 550px)
-                display: none
-
+                    heigth: 1630px
         &_el2
             top: 60px
             left: -226px
             @media (max-width: 550px)
                 display: none
 
-        &_el3
-            top: 25px
-            z-index: 1
-            left: -300px
-            @media (max-width: 550px)
-                display: none
-        &_el4
-            top: 25px
-            z-index: 1
-            left: -1240px
-            @media (max-width: 550px)
-                top: 266px
-                left: -500px
-                z-index: 0
-                &_img
-                    width: 1111px
         &_line
             top: 340px
             z-index: 0
@@ -495,6 +460,7 @@ h6
                 left: -160px
                 &_img
                     width: 550px
+                    height: 428px
         &_chart
             top: -93px
             left: 401px
@@ -504,6 +470,7 @@ h6
 
                 &_img
                     width: 384px
+                    height: 295px
         &_eth
             z-index: 3
             top: 196px
@@ -523,6 +490,7 @@ h6
                     padding: 6px 8px 4px
                     &_img
                         width: 16px
+                        height: 16px
         &_ai
             z-index: 3
             top: 128px
@@ -570,6 +538,7 @@ h6
                     padding: 10px 10px 6px
                     &_img
                         width: 23px
+                        height: 23px
 
         &_stat
             z-index: 2
@@ -584,6 +553,8 @@ h6
                 left: 126px
                 &_img
                     width: 322px
+                    height: 190px
+
             &_button
                 padding: 12px 12px 6px
                 background: rgba(255, 255, 255, 0.1)
@@ -664,6 +635,7 @@ h6
                 top: -278px
                 &_img
                     width: 600px
+                    height: 680px
         &_light1_svg
             left: -102px
             top: -836px
@@ -749,6 +721,7 @@ h6
                     &_img
                         @media (max-width: 550px)
                             width: 32px
+                            height: 32px
 
             &_right
                 padding-top: 50px
@@ -781,6 +754,7 @@ h6
                 &_img
                     @media (max-width: 550px)
                         height: 16px
+                        width: 70px
 .offers
     margin-top: 74px
     @media (max-width: 550px)
@@ -857,6 +831,7 @@ h6
                 &_img
                     margin-top: -10px
                     width: 100%
+                    height: auto
                 &_price_wrapper
                     display: flex
                     justify-content: center
@@ -906,6 +881,7 @@ h6
                             background: rgba(55, 99, 255, 0.1)
                             border-radius: 11px
                             letter-spacing: -0.02em
+
                         &_regular14, &_medium14
                             @media (max-width: 550px)
                                 font-size: 12px
@@ -946,7 +922,8 @@ h6
                             @media (max-width: 550px)
                                 font-size: 18px
                                 line-height: 22px
-                            &_light18
+
+                            &_s
                                 padding-left: 6px
                                 color: rgba(255, 255, 255, 0.5)
                                 @media (max-width: 550px)
@@ -1032,6 +1009,7 @@ h6
                 top: 40px
                 &_img
                     width: 400px
+                    height: 443px
         &_light
             display: none
             @media (max-width: 1000px)
@@ -1040,6 +1018,7 @@ h6
                 top: -77px
                 &_img
                     width: 800px
+                    height: 535px
     &_content
         width: 55%
         @media (max-width: 1000px)
@@ -1083,6 +1062,7 @@ h6
                 &_img
                     @media (max-width: 450px)
                         width: 32px
+                        height: 32px
                 &_h6
                     margin-top: 13px
                 &_body
@@ -1331,6 +1311,7 @@ h6
                 left: -165px
                 &_img
                     width: 330px
+                    height: 450px
             @media (max-width: 550px)
                 top: 11px
         &_waves
@@ -1478,11 +1459,13 @@ h6
                 left: -728px
                 &_img
                     width: 1000px
+                    height: 931px
             @media (max-width: 550px)
                 top: -20px
                 left: -524px
                 &_img
                     width: 700px
+                    height: 652px
         &_bybit
             top: -211px
             left: 223px
@@ -1495,6 +1478,7 @@ h6
                 left: -88px
                 &_img
                     width: 50px
+                    height: 50px
         &_circles
             top: -99px
             left: -395px
@@ -1503,6 +1487,7 @@ h6
                 top: 47px
                 &_img
                     width: 578px
+                    height: 578px
         &_btc
             top: -291px
             left: 25px
@@ -1528,6 +1513,7 @@ h6
                 left: 77px
                 &_img
                     width: 70px
+                    height: 70px
         &_usd_t
             top: -206px
             left: 458px
@@ -1539,6 +1525,7 @@ h6
                 left: 146px
                 &_img
                     width: 30px
+                    height: 30px
         &_btc_l
             top: -77px
             left: 238px
@@ -1550,6 +1537,7 @@ h6
                 left: -101px
                 &_img
                     width: 500px
+                    height: 500px
             &_img
                 filter: grayscale(1)
                 opacity: 0.7

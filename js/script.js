@@ -168,3 +168,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+// imgs = document.querySelectorAll("img")
+// for (var i = 0; i < imgs.length; i++) {
+//     let width = imgs[i].offsetWidth
+//     let height = imgs[i].offsetHeight
+//     imgs[i].setAttribute("width", width)
+//     imgs[i].setAttribute("height", height)
+// }
