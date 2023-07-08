@@ -383,14 +383,28 @@ h6
         display: flex
         justify-content: center
         transition: filter 500ms
-        &_el1
-            top: -160px
-            z-index: 1
-            left: -1074px
+        &_el1_mobile
+            display: none
             @media (max-width: 550px)
-                top: -60px
-                left: -601px
+                display: block
+                display: block
+                top: 116px
+                left: 1px
                 z-index: 0
+                filter: blur(200px)
+
+        &_el1
+            display: flex
+            justify-content: center
+            top: 81px
+            z-index: 1
+            left: 147px
+            left: -364px
+            @media (max-width: 550px)
+                top: 17px
+                left: 136px
+                z-index: 0
+                display: none
         &_el2
             top: 60px
             left: -226px
@@ -420,17 +434,18 @@ h6
         position: relative
 
         &_man_with_notebook
+            display: flex
+            justify-content: center
             top: 152px
-            left: 126px
+            left: 494px
             z-index: 3
             @media (max-width: 900px)
                 top: 200px
             @media (max-width: 650px)
-                left: 50px
-
+                left: 372px
             @media (max-width: 550px)
                 top: 340px
-                left: -160px
+                left: 146px
                 &_img
                     width: 550px
                     height: 428px
@@ -438,12 +453,13 @@ h6
             top: -93px
             left: 401px
             @media (max-width: 550px)
+                display: none
+        &_chart_mob
+            display: none
+            @media (max-width: 550px)
+                display: block
                 top: 241px
                 left: 53px
-
-                &_img
-                    width: 384px
-                    height: 295px
         &_eth
             z-index: 3
             top: 196px
@@ -610,28 +626,28 @@ h6
         justify-content: center
 
         &_box
-            left: -758px
-            top: -582px
+            display: flex
+            justify-content: center
+            left: -292px
+            top: -584px
             z-index: -1
             @media (max-width: 900px)
-                left: -301px
-                top: -308px
+                left: -17px
+                top: -310px
+
                 &_img
                     width: 600px
                     height: 682.58px
-        &_light1_svg
-            left: -102px
-            top: -836px
-            @media (max-width: 900px)
-                left: -166px
-                top: -713px
         &_light1
-            left: -572px
+            display: flex
+            justify-content: center
+            left: 287px
             z-index: -2
+            opacity: 0.8
             top: -639px
             @media (max-width: 900px)
-                left: -960px
-                top: -400px
+                left: -79px
+                top: -389px
 
     &_inner
         width: 100%
@@ -936,30 +952,40 @@ h6
         justify-content: center
         &_light
             top: 72px
-            left: -1061px
+            left: -343px
+            display: flex
+            justify-content: center
             @media (max-width: 1000px)
                 display: none
         &_light1
             top: -88px
-            left: -21px
+            left: 667px
+            display: flex
+            justify-content: center
             @media (max-width: 1000px)
                 display: none
         &_light2
             top: 371px
-            left: -391px
+            left: -378px
+            display: flex
+            justify-content: center
             @media (max-width: 1000px)
                 display: none
         &_light3
             top: 388px
-            left: -1553px
+            left: 550px
+            display: flex
+            justify-content: center
             @media (max-width: 1000px)
                 display: none
         &_light4
             top: 736px
-            left: -1011px
+            left: -83px
+            display: flex
+            justify-content: center
             @media (max-width: 1000px)
                 top: 1019px
-                left: -1011px
+                left: 66px
             @media (max-width: 500px)
                 top: 1519px
 .security
@@ -993,9 +1019,10 @@ h6
         &_light
             display: none
             @media (max-width: 1000px)
-                display: block
-                left: -365px
+                left: -8px
                 top: -77px
+                display: flex
+                justify-content: center
                 &_img
                     width: 800px
                     height: 535px
@@ -1278,8 +1305,10 @@ h6
         display: flex
         justify-content: center
         &_chart
-            top: -427px
-            left: -888px
+            top: -457px
+            left: 161px
+            display: flex
+            justify-content: center
             @media (max-width: 800px)
                 top: -27px
         &_man
@@ -1434,12 +1463,15 @@ h6
                 display: none
 
         &_rocket
+
             top: -319px
-            left: -928px
+            left: -176px
             z-index: 0
+            display: flex
+            justify-content: center
             @media (max-width: 900px)
                 top: -130px
-                left: -728px
+                left: -207px
                 &_img
                     width: 1000px
                     height: 931px
@@ -1466,8 +1498,10 @@ h6
                     height: 50px
         &_circles
             top: -99px
-            left: -395px
+            left: 233px
             z-index: 0
+            display: flex
+            justify-content: center
             @media (max-width: 550px)
                 top: 47px
                 &_img
@@ -1651,14 +1685,21 @@ h6
         @media (max-width: 550px)
             display: none
         &_light1
+
             top: 735px
-            left: -1319px
+            left: -721px
+            display: flex
+            justify-content: center
         &_light2
             top: 32px
-            left: -880px
+            left: -21px
+            display: flex
+            justify-content: center
         &_light3
             top: 329px
-            left: -100px
+            left: 589px
+            display: flex
+            justify-content: center
 
 .faq
     position: relative
@@ -1674,9 +1715,12 @@ h6
         display: flex
         justify-content: center
         &_light
+
             top: 37px
-            left: -506px
+            left: -21px
             z-index: -1
+            display: flex
+            justify-content: center
             @media (max-width: 550px)
                 top: -200px
     &_container
@@ -2027,3 +2071,14 @@ h6
     font-family: 'Inter'
 .footer_content_navigation_elements_element
     font-family: 'Inter'
+
+.fade
+    animation-name: fade
+    animation-duration: 1s
+
+@keyframes fade
+    from
+        opacity: 0
+
+    to
+        opacity: 1

@@ -1,6 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById('all_styles').removeAttribute("disabled");
-
     // Открытие-закрытие меню с кнопки
     document.getElementById('burger_menu_button').onclick = () => {
         elBlock = document.getElementById('mobile_menu')
@@ -169,11 +167,12 @@ document.addEventListener("DOMContentLoaded", () => {
         };
     }
 });
+lozad('.lozad', {
+    load: function (el) {
+        el.src = el.dataset.src;
+        el.onload = function () {
+            el.classList.add('fade')
+        }
+    }
+}).observe()
 
-// imgs = document.querySelectorAll("img")
-// for (var i = 0; i < imgs.length; i++) {
-//     let width = imgs[i].offsetWidth
-//     let height = imgs[i].offsetHeight
-//     imgs[i].setAttribute("width", width)
-//     imgs[i].setAttribute("height", height)
-// }
