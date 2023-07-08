@@ -444,11 +444,15 @@ h6
             @media (max-width: 650px)
                 left: 372px
             @media (max-width: 550px)
+                display: none
+
+        &_man_with_notebook_mob
+            display: none
+            @media (max-width: 550px)
+                display: flex
+                justify-content: center
                 top: 340px
                 left: 146px
-                &_img
-                    width: 550px
-                    height: 428px
         &_chart
             top: -93px
             left: 401px
@@ -460,6 +464,7 @@ h6
                 display: block
                 top: 241px
                 left: 53px
+                filter: blur(3px)
         &_eth
             z-index: 3
             top: 196px
@@ -537,19 +542,22 @@ h6
                 top: 478px
                 left: 17px
             @media (max-width: 550px)
+                display: none
+
+        &_stat_mob
+            display: none
+            @media (max-width: 550px)
+                display: block
                 z-index: 3
                 top: 597px
                 left: 126px
-                &_img
-                    width: 322px
-                    height: 190px
 
-            &_button
-                padding: 12px 12px 6px
-                background: rgba(255, 255, 255, 0.1)
-                box-shadow: -7px 39px 47px rgba(0, 0, 0, 0.46)
-                border-radius: 18px
-                transform: rotate(-14.5deg)
+        &_button
+            padding: 12px 12px 6px
+            background: rgba(255, 255, 255, 0.1)
+            box-shadow: -7px 39px 47px rgba(0, 0, 0, 0.46)
+            border-radius: 18px
+            transform: rotate(-14.5deg)
     &_text
         position: relative
         z-index: 3
