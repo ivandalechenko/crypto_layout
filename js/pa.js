@@ -49,6 +49,10 @@ document.getElementById('modal_closer').onclick = hide_modal
 document.getElementById('add_api_keys_button').onclick = show_modal
 
 document.getElementById("manage_tarif_opener").onclick = () => {
-    hide_all(document.getElementById("page_manage_tarifs"))
-    show(document.getElementById("page_manage_tarifs"))
+    hide_all(document.getElementById("page_manage_tarif"))
+    show(document.getElementById("page_manage_tarif"))
+}
+document.getElementById("profile_opener").onclick = () => {
+    hide_all(document.getElementById("page_profile"))
+    show(document.getElementById("page_profile"))
 }
