@@ -127,11 +127,9 @@ h6
 .h5
     font-weight: 700
     font-size: 20px
-    line-height: 24px
     letter-spacing: -0.02em
     @media (max-width: 550px)
-        font-size: 14px
-        line-height: 21px
+        font-size: 18px
 .h6
     font-weight: 700
     font-size: 18px
@@ -184,6 +182,8 @@ h6
     border: 1px solid rgba(255, 255, 255, 0.25)
     display: flex
     column-gap: 16px
+    @media (max-width: 550px)
+        width: 100% !important
     img, .label_and_input
         margin: auto 0
     .label_and_input
@@ -237,15 +237,9 @@ body
     font-size: 16px
     font-weight: 700
     letter-spacing: -0.32px
-.container
-    width: 100%
-    max-width: 1440px
-    padding: 15px
-    margin: 0 auto
-    display: flex
-    justify-content: space-between
-    @media (max-width: 600px)
-        padding: 10px
+    @media (max-width: 550px)
+        width: 100%
+
 .section
     border-radius: 14px
     background: rgba(255, 255, 255, 0.05)
@@ -261,39 +255,126 @@ body
 .buttons_balance
     display: flex
     column-gap: 12px
+    @media (max-width: 700px)
+        justify-content: center
+        width: 100%
     .button
         padding: 16px
         margin: auto 0
         border-radius: 20px
         background: var(--5, rgba(255, 255, 255, 0.05))
-        width: 267px
+        padding-right: 100px
+        @media (max-width: 600px)
+            padding-right: 16px
+            width: 100%
+            padding: 10px
+
         .name
             margin-top: 12px
             font-size: 18px
             font-weight: 700
             letter-spacing: -0.36px
+            @media (max-width: 500px)
+                font-size: 13px
         .desc
             margin-top: 6px
             color: var(--secondary, #B5B6B6)
             font-size: 15px
             font-weight: 500
             line-height: 20px
-.sidebar
+            @media (max-width: 500px)
+                font-size: 12px
+#modal
+    background: linear-gradient(180deg, rgba(11, 13, 27, 0.87) 0%, rgba(0, 0, 0, 0.44) 100%)
+    backdrop-filter: blur(2px)
+    height: 100vh
+    position: absolute
+    top: 0px
+    left: 0px
+    width: 100%
+    z-index: 1
+    padding: 15px
+    .inner
+        width: 100%
+        max-width: 678px
+        height: auto
+        border-radius: 14px
+        border: 1px solid rgba(255, 255, 255, 0.10)
+        background: var(--5, rgba(255, 255, 255, 0.05))
+        backdrop-filter: blur(34px)
+        margin: 0 auto
+
+.container
+    width: 100%
+    max-width: 1440px
+    padding: 15px
+    margin: 0 auto
+    display: flex
+    flex-wrap: wrap
+    row-gap: 20px
+    justify-content: space-between
+    @media (max-width: 600px)
+        padding: 10px
+#sidebar
     width: 16.5%
-    .section
-        position: sticky
-        top: 15px
-        padding: 14px
+    @media (max-width: 1400px)
+        width: 100%
+        transition: height 400ms ease-in-out
+        height: 60px
+        overflow: hidden
+        .section
+            background: none
+
+    .header
+        display: flex
+        justify-content: space-between
         .logo
             width: 100%
             display: flex
             column-gap: 16px
+            @media (max-width: 1400px)
+                column-gap: 14px
+                .text
+                    font-size: 16px
+                img
+                    height: 28px
+                    width: 28px
             img, .text
                 margin: auto 0
             .text
                 letter-spacing: -0.365px
-                font-size: 18.264px
+                font-size: 18px
                 font-weight: 700
+        .burger_and_lang, .logo
+            margin: auto 0
+        .burger_and_lang
+            display: none
+            @media (max-width: 1400px)
+                display: flex
+                column-gap: 20px
+
+            #burger_opener, #burger_closer, #lang:hover
+                cursor: pointer
+            #lang
+                display: flex
+                column-gap: 12px
+                .name, img
+                    margin: auto 0
+                .name
+                    font-size: 16px
+                    font-weight: 700
+                    letter-spacing: -0.3px
+                    @media (max-width: 350px)
+                        display: none
+    .section
+        position: sticky
+        top: 15px
+        padding: 14px
+        @media (max-width: 1400px)
+            position: relative
+        @media (max-width: 600px)
+            padding: 6px
+
         .navigation
             display: flex
             flex-wrap: wrap
@@ -333,7 +414,6 @@ body
             .text
                 font-size: 15px
                 font-weight: 500
-
     .bottom_button
         margin-top: 10px
         background: rgba(255, 255, 255, 0.05)
@@ -351,10 +431,14 @@ body
             color: #B5B6B6
     .background_transparent
         background: transparent
-    .mt_200
+    .lang
         margin-top: 200px
+        @media (max-width: 1400px)
+            display: none
 #content
     width: 82%
+    @media (max-width: 1400px)
+        width: 100%
     .section:not(:first-child)
         margin-top: 20px
     #profile
@@ -364,12 +448,20 @@ body
         .content
             display: flex
             column-gap: 32px
+            flex-wrap: wrap
             .img
                 width: 15%
+                min-width: 140px
+                @media (max-width: 550px)
+                    width: 100%
+                    display: flex
+                    justify-content: center
             .info
                 .greetings
                     font-size: 16px
                     font-weight: 300
+                    @media (max-width: 550px)
+                        margin-top: 10px
                 .name
                     margin-top: 10px
                     font-size: 36px
@@ -379,22 +471,41 @@ body
                     display: flex
                     margin-top: 24px
                     column-gap: 10px
+                    flex-wrap: wrap
+                    row-gap: 11px
                     .input_block
                         width: 300px
                 .send_info_button
                     margin-top: 24px
     #balance, #manage_tarifs
         padding: 20px 26px 16px
+        @media (max-width: 500px)
+            padding: 20px 12px 16px
+
         .content
             display: flex
             justify-content: space-between
+            flex-wrap: wrap
+            row-gap: 20px
+            @media (max-width: 1173px)
+                justify-content: center
             .balance
+                width: 50%
                 display: flex
                 column-gap: 30px
+                @media (max-width: 1173px)
+                    width: 100%
+                    justify-content: center
+                @media (max-width: 500px)
+                    column-gap: 10px
+
                 .round, .info
                     margin: auto 0
                 .round
                     display: flex
+                    @media (max-width: 500px)
+                        img
+                            width: 114px
                     img, .text
                         margin: auto 0
                     .text
@@ -404,6 +515,9 @@ body
                         font-size: 14px
                         font-weight: 700
                         letter-spacing: -0.28px
+                        @media (max-width: 500px)
+                            margin-left: -114px
+                            width: 114px
                 .info
                     .name
                         display: flex
@@ -418,16 +532,22 @@ body
                         margin-top: 8px
                         display: flex
                         column-gap: 12px
+                        flex-wrap: wrap
+                        row-gap: 10px
                         .num
                             font-size: 36px
                             font-weight: 700
                             letter-spacing: -0.72px
+                            @media (max-width: 500px)
+                                font-size: 26px
                         .percent
                             padding: 4px 12px
                             border-radius: 6px
                             background: #2CBA65
                             font-size: 15px
                             font-weight: 500
+                            @media (max-width: 500px)
+                                font-size: 12px
                         .percent, .num
                             margin: auto 0
                     .earned
@@ -448,8 +568,14 @@ body
         .content
             display: flex
             column-gap: 32px
+            flex-wrap: wrap
             .img
                 width: 15%
+                min-width: 140px
+                @media (max-width: 550px)
+                    width: 100%
+                    display: flex
+                    justify-content: center
             .info
                 .btn
                     margin-top: 24px
@@ -457,6 +583,8 @@ body
                     display: flex
                     margin-top: 16px
                     column-gap: 10px
+                    flex-wrap: wrap
+                    row-gap: 11px
                     .input_block
                         width: 300px
                 .send_info_button
@@ -464,13 +592,21 @@ body
     #have_problems
         padding: 40px
         overflow: hidden
+        @media (max-width: 600px)
+            padding: 10px
+
         .images
             display: flex
             justify-content: right
+            @media (max-width: 1000px)
+                justify-content: center
             .fone_mail
-                top: -413px
+                top: -638px
                 left: -913px
                 z-index: -1
+                @media (max-width: 1000px)
+                    top: -647px
+                    left: -684px
         .chance
             font-size: 16px
             font-weight: 800
@@ -481,18 +617,31 @@ body
             -webkit-text-fill-color: transparent
             background-clip: text
             text-fill-color: transparent
+            @media (max-width: 600px)
+                font-size: 12px
         .header
             margin-top: 12px
             font-size: 36px
             font-weight: 700
             letter-spacing: -0.72px
+            @media (max-width: 600px)
+                font-size: 24px
         p
             margin-top: 12px
-            width: 338px
+            width: 100%
+            max-width: 338px
+            font-size: 16px
+            font-weight: 300
+            @media (max-width: 600px)
+                font-size: 14px
         .contancts
             margin-top: 26px
             display: flex
             column-gap: 12px
+            flex-wrap: wrap
+            row-gap: 12px
+            @media (max-width: 1000px)
+                padding-bottom: 260px
             .contact
                 border-radius: 52px
                 background: linear-gradient(90deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0.00) 100%)
@@ -500,10 +649,14 @@ body
                 padding-right: 70px
                 display: flex
                 column-gap: 12px
+                @media (max-width: 800px)
+                    width: 100%
                 img, .text
                     margin: auto 0
     #manage_tarifs
         padding: 20px 26px 20px
+        @media (max-width: 500px)
+            padding: 20px 12px 20px
     #select_other_tarif
         .offers
             &_offers_list
@@ -691,3 +844,135 @@ body
                                 background: #3763FF
                             &_button:last-child
                                 border: 1px solid rgba(255, 255, 255, 0.25)
+    #previous_payments
+        padding: 20px 10px
+        .table
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            .send_info_button
+                display: none
+                @media (max-width: 900px)
+                    display: block
+                    margin-top: 16px
+            .element:first-child
+                background: none
+                margin-top: 20px
+                @media (max-width: 900px)
+                    display: none
+                .num, .type, .date, .status, .sum
+                    font-size: 14px
+                    font-weight: 400
+                    opacity: 0.7
+            .element
+                margin-top: 6px
+                display: flex
+                justify-content: space-between
+                width: 100%
+                border-radius: 12px
+                background: rgba(255, 255, 255, 0.03)
+                padding: 12px 25px
+                flex-wrap: wrap
+                @media (max-width: 900px)
+                    margin-top: 12px
+                    padding: 20px
+                .name
+                    display: none
+                    @media (max-width: 900px)
+                        display: block
+                        opacity: 0.7
+                        font-size: 14px
+                        font-weight: 400
+                        line-height: 20px
+                        margin: auto 0
+                        color: white
+                .success
+                    background: #2CBA65
+                .error
+                    background: #FF5F72
+
+                .num
+                    width: 5.5%
+                    font-size: 16px
+                    font-weight: 700
+                    letter-spacing: -0.32px
+                    color: rgba(255,255,255,0.5)
+                .type
+                    width: 28.3%
+                    display: flex
+                    column-gap: 12px
+                    .text, img
+                        margin: auto 0
+                    .text
+                        font-size: 15px
+                        font-weight: 500
+                        @media (max-width: 900px)
+                            text-align: right
+                    img
+                        @media (max-width: 900px)
+                            display: none
+                .date
+                    width: 13.6%
+                    font-size: 15px
+                    font-weight: 500
+                    color: rgba(255,255,255,0.7)
+                .status
+                    width: 33.9%
+                    .success, .error
+                        font-size: 15px
+                        font-weight: 500
+                        line-height: 20px
+                        padding: 8px 16px
+                        border-radius: 24px
+                .sum
+                    width: 12.8%
+                    .text
+                        column-gap: 16px
+                        display: flex
+
+                        .count, .percent
+                            margin: auto 0
+                        .count
+                            font-size: 15px
+                            font-weight: 700
+                            letter-spacing: -0.375px
+                        .percent
+                            border-radius: 31px
+                            font-size: 15px
+                            font-weight: 500
+                            line-height: 20px
+                            padding: 4px 12px
+                .num, .type, .date, .status, .sum
+                    margin: auto 0
+                    @media (max-width: 900px)
+                        display: flex
+                        justify-content: space-between
+                        width: 100%
+                        padding: 8px 0px
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.05)
+        .security_and_pages
+            display: flex
+            justify-content: space-between
+            margin-top: 23px
+            column-gap: 100px
+            @media (max-width: 900px)
+                display: none
+            .pages, .secure
+                margin: auto 0
+            .pages
+                display: flex
+                column-gap: 8px
+                button
+                    width: 48px
+                    height: 48px
+                    background: rgba(255, 255, 255, 0.05)
+                    border-radius: 12px
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 15px
+                    line-height: 20px
+                .active
+                    background: #3763FF
+
+.dnone
+    display: none

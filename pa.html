@@ -12,7 +12,7 @@
         as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;700;800&family=Inter:wght@300;500&display=swap">
+            href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;700;800&family=Inter:wght@300;500;700;800&display=swap">
     </noscript>
     <link rel="preload" href="css/pa.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
@@ -23,13 +23,36 @@
 </head>
 
 <body>
+    <div id="modal">
+        <div class="inner">
+            123
+        </div>
+    </div>
     <div class="container">
-        <div class="sidebar">
+        <div id="sidebar">
             <div class="section">
-                <div class="logo">
-                    <img src="img/logo.svg" width="32" height="32">
-                    <div class="text super_tight">
-                        TradeCoinAi
+                <div class="header">
+                    <div class="logo">
+                        <img src="img/logo.svg" width="32" height="32">
+                        <div class="text super_tight">
+                            TradeCoinAi
+                        </div>
+                    </div>
+                    <div class="burger_and_lang">
+                        <div id="lang">
+                            <img src="img/flags/usa.png">
+                            <div class="name">
+                                English
+                            </div>
+                            <img width='18' height="10" src="img/flags/arrow_down.png">
+                        </div>
+                        <div id="burger_opener">
+                            <img width="20" height="20" alt="opener" src="img/burger.svg">
+                        </div>
+                        <div id="burger_closer" class="dnone">
+                            <img width="20" height="20" alt="opener" src="img/cross.svg">
+                        </div>
+
                     </div>
                 </div>
                 <div class="navigation">
@@ -76,7 +99,7 @@
                         Add api keys
                     </div>
                 </button>
-                <button class="bottom_button mt_200">
+                <button class="bottom_button lang">
                     <img src="img/flags/usa.png">
                     <div class="text">
                         Change language
@@ -98,7 +121,7 @@
         </div>
         <div id="content">
             <!-- PROFILE -->
-            <div class="section" id="profile">
+            <!--<div class="section" id="profile">
                 <div class="section_header h5">
                     Profile
                 </div>
@@ -257,11 +280,6 @@
                 </div>
             </div>
             <div class="section" id="have_problems">
-                <div class="images">
-                    <div class="fone_mail free_image">
-                        <img src="img/pa/mail.png">
-                    </div>
-                </div>
                 <div class="chance">
                     YOUR CHANCE
                 </div>
@@ -295,10 +313,15 @@
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="images">
+                    <div class="fone_mail free_image">
+                        <img src="img/pa/mail.png">
+                    </div>
+                </div>
+            </div> -->
 
             <!-- MANAGE TARIFS -->
-            <div class="section" id="manage_tarifs">
+            <!-- <div class="section" id="manage_tarifs">
                 <div class="header h5">
                     Manage tafis
                 </div>
@@ -349,8 +372,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="section" id="select_other_tarif">
+            </div> -->
+            <!-- <div class="section" id="select_other_tarif">
                 <div class="header h5">
                     Select other tarif
                 </div>
@@ -729,10 +752,148 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
+            <!-- <div class="section" id="previous_payments">
+                <div class="header h5">
+                    Previous payments
+                </div>
+                <div class="table">
+                    <div class="element">
+                        <div class="num">
+                            #
+                        </div>
+                        <div class="type">
+                            Bид оплаты
+                        </div>
+                        <div class="date">
+                            Дата
+                        </div>
+                        <div class="status">
+                            Статус
+                        </div>
+                        <div class="sum">
+                            Сумма
+                        </div>
+                    </div>
+                    <div class="element">
+                        <div class="num">
+                            <div class="name">
+                                #
+                            </div>
+                            2334
+                        </div>
+                        <div class="type">
+                            <div class="name">
+                                Вид оплаты
+                            </div>
+                            <img src="img/pa/dollar.svg">
+                            <div class="text">
+                                Оплата тарифа F22 RAPTOR
+                            </div>
+                        </div>
+                        <div class="date">
+                            <div class="name">
+                                Дата
+                            </div>
+                            14 June, 2023
+                        </div>
+                        <div class="status">
+                            <div class="name">
+                                Статус
+                            </div>
+                            <span class="success">
+                                Успешно
+                            </span>
+                        </div>
+                        <div class="sum">
+                            <div class="name">
+                                Сумма
+                            </div>
+                            <div class="text">
+                                <div class="count">
+                                    69$
+                                </div>
+                                <div class="percent success">
+                                    +10%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <div class="num">
+                            <div class="name">
+                                #
+                            </div>
+                            2334
+                        </div>
+                        <div class="type">
+                            <div class="name">
+                                Вид оплаты
+                            </div>
+                            <img src="img/pa/dollar.svg">
+                            <div class="text">
+                                Оплата тарифа F22 RAPTOR
+                            </div>
+                        </div>
+                        <div class="date">
+                            <div class="name">
+                                Дата
+                            </div>
+                            14 June, 2023
+                        </div>
+                        <div class="status">
+                            <div class="name">
+                                Статус
+                            </div>
+                            <span class="error">
+                                Ошибка
+                            </span>
+                        </div>
+                        <div class="sum">
+                            <div class="name">
+                                Сумма
+                            </div>
+                            <div class="text">
+                                <div class="count">
+                                    69$
+                                </div>
+                                <div class="percent error">
+                                    -10%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="send_info_button">Load more</button>
+                </div>
+                <div class="security_and_pages">
+                    <div class="secure">
+                        <img alt="secure" class="lozad secure_img" src="img/shield_check.svg" width="24" height="24">
+                        <div class="medium15 secure_medium15">
+                            Ваши данные верифицированы по API платформы ByBit и надежно защищены!
+                        </div>
+
+                        <img alt="bybit" class="lozad secure_img" src="img/bybit.svg" width="47" height="17">
+                    </div>
+                    <div class="pages">
+                        <button aria-label="Transactions previous page">
+
+                            <img src="img/left_arr.svg" alt="left arrow" class="lozad" width="8" height="14">
+                        </button>
+                        <button>1</button>
+                        <button>2</button>
+                        <button>...</button>
+                        <button class="active">78</button>
+                        <button>79</button>
+                        <button aria-label="Transactions next page">
+                            <img src="img/right_arr.svg" alt="right arrow" class="lozad" width="8" height="14">
+                        </button>
+                    </div>
+                </div>
+            </div> -->
 
         </div>
     </div>
+    <script src="js/pa.js"></script>
 </body>
 
 </html>
