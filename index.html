@@ -11,6 +11,25 @@
 
 
     <style>
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.2s
+        }
+
+        @keyframes fade {
+            0% {
+                opacity: 0
+            }
+
+            40% {
+                opacity: 0
+            }
+
+            100% {
+                opacity: 1
+            }
+        }
+
         header {
             display: block
         }
@@ -1115,20 +1134,19 @@
 <body id="body">
     <div class="lb1">
         <div class="lb1_light" id="lb1">
-            <div class="lb1_light_line free_image">
-                <img width="2294" height="388" alt="fone line" class="lozad" data-src="img/usp_images/line.webp">
+            <div class="lb1_light_line free_image ">
+                <img width="2294" height="388" alt="fone line" class="lozad fade" data-src="img/usp_images/line.webp">
             </div>
-            <div class="lb1_light_el1 free_image">
-                <img width="1600" height="1600" alt="fone light" class="lozad lb1_light_el1_img"
+            <div class="lb1_light_el1 free_image ">
+                <img width="1600" height="1600" alt="fone light" class="lozad fade lb1_light_el1_img"
                     data-src="img/usp_images/el1.webp">
             </div>
-            <div class="lb1_light_el1_mobile free_image">
-                <img width="1000" height="1000" alt="fone light" class="lozad lb1_light_el1_img"
+            <div class="lb1_light_el1_mobile free_image ">
+                <img width="1000" height="1000" alt="fone light" class="lozad fade lb1_light_el1_img"
                     data-src="img/usp_images/el1.svg">
             </div>
             <div class="lb1_light_el2 free_image">
-
-                <img width="1304" height="1285" alt="fone light" class="lozad" data-src="img/usp_images/el2.webp">
+                <img width="1304" height="1285" alt="fone light" class="lozad fade" data-src="img/usp_images/el2.webp">
             </div>
         </div>
         <header class="header" id="header">
@@ -1138,7 +1156,7 @@
                         <div class="header_navigation_logo">
                             <div class="header_navigation_logo_img">
 
-                                <img width="32" height="32" alt="logo" class="lozad" data-src="img/logo.svg">
+                                <img width="32" height="32" alt="logo" class="lozad fade" data-src="img/logo.svg">
                             </div>
                             <div class="header_navigation_logo_text inter">
                                 TradeCoinAi
@@ -1174,13 +1192,13 @@
                             </button>
                         </div>
                         <div class="header_buttons_burger">
-                            <button class="header_buttons_burger_btn" id="burger_menu_button">
+                            <button class="header_buttons_burger_btn fade" id="burger_menu_button">
 
-                                <img alt="mobile menu opener" class="lozad" id="mobile_menu_img_burger"
-                                    data-src="img/burger.svg" width="20" height="14">
+                                <img alt="mobile menu opener" id="mobile_menu_img_burger" src="img/burger.svg"
+                                    width="20" height="14">
 
-                                <img alt="mobile menu closer" class="lozad dnone" id="mobile_menu_img_cross"
-                                    data-src="img/cross.svg" width="24" height="24">
+                                <img alt="mobile menu closer" class="dnone" id="mobile_menu_img_cross"
+                                    src="img/cross.svg" width="24" height="24">
                             </button>
                         </div>
                     </div>
@@ -1242,29 +1260,29 @@
             <div class="usp_container container">
                 <div class="usp_images">
                     <div class="usp_images_chart free_image">
-                        <img data-src="img/usp_images/chart.webp" width="747" height="575" alt="chart"
-                            class="lozad usp_images_chart_img">
+                        <img src="img/usp_images/chart.webp" width="747" height="575" alt="chart"
+                            class="fade usp_images_chart_img">
                     </div>
                     <div class="usp_images_chart_small free_image">
-                        <img data-src="img/usp_images/chart_small.webp" width="384" height="296" alt="chart"
-                            class="lozad usp_images_chart_small_img">
+                        <img src="img/usp_images/chart_small.webp" width="384" height="296" alt="chart"
+                            class="fade usp_images_chart_small_img">
                     </div>
 
 
                     <div class="usp_images_man_with_notebook free_image">
-                        <img data-src="img/usp_images/man_with_notebook.webp" width="739" height="576"
-                            alt="man with notebook" class="lozad usp_images_man_with_notebook_img">
+                        <img src="img/usp_images/man_with_notebook.webp" width="739" height="576"
+                            alt="man with notebook" class="fade  usp_images_man_with_notebook_img">
                     </div>
                     <div class="usp_images_man_with_notebook_mob free_image">
-                        <img data-src="img/usp_images/man_with_notebook_mob.webp" width="550" height="428"
-                            alt="man with notebook" class="lozad usp_images_man_with_notebook_img">
+                        <img src="img/usp_images/man_with_notebook_mob.webp" width="550" height="428"
+                            alt="man with notebook" class="fade  usp_images_man_with_notebook_img">
                     </div>
 
 
                     <div class="usp_images_eth free_image">
                         <button class="usp_images_eth_button" aria-label="Eth button">
-                            <img data-src="img/usp_images/eth.svg" width="23" height="24" alt="eth"
-                                class="lozad usp_images_eth_button_img">
+                            <img src="img/usp_images/eth.svg" width="23" height="24" alt="eth"
+                                class=" fade usp_images_eth_button_img">
                         </button>
                     </div>
                     <div class="usp_images_ai free_image">
@@ -1274,27 +1292,27 @@
                     </div>
                     <div class="usp_images_usdt free_image">
                         <button class="usp_images_usdt_button" aria-label="Usdt button">
-                            <img data-src="img/usp_images/usd_t.svg" width="34" height="34" alt="usdt"
-                                class="lozad usp_images_usdt_button_img">
+                            <img src="img/usp_images/usd_t.svg" width="34" height="34" alt="usdt"
+                                class=" fade usp_images_usdt_button_img">
                         </button>
                     </div>
 
 
                     <div class="usp_images_stat free_image">
-                        <img data-src="img/usp_images/user_stat.webp" width="486" height="287" alt="user statistic"
-                            class="lozad usp_images_stat_img">
+                        <img src="img/usp_images/user_stat.webp" width="486" height="287" alt="user statistic"
+                            class="fade usp_images_stat_img">
                     </div>
                     <div class="usp_images_stat_mob free_image">
-                        <img data-src="img/usp_images/user_stat_mob.webp" width="322" height="190" alt="user statistic"
-                            class="lozad usp_images_stat_img">
+                        <img src="img/usp_images/user_stat_mob.webp" width="322" height="190" alt="user statistic"
+                            class="fade usp_images_stat_img">
                     </div>
 
                 </div>
                 <div class="usp_text">
                     <div class="usp_text_guarant">
 
-                        <img data-src="img/shield_check.svg" alt="verified" class="lozad usp_text_guarant_img"
-                            width="24" height="40">
+                        <img src="img/shield_check.svg" alt="verified" class="fade usp_text_guarant_img" width="24"
+                            height="40">
                         <div class="usp_text_guarant_medium15 medium15">
                             Предлагаем работающий инструмент для получения прибыли. Все данные верифицированы
                         </div>
@@ -1311,13 +1329,13 @@
                     <div class="usp_text_btns_mobile_download">
                         <button class="usp_text_btns_mobile_download_button" aria-label="Appstore download button">
 
-                            <img data-src="img/platforms/apple.svg" alt="appstore download"
-                                class="usp_text_btns_mobile_download_button_img lozad" width="150" height="43">
+                            <img src="img/platforms/apple.svg" alt="appstore download"
+                                class="fade usp_text_btns_mobile_download_button_img " width="150" height="43">
                         </button>
                         <button class="usp_text_btns_mobile_download_button" aria-label="Play market download button">
 
-                            <img data-src="img/platforms/android.svg" alt="play market download"
-                                class="usp_text_btns_mobile_download_button_img lozad" width="150" height="43">
+                            <img src="img/platforms/android.svg" alt="play market download"
+                                class="fade usp_text_btns_mobile_download_button_img " width="150" height="43">
                         </button>
                     </div>
                 </div>
@@ -2675,7 +2693,7 @@
             <div class="footer_content">
                 <div class="footer_content_logo">
 
-                    <img alt="logo" class="lozad" data-src="img/logo.svg" width="73" height="136">
+                    <img alt="logo" src="img/logo.svg" width="73" height="136">
                     <div class="footer_content_logo_text">
                         TradeCoinAi
                     </div>
@@ -2722,20 +2740,20 @@
                 </div>
                 <div class="footer_footer_soc_net">
 
-                    <img alt="twitter" class="lozad footer_footer_soc_net_img" data-src="img/soc_net/twitter.svg"
-                        width="22" height="18">
+                    <img alt="twitter" class=" footer_footer_soc_net_img" src="img/soc_net/twitter.svg" width="22"
+                        height="18">
 
-                    <img alt="instagram" class="lozad footer_footer_soc_net_img" data-src="img/soc_net/instagram.svg"
-                        width="20" height="20">
+                    <img alt="instagram" class=" footer_footer_soc_net_img" src="img/soc_net/instagram.svg" width="20"
+                        height="20">
 
-                    <img alt="tiktok" class="lozad footer_footer_soc_net_img" data-src="img/soc_net/tiktok.svg"
-                        width="16" height="18">
+                    <img alt="tiktok" class=" footer_footer_soc_net_img" src="img/soc_net/tiktok.svg" width="16"
+                        height="18">
 
-                    <img alt="youtube" class="lozad footer_footer_soc_net_img" data-src="img/soc_net/youtube.svg"
-                        width="24" height="18">
+                    <img alt="youtube" class=" footer_footer_soc_net_img" src="img/soc_net/youtube.svg" width="24"
+                        height="18">
 
-                    <img alt="telegram" class="lozad footer_footer_soc_net_img" data-src="img/soc_net/telegram.svg"
-                        width="21" height="18">
+                    <img alt="telegram" class=" footer_footer_soc_net_img" src="img/soc_net/telegram.svg" width="21"
+                        height="18">
                 </div>
             </div>
         </div>
