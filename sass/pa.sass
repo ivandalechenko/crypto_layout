@@ -284,16 +284,25 @@ body
             line-height: 20px
             @media (max-width: 500px)
                 font-size: 12px
+.page
+    opacity: 1
+    transition: opacity 500ms ease-in-out
+
 #modal
     background: linear-gradient(180deg, rgba(11, 13, 27, 0.87) 0%, rgba(0, 0, 0, 0.44) 100%)
     backdrop-filter: blur(2px)
     height: 100vh
-    position: absolute
+    position: fixed
     top: 0px
     left: 0px
     width: 100%
     z-index: 1
     padding: 15px
+    #modal_closer:hover
+        transform: rotate(10deg) scale(1.1)
+    #modal_closer
+        transition: transform 100ms
+        cursor: pointer
     .inner
         width: 100%
         max-width: 678px
@@ -302,7 +311,79 @@ body
         border: 1px solid rgba(255, 255, 255, 0.10)
         background: var(--5, rgba(255, 255, 255, 0.05))
         backdrop-filter: blur(34px)
+        margin-top: 100px
         margin: 0 auto
+        padding: 24px
+        .header
+            display: flex
+            justify-content: space-between
+            .name, img
+                margin: auto 0
+            .name
+                display: flex
+                column-gap: 16px
+                img, .text
+                    margin: auto 0
+        .content
+            .input_block
+                margin-top: 12px
+            .input_block_first
+                margin-top: 24px
+            .platforms
+                margin-top: 30px
+                display: flex
+                justify-content: space-between
+                column-gap: 9px
+                @media (max-width: 600px)
+                    flex-wrap: wrap
+                    row-gap: 14px
+                .active
+                    border: 1px solid #3763FF
+                    background: rgba(109, 141, 255, 0.05)
+                    box-shadow: 0px 13px 24px 0px rgba(55, 99, 255, 0.23)
+                .platform:hover
+                    border: 1px solid #3763FF
+                    box-shadow: 0px 13px 24px 0px rgba(55, 99, 255, 0.23)
+                    cursor: pointer
+                .platform
+                    transition: border 200ms, box-shadow 400ms
+                    width: 100%
+                    padding: 16px
+                    border-radius: 8px
+                    border: 1px solid var(--5, rgba(255, 255, 255, 0.05))
+                    background: var(--5, rgba(255, 255, 255, 0.05))
+                    height: 138px
+                    @media (max-width: 600px)
+                        width: 100%
+                        height: auto
+                        display: flex
+                    .border, .img
+                        @media (max-width: 600px)
+                            margin: auto 0
+
+                    .border
+                        border-radius: 27px
+                        border: 1px solid var(--white-25, rgba(255, 255, 255, 0.25))
+                        width: 24px
+                        height: 24px
+                    .img
+                        margin-top: 14px
+                        display: flex
+                        justify-content: center
+                        width: 100%
+                        @media (max-width: 600px)
+                            margin-top: 0px
+
+                .selected
+                    border: 1px solid #3763FF
+                    background: rgba(109, 141, 255, 0.05)
+                    box-shadow: 0px 13px 24px 0px rgba(55, 99, 255, 0.23)
+                    .border
+                        border-radius: 27px
+                        border: 8px solid var(--primary, #3763FF)
+                        background: var(--white, #FFF)
+                        width: 24px
+                        height: 24px
 
 .container
     width: 100%
@@ -400,7 +481,9 @@ body
             .active
                 filter: brightness(1)
                 background: #3763FF
-        .add_api_keys_button
+        #add_api_keys_button:hover
+            cursor: pointer
+        #add_api_keys_button
             margin-top: 44px
             background: #3763FF
             border-radius: 45px
@@ -845,7 +928,9 @@ body
                             &_button:last-child
                                 border: 1px solid rgba(255, 255, 255, 0.25)
     #previous_payments
-        padding: 20px 10px
+        padding: 20px
+        @media (max-width: 900px)
+            padding: 20px 10px
         .table
             display: flex
             flex-wrap: wrap
@@ -976,3 +1061,5 @@ body
 
 .dnone
     display: none
+.onone
+    opacity: 0 !important
