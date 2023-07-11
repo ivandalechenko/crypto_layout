@@ -176,3 +176,8 @@ lozad('.lozad', {
     }
 }).observe()
 
+
+function hide_loader() {
+    document.getElementById('loader').style.opacity = 0;
+    setTimeout(() => { document.getElementById('loader').classList.add('dnone') }, 600)
+}
