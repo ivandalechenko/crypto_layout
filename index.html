@@ -34,6 +34,10 @@
             animation-duration: 1.2s
         }
 
+        .lozad {
+            opacity: 0
+        }
+
         @keyframes fade {
             0% {
                 opacity: 0
@@ -1152,14 +1156,33 @@
 </head>
 
 <body id="body">
-    <div id="loader">
-        <svg width="140" height="140" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- <div id="loader">
+        <svg width="140" height="140" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
-                d="M19.3455 13.094V9.86876H26.6828V4.77954H6.31565V9.86876H13.6736V13.094C7.50933 13.3905 2.88159 14.628 2.88159 16.1104C2.88159 17.5928 7.50417 18.8226 13.6736 19.1268V29.7719H19.3455V19.1268C25.5098 18.8329 30.1375 17.5954 30.1375 16.1104C30.1375 14.6254 25.515 13.3905 19.3455 13.094ZM16.5096 18.1626C9.83479 18.1626 4.42331 17.1313 4.42331 15.8887C4.42331 14.8188 8.36526 13.9216 13.6685 13.6818V17.3247C14.5811 17.3659 15.5299 17.3892 16.5044 17.3892C17.4789 17.3892 18.4328 17.3659 19.3403 17.3247V13.6818C24.6435 13.9216 28.5855 14.8188 28.5855 15.8887C28.5958 17.1442 23.1843 18.1626 16.5096 18.1626Z"
-                fill="white" />
+                d="M24.0355 13.6334L26.4021 16L16 26.4021L5.59791 16L8.112 13.4859L5.31339 10.6866L0 16L16 32L32 16L26.8341 10.8341L24.0355 13.6334Z"
+                fill="url(#paint0_linear_4_186)" />
+            <path d="M17.8254 1.82539L16 0L14.1746 1.82539L16 3.65078L17.8254 1.82539Z"
+                fill="url(#paint1_linear_4_186)" />
+            <path
+                d="M18.7986 2.79861L16 5.59791L13.2014 2.79861L7.18191 8.81739L9.98122 11.6167L13.8365 7.76139L16 26.4021L18.1635 7.76139L22.1663 11.7642L24.9649 8.96487L18.7986 2.79861Z"
+                fill="url(#paint2_linear_4_186)" />
+            <defs>
+                <linearGradient id="paint0_linear_4_186" x1="16" y1="0" x2="16" y2="32" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#725BFF" />
+                    <stop offset="1" stop-color="#4791FF" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_4_186" x1="16" y1="0" x2="16" y2="32" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#725BFF" />
+                    <stop offset="1" stop-color="#4791FF" />
+                </linearGradient>
+                <linearGradient id="paint2_linear_4_186" x1="16" y1="0" x2="16" y2="32" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#725BFF" />
+                    <stop offset="1" stop-color="#4791FF" />
+                </linearGradient>
+            </defs>
         </svg>
 
-    </div>
+    </div> -->
 
     <div class="lb1">
         <div class="lb1_light" id="lb1">
@@ -1185,7 +1208,7 @@
                         <div class="header_navigation_logo">
                             <div class="header_navigation_logo_img">
 
-                                <img width="32" height="32" alt="logo" class=" fade" src="img/logo.svg">
+                                <img width="32" height="32" alt="logo" class="lozad fade" data-src="img/logo.svg">
                             </div>
                             <div class="header_navigation_logo_text inter">
                                 TradeCoinAi
@@ -1202,14 +1225,14 @@
                         <!-- <div class="header_buttons_lang">
                             <div class="header_buttons_lang_img">
                                 
-                                <img width="20" height="21" alt="english" class="" src="img/flags/usa.png">
+                                <img width="20" height="21" alt="english" class="lozad" data-src="img/flags/usa.png">
                             </div>
                             <div class="header_buttons_lang_btn btn">
                                 English
                             </div>
                             <div class="header_buttons_lang_dd_btn">
                                 
-                                <img width="12" height="7" alt="arrow down" class=" header_buttons_lang_dd_btn_img" src="img/flags/arrow_down.png">
+                                <img width="12" height="7" alt="arrow down" class="lozad header_buttons_lang_dd_btn_img" data-src="img/flags/arrow_down.png">
                             </div>
                         </div> -->
                         <div class="header_buttons_log_reg">
@@ -1258,27 +1281,27 @@
                     <!-- <div class="header_mobile_menu_element header_mobile_menu_element_last">
                         <button
                             class="header_mobile_menu_element_button header_mobile_menu_element_button_active btn">
-                            <img width="20" height="21" alt="english" src="img/flags/usa.png">
+                            <img width="20" height="21" alt="english" data-src="img/flags/usa.png">
                             <div class="text">English</div>
                         </button>
                         <button
                             class="header_mobile_menu_element_button header_mobile_menu_element_button_active btn">
-                            <img width="20" height="21" alt="english" src="img/flags/usa.png">
+                            <img width="20" height="21" alt="english" data-src="img/flags/usa.png">
                             <div class="text">English</div>
                         </button>
                         <button
                             class="header_mobile_menu_element_button header_mobile_menu_element_button_active btn">
-                            <img width="20" height="21" alt="english" src="img/flags/usa.png">
+                            <img width="20" height="21" alt="english" data-src="img/flags/usa.png">
                             <div class="text">English</div>
                         </button>
                         <button
                             class="header_mobile_menu_element_button header_mobile_menu_element_button_active btn">
-                            <img width="20" height="21" alt="english" src="img/flags/usa.png">
+                            <img width="20" height="21" alt="english" data-src="img/flags/usa.png">
                             <div class="text">English</div>
                         </button>
                         <button
                             class="header_mobile_menu_element_button header_mobile_menu_element_button_active btn">
-                            <img width="20" height="21" alt="english" src="img/flags/usa.png">
+                            <img width="20" height="21" alt="english" data-src="img/flags/usa.png">
                             <div class="text">English</div>
                         </button>
                     </div> -->
@@ -1383,9 +1406,12 @@
                         <div class="about_us_content_advantages">
                             <div class="about_us_content_advantages_left">
                                 <div class="about_us_content_advantages_left_element">
+                                    <div class="about_us_content_advantages_left_element_img_wrapper">
 
-                                    <img src="img/advantages/pc/robot.svg" alt="robot"
-                                        class=" about_us_content_advantages_left_element_img" width="52" height="52">
+                                        <img data-src="img/advantages/pc/robot.svg" alt="robot"
+                                            class="lozad about_us_content_advantages_left_element_img" width="52"
+                                            height="52">
+                                    </div>
                                     <div class="about_us_content_advantages_left_element_h5 h5">
                                         Отсутствует человеческий фактор
                                     </div>
@@ -1395,9 +1421,12 @@
                                     </div>
                                 </div>
                                 <div class="about_us_content_advantages_left_element">
+                                    <div class="about_us_content_advantages_left_element_img_wrapper">
 
-                                    <img src="img/advantages/pc/auto.svg" alt="auto"
-                                        class=" about_us_content_advantages_left_element_img" width="52" height="52">
+                                        <img data-src="img/advantages/pc/auto.svg" alt="auto"
+                                            class="lozad about_us_content_advantages_left_element_img" width="52"
+                                            height="52">
+                                    </div>
                                     <div class="about_us_content_advantages_left_element_h5 h5">
                                         Анализ и торговля на боте
                                     </div>
@@ -1410,9 +1439,12 @@
                             </div>
                             <div class="about_us_content_advantages_right">
                                 <div class="about_us_content_advantages_right_element">
+                                    <div class="about_us_content_advantages_left_element_img_wrapper">
 
-                                    <img src="img/advantages/pc/source.svg" alt="source"
-                                        class=" about_us_content_advantages_right_element_img" width="52" height="52">
+                                        <img data-src="img/advantages/pc/source.svg" alt="source"
+                                            class="lozad about_us_content_advantages_right_element_img" width="52"
+                                            height="52">
+                                    </div>
                                     <div class="about_us_content_advantages_right_element_h5 h5">
                                         Круглосуточная работа бота
                                     </div>
@@ -1422,9 +1454,12 @@
                                     </div>
                                 </div>
                                 <div class="about_us_content_advantages_right_element">
+                                    <div class="about_us_content_advantages_left_element_img_wrapper">
 
-                                    <img src="img/advantages/pc/stat.svg" alt="statistic"
-                                        class=" about_us_content_advantages_right_element_img" width="52" height="52">
+                                        <img data-src="img/advantages/pc/stat.svg" alt="statistic"
+                                            class="lozad about_us_content_advantages_right_element_img" width="52"
+                                            height="52">
+                                    </div>
                                     <div class="about_us_content_advantages_right_element_h5 h5">
                                         Стабильный заработок
                                     </div>
@@ -1447,23 +1482,23 @@
                             <div class="about_us_content_text_services_about_us_logos">
 
                                 <a href="https://www.trustpilot.com/review/tradecoinai.com" target="_blank"> <img
-                                        src="img/services_about_us_logos/trustpilot.svg" alt="trustpilot"
-                                        class=" about_us_content_text_services_about_us_logos_img" width="144"
+                                        data-src="img/services_about_us_logos/trustpilot.svg" alt="trustpilot"
+                                        class="lozad about_us_content_text_services_about_us_logos_img" width="144"
                                         height="27"></a>
 
                                 <a href="https://forklog.com/" target="_blank"> <img
-                                        src="img/services_about_us_logos/forklog.png" alt="forklog"
-                                        class=" about_us_content_text_services_about_us_logos_img" width="108"
+                                        data-src="img/services_about_us_logos/forklog.png" alt="forklog"
+                                        class="lozad about_us_content_text_services_about_us_logos_img" width="108"
                                         height="27"></a>
 
                                 <a href="https://vc.ru/" target="_blank"> <img
-                                        src="img/services_about_us_logos/vcru.svg" alt="vcru"
-                                        class=" about_us_content_text_services_about_us_logos_img" width="28"
+                                        data-src="img/services_about_us_logos/vcru.svg" alt="vcru"
+                                        class="lozad about_us_content_text_services_about_us_logos_img" width="28"
                                         height="27"></a>
 
                                 <a href="https://www.bybit.com/" target="_blank"> <img
-                                        src="img/services_about_us_logos/bybit.svg" alt="bybit"
-                                        class=" about_us_content_text_services_about_us_logos_img" width="66"
+                                        data-src="img/services_about_us_logos/bybit.svg" alt="bybit"
+                                        class="lozad about_us_content_text_services_about_us_logos_img" width="66"
                                         height="27"></a>
                             </div>
                         </div>
@@ -1471,13 +1506,13 @@
                     <div class="about_us_images">
                         <div class="about_us_images_box free_image">
 
-                            <img src="img/abous_us_images/box.webp" alt="box with light"
-                                class=" about_us_images_box_img" width="850" height="967">
+                            <img data-src="img/abous_us_images/box.webp" alt="box with light"
+                                class="lozad about_us_images_box_img" width="850" height="967">
                         </div>
                         <div class="about_us_images_light1 free_image">
 
-                            <img src="img/abous_us_images/el1.webp" alt="fone light" class=" about_us_images_light1_img"
-                                width="2340" height="1594">
+                            <img data-src="img/abous_us_images/el1.webp" alt="fone light"
+                                class="lozad about_us_images_light1_img" width="2340" height="1594">
                         </div>
                     </div>
                 </div>
@@ -1503,8 +1538,9 @@
                             </div>
                             <div class="offers_offers_list_offer_header_name_verified">
 
-                                <img src="img/verified.svg" alt="verified"
-                                    class=" offers_offers_list_offer_header_name_verified_img" width="20" height="20">
+                                <img data-src="img/verified.svg" alt="verified"
+                                    class="lozad offers_offers_list_offer_header_name_verified_img" width="20"
+                                    height="20">
                             </div>
                         </div>
                         <div class="offers_offers_list_offer_header_light14 light14">
@@ -1529,8 +1565,8 @@
                             </div>
                         </div>
 
-                        <img src="img/offer_chart1.svg" alt="offer chart" class=" offers_offers_list_offer_chart_img"
-                            width="345" height="130">
+                        <img data-src="img/offer_chart1.svg" alt="offer chart"
+                            class="lozad offers_offers_list_offer_chart_img" width="345" height="130">
                     </div>
                     <div class="offers_offers_list_offer_content">
                         <div class="offers_offers_list_offer_content_pnl">
@@ -1617,8 +1653,9 @@
                             </div>
                             <div class="offers_offers_list_offer_header_name_verified">
 
-                                <img src="img/verified.svg" alt="verified"
-                                    class=" offers_offers_list_offer_header_name_verified_img" width="20" height="20">
+                                <img data-src="img/verified.svg" alt="verified"
+                                    class="lozad offers_offers_list_offer_header_name_verified_img" width="20"
+                                    height="20">
                             </div>
                         </div>
                         <div class="offers_offers_list_offer_header_light14 light14">
@@ -1643,8 +1680,8 @@
                             </div>
                         </div>
 
-                        <img src="img/offer_chart2.svg" alt="chart" class=" offers_offers_list_offer_chart_img"
-                            width="345" height="119">
+                        <img data-src="img/offer_chart2.svg" alt="chart"
+                            class="lozad offers_offers_list_offer_chart_img" width="345" height="119">
                     </div>
                     <div class="offers_offers_list_offer_content">
                         <div class="offers_offers_list_offer_content_pnl">
@@ -1732,8 +1769,9 @@
                             </div>
                             <div class="offers_offers_list_offer_header_name_verified">
 
-                                <img src="img/verified.svg" alt="verified"
-                                    class=" offers_offers_list_offer_header_name_verified_img" width="20" height="20">
+                                <img data-src="img/verified.svg" alt="verified"
+                                    class="lozad offers_offers_list_offer_header_name_verified_img" width="20"
+                                    height="20">
                             </div>
                         </div>
                         <div class="offers_offers_list_offer_header_light14 light14">
@@ -1758,8 +1796,8 @@
                             </div>
                         </div>
 
-                        <img src="img/offer_chart3.svg" alt="chart" class=" offers_offers_list_offer_chart_img"
-                            width="345" height="120">
+                        <img data-src="img/offer_chart3.svg" alt="chart"
+                            class="lozad offers_offers_list_offer_chart_img" width="345" height="120">
                     </div>
                     <div class="offers_offers_list_offer_content">
                         <div class="offers_offers_list_offer_content_pnl">
@@ -1845,12 +1883,12 @@
             </div>
             <div class="secure">
 
-                <img src="img/shield_check.svg" alt="shied" class=" secure_img" width="24" height="24">
+                <img data-src="img/shield_check.svg" alt="shied" class="lozad secure_img" width="24" height="24">
                 <div class="medium15 secure_medium15">
                     Ваши данные верифицированы по API платформы ByBit и надежно защищены!
                 </div>
 
-                <img src="img/bybit.svg" alt="bybit" class=" secure_img" width="47" height="17">
+                <img data-src="img/bybit.svg" alt="bybit" class="lozad secure_img" width="47" height="17">
             </div>
         </div>
     </div>
@@ -1858,28 +1896,28 @@
         <div class="lb2_images">
             <div class="lb2_images_light free_image">
 
-                <img src="img/security_images/l1.webp" alt="fone light" class=" lb2_images_light_img" width="1228"
-                    height="822">
+                <img data-src="img/security_images/l1.webp" alt="fone light" class="lozad lb2_images_light_img"
+                    width="1228" height="822">
             </div>
             <div class="lb2_images_light1 free_image">
 
-                <img src="img/security_images/l2.webp" alt="fone light" class=" lb2_images_light_img" width="1707"
-                    height="1591">
+                <img data-src="img/security_images/l2.webp" alt="fone light" class="lozad lb2_images_light_img"
+                    width="1707" height="1591">
             </div>
             <div class="lb2_images_light2 free_image">
 
-                <img src="img/security_images/l3.webp" alt="fone light" class=" lb2_images_light_img" width="1672"
-                    height="1672">
+                <img data-src="img/security_images/l3.webp" alt="fone light" class="lozad lb2_images_light_img"
+                    width="1672" height="1672">
             </div>
             <div class="lb2_images_light3 free_image">
 
-                <img src="img/security_images/l5.webp" alt="fone light" class=" lb2_images_light_img" width="1672"
-                    height="1672">
+                <img data-src="img/security_images/l5.webp" alt="fone light" class="lozad lb2_images_light_img"
+                    width="1672" height="1672">
             </div>
             <div class="lb2_images_light4 free_image">
 
-                <img src="img/security_images/l4.webp" alt="fone light" class=" lb2_images_light_img" width="1903"
-                    height="1659">
+                <img data-src="img/security_images/l4.webp" alt="fone light" class="lozad lb2_images_light_img"
+                    width="1903" height="1659">
             </div>
         </div>
         <div class="security">
@@ -1887,12 +1925,13 @@
                 <div class="security_img">
                     <div class="security_img_light free_image">
 
-                        <img src="img/security_images/l1.webp" alt="fone light" class=" security_img_light_img">
+                        <img data-src="img/security_images/l1.webp" alt="fone light"
+                            class="lozad security_img_light_img">
                     </div>
                     <div class="security_img_success free_image">
 
-                        <img src="img/security_images/success.webp" alt="success" class=" security_img_success_img"
-                            width="528" height="585">
+                        <img data-src="img/security_images/success.webp" alt="success"
+                            class="lozad security_img_success_img" width="528" height="585">
                     </div>
                 </div>
                 <div class="security_content">
@@ -1906,9 +1945,11 @@
                     </div>
                     <div class="security_content_advantages">
                         <div class="security_content_advantages_advantages_element">
-
-                            <img src="img/shield_check_yellow.svg" alt="shield"
-                                class=" security_content_advantages_advantages_element_img" width="44" height="44">
+                            <div class="security_content_advantages_advantages_element_img_wrapper">
+                                <img data-src="img/shield_check_yellow.svg" alt="shield"
+                                    class="lozad security_content_advantages_advantages_element_img" width="44"
+                                    height="44">
+                            </div>
                             <div class="security_content_advantages_advantages_element_h6 h6">
                                 Защита финансовых средств пользователя
                             </div>
@@ -1918,9 +1959,12 @@
                             </div>
                         </div>
                         <div class="security_content_advantages_advantages_element">
+                            <div class="security_content_advantages_advantages_element_img_wrapper">
 
-                            <img src="img/shield_check_yellow.svg" alt="shield"
-                                class=" security_content_advantages_advantages_element_img" width="44" height="44">
+                                <img data-src="img/shield_check_yellow.svg" alt="shield"
+                                    class="lozad security_content_advantages_advantages_element_img" width="44"
+                                    height="44">
+                            </div>
                             <div class="security_content_advantages_advantages_element_h6 h6">
                                 Прогнозирование рыночного риска
                             </div>
@@ -1930,9 +1974,12 @@
                             </div>
                         </div>
                         <div class="security_content_advantages_advantages_element">
+                            <div class="security_content_advantages_advantages_element_img_wrapper">
 
-                            <img src="img/shield_check_yellow.svg" alt="shield"
-                                class=" security_content_advantages_advantages_element_img" width="44" height="44">
+                                <img data-src="img/shield_check_yellow.svg" alt="shield"
+                                    class="lozad security_content_advantages_advantages_element_img" width="44"
+                                    height="44">
+                            </div>
                             <div class="security_content_advantages_advantages_element_h6 h6">
                                 Скорость совершения сделки
                             </div>
@@ -1941,9 +1988,12 @@
                             </div>
                         </div>
                         <div class="security_content_advantages_advantages_element">
+                            <div class="security_content_advantages_advantages_element_img_wrapper">
 
-                            <img src="img/shield_check_yellow.svg" alt="shield"
-                                class=" security_content_advantages_advantages_element_img" width="44" height="44">
+                                <img data-src="img/shield_check_yellow.svg" alt="shield"
+                                    class="lozad security_content_advantages_advantages_element_img" width="44"
+                                    height="44">
+                            </div>
                             <div class="security_content_advantages_advantages_element_h6 h6">
                                 Реальные результаты
                             </div>
@@ -1955,12 +2005,13 @@
                     </div>
                     <div class="secure">
 
-                        <img alt="shied" class=" secure_img" src="img/shield_check.svg" width="24" height="24">
+                        <img alt="shied" class="lozad secure_img" data-src="img/shield_check.svg" width="24"
+                            height="24">
                         <div class="medium15 secure_medium15">
                             Ваши данные верифицированы по API платформы ByBit и надежно защищены!
                         </div>
 
-                        <img alt="bybit" class=" secure_img" src="img/bybit.svg" width="47" height="17">
+                        <img alt="bybit" class="lozad secure_img" data-src="img/bybit.svg" width="47" height="17">
                     </div>
                 </div>
             </div>
@@ -2027,8 +2078,8 @@
                         </div>
                         <div class="transactions_pc_elements_table_element_pair">
 
-                            <img src="img/currency/bnb.png" alt="cryptotype"
-                                class=" transactions_pc_elements_table_element_pair_img" width="35" height="35">
+                            <img data-src="img/currency/bnb.png" alt="cryptotype"
+                                class="lozad transactions_pc_elements_table_element_pair_img" width="35" height="35">
                             <div class="transactions_pc_elements_table_element_pair_medium15 medium15">
                                 BNB/USDT
                             </div>
@@ -2068,8 +2119,8 @@
                         </div>
                         <div class="transactions_pc_elements_table_element_pair">
 
-                            <img src="img/currency/bnb.png" alt="cryptotype"
-                                class=" transactions_pc_elements_table_element_pair_img" width="35" height="35">
+                            <img data-src="img/currency/bnb.png" alt="cryptotype"
+                                class="lozad transactions_pc_elements_table_element_pair_img" width="35" height="35">
                             <div class="transactions_pc_elements_table_element_pair_medium15 medium15">
                                 BNB/USDT
                             </div>
@@ -2109,8 +2160,8 @@
                         </div>
                         <div class="transactions_pc_elements_table_element_pair">
 
-                            <img src="img/currency/bnb.png" alt="cryptotype"
-                                class=" transactions_pc_elements_table_element_pair_img" width="35" height="35">
+                            <img data-src="img/currency/bnb.png" alt="cryptotype"
+                                class="lozad transactions_pc_elements_table_element_pair_img" width="35" height="35">
                             <div class="transactions_pc_elements_table_element_pair_medium15 medium15">
                                 BNB/USDT
                             </div>
@@ -2150,8 +2201,8 @@
                         </div>
                         <div class="transactions_pc_elements_table_element_pair">
 
-                            <img src="img/currency/bnb.png" alt="cryptotype"
-                                class=" transactions_pc_elements_table_element_pair_img" width="35" height="35">
+                            <img data-src="img/currency/bnb.png" alt="cryptotype"
+                                class="lozad transactions_pc_elements_table_element_pair_img" width="35" height="35">
                             <div class="transactions_pc_elements_table_element_pair_medium15 medium15">
                                 BNB/USDT
                             </div>
@@ -2191,8 +2242,8 @@
                         </div>
                         <div class="transactions_pc_elements_table_element_pair">
 
-                            <img src="img/currency/bnb.png" alt="cryptotype"
-                                class=" transactions_pc_elements_table_element_pair_img" width="35" height="35">
+                            <img data-src="img/currency/bnb.png" alt="cryptotype"
+                                class="lozad transactions_pc_elements_table_element_pair_img" width="35" height="35">
                             <div class="transactions_pc_elements_table_element_pair_medium15 medium15">
                                 BNB/USDT
                             </div>
@@ -2232,8 +2283,8 @@
                         </div>
                         <div class="transactions_pc_elements_table_element_pair">
 
-                            <img src="img/currency/bnb.png" alt="cryptotype"
-                                class=" transactions_pc_elements_table_element_pair_img" width="35" height="35">
+                            <img data-src="img/currency/bnb.png" alt="cryptotype"
+                                class="lozad transactions_pc_elements_table_element_pair_img" width="35" height="35">
                             <div class="transactions_pc_elements_table_element_pair_medium15 medium15">
                                 BNB/USDT
                             </div>
@@ -2265,8 +2316,8 @@
                         <div class="transactions_mobile_elements_element_pair_and_leverage">
                             <div class="transactions_mobile_elements_element_pair_and_leverage_pair">
 
-                                <img width="35" height="35" src="img/currency/bnb.png" alt="cryptotype"
-                                    class=" transactions_mobile_elements_element_pair_and_leverage_pair_img">
+                                <img width="35" height="35" data-src="img/currency/bnb.png" alt="cryptotype"
+                                    class="lozad transactions_mobile_elements_element_pair_and_leverage_pair_img">
                                 <div
                                     class="medium15 transactions_mobile_elements_element_pair_and_leverage_pair_medium15">
                                     BNB/USDT
@@ -2334,32 +2385,34 @@
                     <button class="btn transactions_mobile_elements_button">Load more</button>
                     <div class="secure nobem">
 
-                        <img alt="secure" class=" secure_img" src="img/shield_check.svg" width="24" height="24">
+                        <img alt="secure" class="lozad secure_img" data-src="img/shield_check.svg" width="24"
+                            height="24">
                         <div class="medium15 secure_medium15">
                             Ваши данные верифицированы по API платформы ByBit и надежно защищены!
                         </div>
 
-                        <img src="img/bybit.svg" alt="bybit" class=" secure_img" width="47" height="17">
+                        <img data-src="img/bybit.svg" alt="bybit" class="lozad secure_img" width="47" height="17">
                     </div>
                 </div>
                 <div class="transactions_security_and_pages">
                     <div class="transactions_security_and_pages_sec">
                         <div class="secure transactions_security_and_pages_sec_secure">
 
-                            <img alt="secure" class=" secure_img" src="img/shield_check.svg" width="24" height="24">
+                            <img alt="secure" class="lozad secure_img" data-src="img/shield_check.svg" width="24"
+                                height="24">
                             <div class="medium15 secure_medium15">
                                 Ваши данные верифицированы по API платформы ByBit и надежно защищены!
                             </div>
 
-                            <img alt="bybit" class=" secure_img" src="img/bybit.svg" width="47" height="17">
+                            <img alt="bybit" class="lozad secure_img" data-src="img/bybit.svg" width="47" height="17">
                         </div>
                     </div>
                     <div class="transactions_security_and_pages_pages">
                         <button class="transactions_security_and_pages_pages_button"
                             aria-label="Transactions previous page">
 
-                            <img src="img/left_arr.svg" alt="left arrow"
-                                class=" transactions_security_and_pages_pages_button_img" width="8" height="14">
+                            <img data-src="img/left_arr.svg" alt="left arrow"
+                                class="lozad transactions_security_and_pages_pages_button_img" width="8" height="14">
                         </button>
                         <button class="transactions_security_and_pages_pages_button">1</button>
                         <button class="transactions_security_and_pages_pages_button">2</button>
@@ -2370,8 +2423,8 @@
                         <button class="transactions_security_and_pages_pages_button"
                             aria-label="Transactions next page">
 
-                            <img src="img/right_arr.svg" alt="right arrow"
-                                class=" transactions_security_and_pages_pages_button_img" width="8" height="14">
+                            <img data-src="img/right_arr.svg" alt="right arrow"
+                                class="lozad transactions_security_and_pages_pages_button_img" width="8" height="14">
                         </button>
                     </div>
                 </div>
@@ -2473,18 +2526,18 @@
                 </div>
                 <div class="tutorial_images">
                     <div class="tutorial_images_chart free_image">
-                        <img alt="chart" class=" tutorial_images_chart_img" src="img/tutorial_images/chart.webp"
-                            width="1936" height="608">
+                        <img alt="chart" class="lozad tutorial_images_chart_img"
+                            data-src="img/tutorial_images/chart.webp" width="1936" height="608">
                     </div>
                     <!-- <div class="tutorial_images_waves free_image">
 
-                        <img src="img/tutorial_images/waves.webp" alt="fone wawes"
-                            class=" tutorial_images_waves_img" width="1763" height="608">
+                        <img data-src="img/tutorial_images/waves.webp" alt="fone wawes"
+                            class="lozad tutorial_images_waves_img" width="1763" height="608">
                     </div> -->
                     <div class="tutorial_images_man free_image">
 
-                        <img alt="man" class=" tutorial_images_man_img" src="img/tutorial_images/man.webp" width="611"
-                            height="835">
+                        <img alt="man" class="lozad tutorial_images_man_img" data-src="img/tutorial_images/man.webp"
+                            width="611" height="835">
                     </div>
                 </div>
             </div>
@@ -2493,14 +2546,14 @@
     <div class="lb3">
         <div class="lb3_images">
             <div class="lb3_images_light1 free_image">
-                <img alt="fone light" class="" src="img/quest/el1.webp" width="1537" height="1449">
+                <img alt="fone light" class="lozad" data-src="img/quest/el1.webp" width="1537" height="1449">
             </div>
             <div class="lb3_images_light2 free_image">
 
-                <img alt="fone light" class="" src="img/quest/el2.webp" width="1707" height="1591">
+                <img alt="fone light" class="lozad" data-src="img/quest/el2.webp" width="1707" height="1591">
             </div>
             <div class="lb3_images_light3 free_image">
-                <img alt="fone light" class="" src="img/quest/el3.webp" width="1707" height="1591">
+                <img alt="fone light" class="lozad" data-src="img/quest/el3.webp" width="1707" height="1591">
             </div>
         </div>
         <div class="chance">
@@ -2524,41 +2577,42 @@
                     <div class="chance_images">
                         <div class="chance_images_bybit free_image">
 
-                            <img alt="bybit" class=" chance_images_bybit_img" src="img/chance_images/bybit.svg"
-                                width="77" height="77">
+                            <img alt="bybit" class="lozad chance_images_bybit_img"
+                                data-src="img/chance_images/bybit.svg" width="77" height="77">
                         </div>
                         <div class="chance_images_circles free_image">
 
-                            <img src="img/chance_images/circles.svg" alt="circles" class="chance_images_circles_img "
-                                width="1121" height="1121">
+                            <img data-src="img/chance_images/circles.svg" alt="circles"
+                                class="chance_images_circles_img lozad" width="1121" height="1121">
                         </div>
                         <div class="chance_images_rocket free_image">
 
-                            <img src="img/chance_images/rocket.webp" alt="rocket"
-                                class="chance_images_rocket_img chance_images_rocket_img_pc " width="1423"
+                            <img data-src="img/chance_images/rocket.webp" alt="rocket"
+                                class="chance_images_rocket_img chance_images_rocket_img_pc lozad" width="1423"
                                 height="1325">
 
-                            <img src="img/chance_images/rocket.webp" alt="rocket"
-                                class="chance_images_rocket_img chance_images_rocket_img_mob " width="700" height="652">
+                            <img data-src="img/chance_images/rocket.webp" alt="rocket"
+                                class="chance_images_rocket_img chance_images_rocket_img_mob lozad" width="700"
+                                height="652">
                         </div>
                         <div class="chance_images_btc free_image">
 
-                            <img alt="btc" class="chance_images_btc_img " src="img/chance_images/btc.webp" width="175"
-                                height="175">
+                            <img alt="btc" class="chance_images_btc_img lozad" data-src="img/chance_images/btc.webp"
+                                width="175" height="175">
                         </div>
                         <div class="chance_images_eth free_image">
 
-                            <img alt="eth" class="chance_images_eth_img " src="img/chance_images/eth.webp" width="97"
-                                height="97">
+                            <img alt="eth" class="chance_images_eth_img lozad" data-src="img/chance_images/eth.webp"
+                                width="97" height="97">
                         </div>
                         <div class="chance_images_btc_l free_image">
 
-                            <img alt="btcl" class="chance_images_btc_l_img " src="img/chance_images/btc_l.webp"
-                                width="680" height="680">
+                            <img alt="btcl" class="chance_images_btc_l_img lozad"
+                                data-src="img/chance_images/btc_l.webp" width="680" height="680">
                         </div>
                         <div class="chance_images_usd_t free_image">
 
-                            <img alt="usdt" class="chance_images_usd_t_img " src="img/chance_images/usd_t.svg"
+                            <img alt="usdt" class="chance_images_usd_t_img lozad" data-src="img/chance_images/usd_t.svg"
                                 width="45" height="45">
                         </div>
                     </div>
@@ -2575,7 +2629,7 @@
                             </div>
                             <div class="small_offers_offer_info_name_verified">
 
-                                <img alt="verified" class="" src="img/verified.svg" width="20" height="20">
+                                <img alt="verified" class="lozad" data-src="img/verified.svg" width="20" height="20">
                             </div>
                         </div>
                         <div class="small_offers_offer_info_price">
@@ -2594,8 +2648,8 @@
                     </div>
                     <a class="small_offers_offer_button" href="#pricing">
 
-                        <img alt="arrow up" class=" small_offers_offer_button_img" src="img/arrow_up.svg" width="14"
-                            height="18">
+                        <img alt="arrow up" class="lozad small_offers_offer_button_img" data-src="img/arrow_up.svg"
+                            width="14" height="18">
                         <div class="small_offers_offer_button_text small_offers_offer_button_btn btn">
                             Details
                         </div>
@@ -2609,7 +2663,7 @@
                             </div>
                             <div class="small_offers_offer_info_name_verified">
 
-                                <img alt="verified" class="" src="img/verified.svg" width="20" height="20">
+                                <img alt="verified" class="lozad" data-src="img/verified.svg" width="20" height="20">
                             </div>
                         </div>
                         <div class="small_offers_offer_info_price">
@@ -2628,8 +2682,8 @@
                     </div>
                     <a class="small_offers_offer_button" href="#pricing">
 
-                        <img alt="arrow up" class=" small_offers_offer_button_img" src="img/arrow_up.svg" width="14"
-                            height="18">
+                        <img alt="arrow up" class="lozad small_offers_offer_button_img" data-src="img/arrow_up.svg"
+                            width="14" height="18">
                         <div class="small_offers_offer_button_text small_offers_offer_button_btn btn">
                             Details
                         </div>
@@ -2643,7 +2697,7 @@
                             </div>
                             <div class="small_offers_offer_info_name_verified">
 
-                                <img alt="verified" class="" src="img/verified.svg" width="20" height="20">
+                                <img alt="verified" class="lozad" data-src="img/verified.svg" width="20" height="20">
                             </div>
                         </div>
                         <div class="small_offers_offer_info_price">
@@ -2663,8 +2717,8 @@
                     <a class="small_offers_offer_button" href="#pricing">
 
 
-                        <img alt="arrow up" class=" small_offers_offer_button_img" src="img/arrow_up.svg" width="14"
-                            height="18">
+                        <img alt="arrow up" class="lozad small_offers_offer_button_img" data-src="img/arrow_up.svg"
+                            width="14" height="18">
                         <div class="small_offers_offer_button_text small_offers_offer_button_btn btn">
                             Details
                         </div>
@@ -2684,7 +2738,7 @@
             <div class="faq_images">
                 <div class="faq_images_light free_image">
 
-                    <img alt="fone light" class="" src="img/quest/el4.webp" width="1003" height="393">
+                    <img alt="fone light" class="lozad" data-src="img/quest/el4.webp" width="1003" height="393">
                 </div>
             </div>
         </div>
@@ -2774,7 +2828,7 @@
     </footer>
     <script
         src="https://raw.githubusercontent.com/w3c/IntersectionObserver/master/polyfill/intersection-observer.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lozad"></script>
     <script src="js/script.js"></script>
 
 

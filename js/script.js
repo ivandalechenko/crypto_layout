@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById('faq_list').innerHTML += `
             <div class="faq_questions_question">
                 <div class="faq_questions_question_dot">
-                    <img width="18" height="18" alt="dot" class="lozad" src="img/quest/dot.svg">
+                    <img width="18" height="18" alt="dot" src="img/quest/dot.svg">
                 </div>
                 <div class="faq_questions_question_text">
                     <div class="faq_questions_question_text_visible">
@@ -139,9 +139,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                 </div>
                 <div class="faq_questions_question_question_arrow `+ style2 + `">
-                    <img width="16" height="16" alt="show answer" class="lozad plus" src="img/quest/plus.svg">
-                    <img width="16" height="16" alt="show answer" class="lozad plus_mob" src="img/quest/plus_mob.svg">
-                    <img width="16" height="3" alt="hide answer" class="lozad minus" src="img/quest/minus.svg">
+                    <img width="16" height="16" alt="show answer" class=" plus" src="img/quest/plus.svg">
+                    <img width="16" height="16" alt="show answer" class=" plus_mob" src="img/quest/plus_mob.svg">
+                    <img width="16" height="3" alt="hide answer" class=" minus" src="img/quest/minus.svg">
                 </div>
             </div>
         `
@@ -172,6 +172,7 @@ lozad('.lozad', {
         el.src = el.dataset.src;
         el.onload = function () {
             el.classList.add('fade')
+            el.classList.remove('lozad')
         }
     }
 }).observe()
