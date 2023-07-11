@@ -100,3 +100,7 @@ document.getElementById("pay_opener").onclick = () => {
 document.getElementById('add_api_opener').onclick = () => {
     show_modal(document.getElementById("inner_add_api"))
 }
+
+document.getElementById('renew_tarif_opener').onclick = () => {
+    show_modal(document.getElementById("inner_renew_tarif"))
+}
