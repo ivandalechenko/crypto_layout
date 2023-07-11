@@ -128,19 +128,19 @@
                             Manage tarifs
                         </div>
                     </div>
-                    <div class="navigation_element">
+                    <div class="navigation_element_no_act">
                         <img src="img/pa/navigation/wallet.svg">
                         <div class="text">
                             Pay now
                         </div>
                     </div>
-                    <div class="navigation_element">
+                    <div class="navigation_element_no_act">
                         <img src="img/pa/navigation/renew.svg">
                         <div class="text">
                             Renew tarif
                         </div>
                     </div>
-                    <div class="navigation_element">
+                    <div class="navigation_element" id="ref_opener">
                         <img src="img/pa/navigation/ref.svg">
                         <div class="text">
                             Referral
@@ -174,7 +174,7 @@
             </div>
         </div>
         <div id="content">
-            <div id="page_profile" class="page">
+            <div id="profile_page" class="page dnone onone">
                 <div class="section" id="profile">
                     <div class="section_header h5">
                         Profile
@@ -374,8 +374,7 @@
                     </div>
                 </div>
             </div>
-
-            <div id="page_manage_tarif" class="page dnone onone">
+            <div id="manage_tarif_page" class="page dnone onone">
 
                 <div class="section" id="manage_tarifs">
                     <div class="header h5">
@@ -950,8 +949,199 @@
                 </div>
 
             </div>
+            <div id="ref_page" class="page dnone onone">
+                <div class="section" id="ref">
+                    <div class="header h5">
+                        Your balance
+                    </div>
+                    <div class="hr">
+                    </div>
+                    <div class="content">
+                        <div class="balance">
+                            <img src="img/pa/peoples.png">
+                            <div class="info">
+                                <div class="name">
+                                    <img src="img/pa/rounds_green.svg">
+                                    <div class="text">
+                                        Your balance
+                                    </div>
+                                </div>
+                                <div class="count">
+                                    <div class="num">
+                                        $110,3
+                                    </div>
+                                    <div class="percent">
+                                        +1,39%
+                                    </div>
+                                </div>
+                                <div class="earned">
+                                    <div class="text">
+                                        Earned
+                                    </div>
+                                    <div class="num">
+                                        $990.33
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="invite_link">
+                            <div class="header">
+                                <img src="img/pa/arrow_out.svg">
+                                <div class="text">
+                                    Your invite link
+                                </div>
+                            </div>
+                            <div class="link_with_button">
+                                <div class="link">
+                                    Tradecoinai.com/invite/ref48392
+                                </div>
+                                <button id="copy_invite_link">
+                                    <div class="text">
+                                        Copy
+                                    </div>
+                                    <img src="img/pa/copy.svg">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr">
+                    </div>
+                    <div class="referals">
+                        <div class="table">
+                            <div class="element">
+                                <div class="num">
+                                    #
+                                </div>
+                                <div class="type">
+                                    Nickname
+                                </div>
+                                <div class="date">
+                                    Date
+                                </div>
+                                <div class="earned">
+                                    Earned
+                                </div>
+                                <div class="sum">
+                                    Your profit
+                                </div>
+                            </div>
+                            <div class="element">
+                                <div class="num">
+                                    <div class="name">
+                                        #
+                                    </div>
+                                    2334
+                                </div>
+                                <div class="type">
+                                    <div class="name">
+                                        Nickname
+                                    </div>
+                                    <img src="img/pa/people_green.svg">
+                                    <div class="text">
+                                        @amazing_trade
+                                    </div>
+                                </div>
+                                <div class="date">
+                                    <div class="name">
+                                        Date
+                                    </div>
+                                    14 June, 2023
+                                </div>
+                                <div class="earned">
+                                    <div class="name">
+                                        Earned
+                                    </div>
+                                    <span>
+                                        $349,43
+                                    </span>
+                                </div>
+                                <div class="sum">
+                                    <div class="name">
+                                        Your profit
+                                    </div>
+                                    <div class="text">
+                                        <div class="count">
+                                            69$
+                                        </div>
+                                        <div class="percent success">
+                                            3%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="send_info_button">Load more</button>
+                        </div>
+                        <div class="security_and_pages">
+                            <div class="secure">
+                                <img alt="secure" class="lozad secure_img" src="img/shield_check.svg" width="24"
+                                    height="24">
+                                <div class="medium15 secure_medium15">
+                                    Ваши данные верифицированы по API платформы ByBit и надежно защищены!
+                                </div>
+
+                                <img alt="bybit" class="lozad secure_img" src="img/bybit.svg" width="47" height="17">
+                            </div>
+                            <div class="pages">
+                                <button aria-label="Transactions previous page">
+
+                                    <img src="img/left_arr.svg" alt="left arrow" class="lozad" width="8" height="14">
+                                </button>
+                                <button>1</button>
+                                <button>2</button>
+                                <button>...</button>
+                                <button class="active">78</button>
+                                <button>79</button>
+                                <button aria-label="Transactions next page">
+                                    <img src="img/right_arr.svg" alt="right arrow" class="lozad" width="8" height="14">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section" id="have_problems">
+                    <div class="chance">
+                        YOUR CHANCE
+                    </div>
+                    <div class="header">
+                        Have problems? Contact us
+                    </div>
+                    <p class="body">
+                        Professional platform for algorithmic and manual trading of cryptocurrencies
+                    </p>
+                    <div class="contancts">
+                        <div class="contact">
+                            <img src="img/pa/mail.svg">
+                            <div class="text">
+                                <div class="regular14">
+                                    Our mail
+                                </div>
+                                <div class="btn">
+                                    Tradecoinai@gmail.com
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact">
+                            <img src="img/pa/telegram.svg">
+                            <div class="text">
+                                <div class="regular14">
+                                    Our mail
+                                </div>
+                                <div class="btn">
+                                    Tradecoinai@gmail.com
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="images">
+                        <div class="fone_mail free_image">
+                            <img src="img/pa/mail.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <script src="js/pa.js"></script>
+    </div>
+    <script src="js/pa.js"></script>
 </body>
 
 </html>
