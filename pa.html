@@ -24,7 +24,7 @@
 
 <body id="body">
     <div id="modal" class="dnone onone">
-        <div class="inner">
+        <div id="inner_add_api" class="dnone modal_inner">
             <div class="header">
                 <div class="name">
                     <img src="img/pa/modal/key.svg">
@@ -32,7 +32,7 @@
                         Add crypto-key API
                     </div>
                 </div>
-                <img id="modal_closer" src="img/pa/modal/cross.svg">
+                <img class="modal_closer" src="img/pa/modal/cross.svg">
             </div>
             <div class="content">
                 <div class="platforms">
@@ -76,10 +76,150 @@
                         <input type="text" placeholder="Enter secret key">
                     </div>
                 </div>
-                <button class="send_info_button input_block_first">
-                    Add API key
-                </button>
+                <div class="button_and_check">
+                    <button class="send_info_button input_block_first">
+                        Add API key
+                    </button>
+                    <div class="checkbox">
+                        <div class="checkbox_wrapper checked">
+                            <img src="img/pa/check.svg">
+                        </div>
+                        <div class="text">
+                            I understang how to use API keys
+                        </div>
+                    </div>
+                </div>
+                <div class="steps_and_notice">
+                    <div class="steps_and_bg">
+                        <div class="bg">
+                        </div>
+                        <div class="steps">
+                            <div class="step">
+                                <button class="num">
+                                    1
+                                </button>
+                                <div class="text">
+                                    <div class="head">
+                                        Step 1
+                                    </div>
+                                    <div class="info">
+                                        Перейдите на сайт биржи
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <button class="num">
+                                    2
+                                </button>
+                                <div class="text">
+                                    <div class="head">
+                                        Step 2
+                                    </div>
+                                    <div class="info">
+                                        Create key “only for reading”
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <button class="num">
+                                    3
+                                </button>
+                                <div class="text">
+                                    <div class="head">
+                                        Step 3
+                                    </div>
+                                    <div class="info">
+                                        Enter the key
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notice">
+                        <div class="wrapper">
+
+                            <img src="img/pa/notice.svg">
+                            <div class="text">
+                                <div class="head">
+                                    Important!
+                                </div>
+                                <div class="info">
+                                    Always use API keys “only for reading. Dairy book available only for features
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div id="inner_pay" class="dnone modal_inner">
+            <div class="header">
+                <div class="name">
+                    <img src="img/pa/modal/wallet.svg">
+                    <div class="text">
+                        Payment
+                    </div>
+                </div>
+                <img class="modal_closer" src="img/pa/modal/cross.svg">
+            </div>
+            <div class="input_block" id="email">
+                <img src="img/pa/modal/form_key.svg">
+                <div class="label_and_input">
+                    <div class="label">
+                        Card number
+                    </div>
+                    <input type="text" placeholder="0000 0000 0000 0000">
+                </div>
+            </div>
+            <div class="ccv_and_date">
+                <div class="input_block" id="email">
+                    <img src="img/pa/modal/form_lock.svg">
+                    <div class="label_and_input">
+                        <div class="label">
+                            CCV
+                        </div>
+                        <input type="text" placeholder="000">
+                    </div>
+                </div>
+                <div class="input_block" id="email">
+                    <img src="img/pa/modal/form_lock.svg">
+                    <div class="label_and_input">
+                        <div class="label">
+                            Expiry date
+                        </div>
+                        <input type="text" placeholder="00/00">
+                    </div>
+                </div>
+            </div>
+            <div class="price">
+                <div class="num">
+                    <div class="name">
+                        Цена
+                    </div>
+                    <div class="new_old">
+                        <div class="new">
+                            $39.00
+                        </div>
+                        <div class="old">
+                            500$
+                        </div>
+                    </div>
+                </div>
+                <div class="percent">
+                    +38,39%
+                </div>
+            </div>
+            <div class="checkbox">
+                <div class="checkbox_wrapper checked">
+                    <img src="img/pa/check.svg">
+                </div>
+                <div class="text">
+                    I accept <a href="#">Terms & Condition</a> and <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+            <button class="accept_btn">
+                Pay now
+            </button>
         </div>
     </div>
     <div class="container">
@@ -128,7 +268,7 @@
                             Manage tarifs
                         </div>
                     </div>
-                    <div class="navigation_element_no_act">
+                    <div id="pay_opener" class="navigation_element_no_act">
                         <img src="img/pa/navigation/wallet.svg">
                         <div class="text">
                             Pay now
@@ -147,7 +287,7 @@
                         </div>
                     </div>
                 </div>
-                <button id="add_api_keys_button">
+                <button id="add_api_opener">
                     <img src="img/pa/key.svg">
                     <div class="text">
                         Add api keys
@@ -174,7 +314,7 @@
             </div>
         </div>
         <div id="content">
-            <div id="profile_page" class="page dnone onone">
+            <div id="profile_page" class="page">
                 <div class="section" id="profile">
                     <div class="section_header h5">
                         Profile
@@ -1139,6 +1279,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
     <script src="js/pa.js"></script>
